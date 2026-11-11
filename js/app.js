@@ -1,0 +1,129 @@
+// Entry point: loads data and state, routes between the tabs, handles share links and offline.
+import { loadData, get } from './data.js';
+import { load, store, update, subscribe, decodeShare, replaceState, snapshot, undo } from './store.js';
+import { generatePlan, TRIP } from './planner.js';
+import { loadWeather } from './weather.js';
+import { $, $$, romeToday, daysBetween, weekdayOf, WD_LONG } from './util.js';
+import { toast, confirmSheet, dropAllSheets } from './ui.js';
+import { renderPlan } from './views/plan.js';
+import { renderExplore } from './views/explore.js';
+import { renderFood } from './views/food.js';
+import { renderHotels } from './views/hotels.js';
+import { renderMap } from './views/map.js';
+import { renderInfo } from './views/info.js';
+import { openSettings, applyTheme, shareNow } from './views/settings.js';
+
+const ROUTES = { plan: renderPlan, explore: renderExplore, food: renderFood, hotels: renderHotels, map: renderMap, info: renderInfo };
+const scrolls = {};
+let lastRoute = null;
+
+function parseHash() {
+  const m = location.hash.match(/^#\/(\w+)(?:\/([\w-]+))?/);
+  const name = m && ROUTES[m[1]] ? m[1] : 'plan';
+  return { name, param: m?.[2] || null };
+}
+
+function render() {
+  const { name, param } = parseHash();
+  const view = $('#view');
+  const key = `${name}/${param || ''}`;
+  if (lastRoute) scrolls[lastRoute] = window.scrollY;
+  view.className = `view view-${name}`;
+  ROUTES[name](view, param);
+  $$('.tabbar a').forEach(a => a.classList.toggle('active', a.dataset.tab === name));
+  document.body.dataset.route = name;
+  if (name !== 'map') window.scrollTo(0, key === lastRoute ? scrolls[key] || 0 : 0);
+  lastRoute = key;
+}
+
+function countdown() {
+  const today = romeToday();
+  const d = daysBetween(today, TRIP.dates[0]);
+  const i = TRIP.dates.indexOf(today);
+  let text;
+  if (d > 1) text = `עוד ${d} ימים לטיסה ✈️`;
+  else if (d === 1) text = 'מחר טסים! ✈️';
+  else if (i >= 0) text = `יום ${i + 1} מתוך 6 · ${WD_LONG[weekdayOf(today)]}`;
+  else text = '<span dir="ltr">12–17</span> בנובמבר 2026';
+  $('#countdown').innerHTML = text;
+}
+
+// Drop plan items that point at entries removed from the data files.
+function cleanPlan(s) {
+  for (const d of s.days || []) d.items = d.items.filter(it => !it.id || get(it.id));
+}
+
+async function importShared() {
+  const m = location.hash.match(/^#share=(.+)$/);
+  if (!m) return;
+  history.replaceState(null, '', `${location.pathname}#/plan`);
+  try {
+    const data = await decodeShare(m[1]);
+    const n = data.days.reduce((k, d) => k + d.items.length, 0);
+    const ok = await confirmSheet({
+      title: 'קיבלתם תוכנית משותפת 💌',
+      text: `להחליף את התוכנית בטלפון הזה בתוכנית שקיבלתם? (${data.days.length} ימים, ${n} פריטים, כולל הגדרות ומועדפים)`,
+      ok: 'כן, להחליף',
+    });
+    if (!ok) return;
+    snapshot();
+    replaceState({ ...store.state, ...data });
+    toast('התוכנית עודכנה', { action: 'ביטול', onAction: undo, ms: 6000 });
+  } catch {
+    toast('הקישור לא תקין או נקטע בהעתקה');
+  }
+}
+
+function registerSW() {
+  if (!('serviceWorker' in navigator)) return;
+  const local = ['localhost', '127.0.0.1'].includes(location.hostname);
+  if (local && !location.search.includes('sw=1')) return;
+  navigator.serviceWorker.register('sw.js').then(reg => {
+    reg.update().catch(() => {});
+    reg.addEventListener('updatefound', () => {
+      const nw = reg.installing;
+      nw?.addEventListener('statechange', () => {
+        if (nw.state === 'activated' && navigator.serviceWorker.controller) {
+          toast('יש גרסה חדשה של האפליקציה', { action: 'רענון', onAction: () => location.reload(), ms: 12000 });
+        }
+      });
+    });
+  }).catch(() => {});
+}
+
+let ready = false;
+
+async function boot() {
+  window.addEventListener('hashchange', () => {
+    if (!ready) return;
+    dropAllSheets();
+    render();
+  });
+  load();
+  applyTheme();
+  try {
+    await loadData();
+  } catch (e) {
+    $('#view').innerHTML = `<div class="empty">לא הצלחנו לטעון את הנתונים 😕<br><small>${String(e.message || e)}</small><br><button class="btn btn-primary" onclick="location.reload()">לנסות שוב</button></div>`;
+    return;
+  }
+  if (!store.state.days) update(s => { s.days = generatePlan(s); }, { silent: true });
+  else update(cleanPlan, { silent: true });
+
+  countdown();
+  ready = true;
+  render();
+  subscribe(render);
+  $('#btn-settings').addEventListener('click', openSettings);
+  $('#btn-share').addEventListener('click', shareNow);
+  await importShared();
+  loadWeather().then(() => { if (['plan', 'info'].includes(parseHash().name)) render(); });
+  registerSW();
+  setInterval(countdown, 60 * 60 * 1000);
+}
+
+boot().catch(e => {
+  console.error(e);
+  $('#view').innerHTML = `<div class="empty">משהו השתבש 😕<br><small dir="ltr">${String(e?.message || e)}</small><br><br>
+    <button class="btn btn-primary" onclick="location.reload()">לנסות שוב</button></div>`;
+});

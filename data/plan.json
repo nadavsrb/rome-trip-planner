@@ -1,0 +1,167 @@
+{
+  "themes": {
+    "arrival": {
+      "kind": "arrival", "title": "נחיתה ושיטוט ראשון במרכז", "emoji": "✈️",
+      "blocks": [
+        { "meal": "lunch", "area": "centro" },
+        { "p": "pantheon", "tier": 1 },
+        { "p": "san-luigi", "tier": 2 },
+        { "p": "sant-agostino", "tier": 3 },
+        { "p": "piazza-navona", "tier": 1 },
+        { "p": "campo-de-fiori", "tier": 3 },
+        { "meal": "dinner", "area": "centro" },
+        { "p": "trevi", "tier": 1 }
+      ]
+    },
+    "vatican": {
+      "kind": "day", "title": "הוותיקן ופטרוס הקדוש", "emoji": "⛪", "value": 100,
+      "blurb": "מוזיאוני הוותיקן והקפלה הסיסטינית, הבזיליקה והכיפה, ובערב טרסטוורה",
+      "notOn": [0], "pref": { "5": 10, "6": 0, "1": -5 },
+      "blocks": [
+        { "p": "vatican-museums", "tier": 1, "pin": "start" },
+        { "meal": "lunch", "area": "vatican" },
+        { "p": "st-peters-dome", "tier": 2 },
+        { "p": "st-peters", "tier": 1 },
+        { "p": "castel-santangelo", "tier": 3 },
+        { "p": "ponte-santangelo", "tier": 2 },
+        { "p": "trastevere-walk", "tier": 1 },
+        { "p": "santa-maria-trastevere", "tier": 2 },
+        { "p": "ee-twilight-trastevere", "tier": 1, "needs": "food", "replaces": ["trastevere-walk", "dinner"] },
+        { "meal": "dinner", "area": "trastevere" }
+      ]
+    },
+    "ancient": {
+      "kind": "day", "title": "רומא העתיקה", "emoji": "🏛️", "value": 100,
+      "blurb": "קולוסיאום, פורום ופלטינו, גבעת הקפיטול ותצפית מהוויטוריאנו, ובערב הגטו",
+      "pref": { "6": 8 },
+      "blocks": [
+        { "p": "colosseum", "tier": 1, "pin": "start" },
+        { "p": "colosseum-underground", "tier": 3 },
+        { "p": "forum-palatine", "tier": 1 },
+        { "meal": "lunch", "area": "monti" },
+        { "p": "trajan-markets", "tier": 3 },
+        { "p": "campidoglio", "tier": 1 },
+        { "p": "capitoline-museums", "tier": 3 },
+        { "p": "vittoriano", "tier": 2, "pin": "sunset-25" },
+        { "p": "theater-marcellus", "tier": 3 },
+        { "p": "ghetto-walk", "tier": 2, "dur": 40 },
+        { "meal": "dinner", "area": "ghetto" }
+      ]
+    },
+    "borghese": {
+      "kind": "day", "title": "בורגזה, הפינצ׳ו והמדרגות הספרדיות", "emoji": "🖼️", "value": 85,
+      "blurb": "גלריה בורגזה, הפארק והתצפית, פיאצה דל פופולו ורחובות האופנה",
+      "notOn": [1], "pref": { "0": 10 },
+      "blocks": [
+        { "p": "borghese-gallery", "tier": 1, "pin": "start" },
+        { "p": "villa-borghese", "tier": 2 },
+        { "p": "pincio", "tier": 1 },
+        { "p": "piazza-del-popolo", "tier": 1 },
+        { "p": "santa-maria-popolo", "tier": 2 },
+        { "meal": "lunch", "area": "tridente" },
+        { "p": "via-margutta", "tier": 3 },
+        { "p": "shop-via-del-babuino", "tier": 3, "dur": 30 },
+        { "p": "spanish-steps", "tier": 1 },
+        { "p": "shop-via-condotti", "tier": 2, "dur": 45 },
+        { "p": "shop-via-del-corso", "tier": 3, "dur": 45 },
+        { "p": "ara-pacis", "tier": 3 },
+        { "meal": "dinner", "area": "tridente" }
+      ]
+    },
+    "shopping": {
+      "kind": "day", "title": "יום שופינג", "emoji": "🛍️", "value": 42, "needs": "shopping",
+      "blurb": "ויה דל קורסו, לה רינשנטה, רחובות האופנה סביב המדרגות הספרדיות ובוטיקים במונטי",
+      "pref": { "0": -5 },
+      "blocks": [
+        { "p": "shop-via-del-corso", "tier": 1, "dur": 60 },
+        { "p": "shop-galleria-alberto-sordi", "tier": 3, "dur": 30 },
+        { "p": "shop-rinascente-tritone", "tier": 1, "dur": 75 },
+        { "p": "trevi", "tier": 2 },
+        { "meal": "lunch", "area": "tridente" },
+        { "p": "shop-via-condotti", "tier": 1, "dur": 60 },
+        { "p": "spanish-steps", "tier": 2 },
+        { "p": "shop-via-del-babuino", "tier": 2, "dur": 45 },
+        { "p": "shop-monti-boschetto-urbana", "tier": 2, "dur": 60 },
+        { "p": "monti-walk", "tier": 3 },
+        { "meal": "dinner", "area": "monti" }
+      ]
+    },
+    "jewish": {
+      "kind": "day", "title": "הגטו היהודי והאוונטינו", "emoji": "✡️", "value": 75,
+      "blurb": "בית הכנסת הגדול והמוזיאון היהודי, צהריים כשרים בגטו, פי האמת ושקיעה בגן התפוזים",
+      "notOn": [6], "pref": { "1": 6, "0": 3, "5": -8 },
+      "blocks": [
+        { "p": "ghetto-walk", "tier": 1, "dur": 60 },
+        { "p": "great-synagogue", "tier": 1 },
+        { "p": "theater-marcellus", "tier": 2 },
+        { "meal": "lunch", "area": "ghetto" },
+        { "p": "tiber-island", "tier": 2 },
+        { "p": "mouth-of-truth", "tier": 3 },
+        { "p": "circus-maximus", "tier": 3 },
+        { "p": "orange-garden", "tier": 1, "pin": "sunset-40" },
+        { "p": "aventine-keyhole", "tier": 1 },
+        { "meal": "dinner", "area": "aventine" }
+      ]
+    },
+    "trastevere": {
+      "kind": "day", "title": "טרסטוורה והג׳יאניקולו", "emoji": "🌇", "value": 55,
+      "blurb": "שוק פורטה פורטזה (רק בא׳), כנסיות ופרסקאות, וילה פרנזינה ושקיעה מהג׳יאניקולו",
+      "pref": { "0": 8 },
+      "blocks": [
+        { "p": "porta-portese", "tier": 2 },
+        { "p": "santa-cecilia", "tier": 3 },
+        { "p": "santa-maria-trastevere", "tier": 1 },
+        { "p": "trastevere-walk", "tier": 1 },
+        { "meal": "lunch", "area": "trastevere" },
+        { "p": "villa-farnesina", "tier": 2 },
+        { "p": "orto-botanico", "tier": 3 },
+        { "p": "fontanone", "tier": 2 },
+        { "p": "gianicolo", "tier": 1, "pin": "sunset-35" },
+        { "meal": "dinner", "area": "trastevere" }
+      ]
+    },
+    "art": {
+      "kind": "day", "title": "יום אמנות במרכז", "emoji": "🎨", "value": 50, "needs": "art",
+      "blurb": "גלריות פרטיות, קרווג׳ו ורפאל, פאלאצו אלטמפס וקלויסטר ברמנטה",
+      "blocks": [
+        { "p": "doria-pamphilj", "tier": 1 },
+        { "p": "sant-ignazio", "tier": 2 },
+        { "p": "galleria-sciarra", "tier": 3 },
+        { "meal": "lunch", "area": "centro" },
+        { "p": "san-luigi", "tier": 2 },
+        { "p": "palazzo-altemps", "tier": 2 },
+        { "p": "chiostro-bramante", "tier": 3 },
+        { "p": "galleria-spada", "tier": 2 },
+        { "meal": "dinner", "area": "centro" }
+      ]
+    },
+    "monti": {
+      "kind": "day", "title": "מונטי, משה של מיכלאנג׳לו וסן קלמנטה", "emoji": "🏘️", "value": 45,
+      "blurb": "בזיליקות ופסיפסים, המוזיאון הרומי, ובוטיקים ובתי קפה בשכונה",
+      "blocks": [
+        { "p": "santa-maria-maggiore", "tier": 1 },
+        { "p": "palazzo-massimo", "tier": 2 },
+        { "p": "san-pietro-vincoli", "tier": 1 },
+        { "meal": "lunch", "area": "monti" },
+        { "p": "san-clemente", "tier": 2 },
+        { "p": "domus-aurea", "tier": 3 },
+        { "p": "monti-walk", "tier": 1 },
+        { "p": "trajan-markets", "tier": 3 },
+        { "meal": "dinner", "area": "monti" }
+      ]
+    },
+    "appia": {
+      "kind": "day", "title": "דרך אפיה והקטקומבות", "emoji": "🚲", "value": 40,
+      "blurb": "רכיבה על הדרך הרומית, קטקומבות, ואקוודוקטים בשקיעה",
+      "blocks": [
+        { "p": "baths-caracalla", "tier": 2 },
+        { "p": "appian-way", "tier": 1 },
+        { "p": "catacombs-callixtus", "tier": 1 },
+        { "meal": "lunch", "area": "appia" },
+        { "p": "catacombs-sebastian", "tier": 3 },
+        { "p": "aqueduct-park", "tier": 2, "pin": "sunset-45" },
+        { "meal": "dinner", "area": "monti" }
+      ]
+    }
+  }
+}

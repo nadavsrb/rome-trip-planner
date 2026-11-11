@@ -1,0 +1,5798 @@
+{
+ "items": [
+  {
+   "id": "baghetto-meat",
+   "name": "בא'גטו",
+   "orig": "Ba'Ghetto (meat)",
+   "type": "restaurant",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 57, 00186 Roma",
+   "lat": 41.89267,
+   "lng": 12.47778,
+   "kosher": {
+    "kind": "meat",
+    "cert": "רבנות רומא (ברשימה הרשמית של הקהילה היהודית); לפי חב״ד פיאצה בולוניה: מהדרין/גלאט עם משגיח תמידי",
+    "shabbat": true,
+    "fri": "15:00",
+    "satNight": "19:00"
+   },
+   "veg": 2,
+   "price": 3,
+   "order": "ארטישוק בסגנון יהודי (carciofo alla giudia), קרבונרה כשרה עם אווז מעושן, אבקיו (טלה) עם תפוחי אדמה, קוסקוס, חומוס ופלאפל; לקינוח קרוסטטה ויצ'ולה או טירמיסו (יש גם טבעוני)",
+   "reserve": "recommended",
+   "hours": "א׳–ה׳ 12:00–15:00 ו-18:00–23:00 · ו׳ 12:00–15:00 (ערב שבת סגור) · מוצ״ש מ-19:00 עד 23:00",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ]
+    ],
+    "6": [
+     [
+      "19:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "המסעדה הבשרית הכשרה המפורסמת של הגטו: מטבח יהודי-רומאי עם השפעות מזרח-תיכוניות, שולחנות בחוץ מול הפורטיקו ורשימת יינות כשרים של יותר מ-100 תוויות.",
+   "tips": "מטבח בשרי — אין חלב בשום מנה, גם לא בקינוחים. שולחנות בחוץ מול חורבות פורטיקו אוקטביה (בנובמבר כדאי לבקש פנים). ארוחת ליל שבת וצהרי שבת רק בהזמנה ובתשלום מראש באתר (כ-€45–50 לאדם). האחות החלבית (Milky) כ-70 מ׳ משם — מטבח נפרד, לא להתבלבל.",
+   "url": "https://www.baghetto.com/ristoranti/ristorante-kasher-portico-dottavia-roma/",
+   "phone": "+39 06 6889 2868",
+   "verified": true,
+   "note": "Hours from baghetto.com (Mon-Thu & Sun 12-15 and 18-23; Fri 12-15; Sat dinner 19-23, 'served after Arvit') - same as Eating Europe (Jan 2025). Kosher: on the Rome Jewish Community's official restaurant list (romaebraica.it/en/restaurants, 'Meat'); the restaurant site shows a teuda but names no certifier; Chabad Piazza Bologna guide calls it Mehadrin/Glatt with a permanent mashgiach (a reader comment there disputes Glatt). TableJourney re-checked the listing 27 Oct 2026. Coordinates: OSM node."
+  },
+  {
+   "id": "baghetto-milky",
+   "name": "בא'גטו מילקי",
+   "orig": "Ba'Ghetto Milky",
+   "type": "restaurant",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 2/A, 00186 Roma",
+   "lat": 41.89315,
+   "lng": 12.47707,
+   "kosher": {
+    "kind": "dairy",
+    "cert": "רבנות רומא — חלב ישראל (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": "15:00",
+    "satNight": "19:00"
+   },
+   "veg": 3,
+   "price": 2,
+   "order": "ארטישוק בסגנון יהודי, קונצ'ה די זוקיני, סופלי, פילה בקלה מטוגן, טונרלי קאצ'ו א פפה, פיצה רומאית בתנור עצים, חומוס/פלאפל/קוסקוס; לקינוח ריקוטה עם ויצ'ולה, ואמארו מארטישוק",
+   "reserve": "recommended",
+   "hours": "א׳–ה׳ 12:00–15:00 ו-18:00–23:00 · ו׳ 12:00–15:00 (ערב שבת סגור) · מוצ״ש מ-19:00 עד 23:00",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ]
+    ],
+    "6": [
+     [
+      "19:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "הסניף החלבי של בא'גטו: דגים, גבינות ופיצה בתנור עצים לצד קלאסיקות יהודיות-רומאיות ומזרח-תיכוניות. מהמקומות הכי נוחים לצמחונים בגטו.",
+   "tips": "חלבי בלבד — אין בשר, פירות ים או חסרי חוליות. פרחי קישוא מטוגנים מופיעים בתפריט, אבל זו לא עונה שלהם — שאלו מה טרי. ממש לידו בא'גטו ביסטרו (קפה-מאפה) מאותה קבוצה.",
+   "url": "https://www.baghetto.com/ristoranti/baghetto-milky-roma/",
+   "phone": "+39 06 6830 0077",
+   "verified": true,
+   "note": "Hours from baghetto.com (same pattern as the meat restaurant). Listed as 'Milk (Chalav Israel)' on the Rome Jewish Community's official list; the restaurant site names no certifier. TableJourney re-checked the listing 27 Oct 2026. Coordinates: OSM node."
+  },
+  {
+   "id": "bellacarne",
+   "name": "בלה קרנה",
+   "orig": "Bellacarne Kosher Restaurant",
+   "type": "restaurant",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 51, 00186 Roma",
+   "lat": 41.89264,
+   "lng": 12.47788,
+   "kosher": {
+    "kind": "meat",
+    "cert": "רבנות רומא (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": "15:30",
+    "satNight": "21:00"
+   },
+   "veg": 2,
+   "price": 3,
+   "order": "קרבונרה כשרה עם בשר מיובש ביתי, קוסקוס בקר ברוטב עגבניות בסגנון יהודי-רומאי, נתחי בקר בגריל ובשיפוד, פסטה טרייה; לקינוח pizzarella בדבש",
+   "reserve": "recommended",
+   "hours": "א׳ 12:00–22:30 · ב׳–ה׳ 12:00–23:00 · ו׳ 12:00–15:30 (ערב שבת סגור) · מוצ״ש מ-21:00 עד 23:00",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "22:30"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:30"
+     ]
+    ],
+    "6": [
+     [
+      "21:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "מסעדת בשר כשרה במרחק דקה מבית הכנסת הגדול. המטבח ללא חלב, עם מנות צמחוניות וללא גלוטן, ותפריט ליל שבת מיוחד.",
+   "tips": "ארוחת ליל שבת (6 מנות): €50 לאדם, קלאסית או צמחונית, בהזמנה ובתשלום מראש בלבד (bellacarne.it/en/booking-shabbat); מתחילה אחרי ערבית וניתן להעביר מועד רק 48 שעות מראש. שעות מוצ״ש משתנות בין המקורות (20:30–21:30) — כדאי להתקשר. לטייק-אווי ומשלוחים יש את האחות Bellacarne Street Food.",
+   "url": "https://www.bellacarne.it/en/",
+   "phone": "+39 06 683 3104",
+   "verified": true,
+   "note": "Hours from bellacarne.it (Mon-Thu 12-23, Fri 12-15:30, Sat 21-23, Sun 12-22:30); other sources differ slightly (Eating Europe Jan 2025: Sat 20:30; OSM: Sat 21:30) so Saturday night 21:00 is the middle value. On the Rome Jewish Community's official list ('Meat'); the site names no certifier (EasyKosherTravel Mar 2026: Rabbinate of Rome). The site's menu link says 'food-menu-2023' - prices may be outdated. Shabbat dinner prices from bellacarne.it/en/booking-shabbat."
+  },
+  {
+   "id": "renato-al-ghetto",
+   "name": "רנאטו אל גטו",
+   "orig": "Renato al Ghetto (Hostaria Kosher)",
+   "type": "restaurant",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 5, 00186 Roma",
+   "lat": 41.89301,
+   "lng": 12.47745,
+   "kosher": {
+    "kind": "meat",
+    "cert": "רבנות רומא (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": "15:00",
+    "satNight": "18:00"
+   },
+   "veg": 1,
+   "price": 3,
+   "order": "ארטישוק יהודי ופריטו די קרצ'ופי (ארטישוק בטמפורה), קציצות עגל מטוגנות, פאג'ולי אל אוצ'לטו (שעועית ברוטב עגבניות ומרווה), טליאטה בקר, אמטריצ'יאנה/קרבונרה כשרות",
+   "reserve": "recommended",
+   "hours": "א׳–ה׳ 12:00–23:00 · ו׳ 12:00–15:00 (ערב שבת סגור) · מוצ״ש מ-18:00 עד 23:00",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ]
+    ],
+    "6": [
+     [
+      "18:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "אוסטריה כשרה בשרית (כ-60 מקומות) עם מטבח יהודי-רומאי מודרני. יחסית חדשה בגטו ומאוד פופולרית.",
+   "tips": "ארוחות שבת בהזמנה בלבד (renatoalghetto.it/shabbat): ליל שבת €50, צהרי שבת €50, טייק-אווי €45, תשלום אונליין לפני שבת. לצמחונים הבחירה מצומצמת (ארטישוק, שעועית, פולנטה, מתאבנים). OSM מציין שבת סגור — האתר והמדריכים מציינים פתיחה במוצ״ש, כדאי לאשר בטלפון.",
+   "url": "https://www.renatoalghetto.it/",
+   "phone": "+39 06 4754 5830",
+   "verified": true,
+   "note": "Hours from renatoalghetto.it (Sun-Thu 12-23, Fri 12-15, Sat 18-23), same as Eating Europe (Jan 2025); OSM has Mo-Th,Su 12-22, Fr 12-15, Sa off. On the Rome Jewish Community's official list ('Meat'); site names no certifier. Shabbat prices from renatoalghetto.it/shabbat. Coordinates: OSM node."
+  },
+  {
+   "id": "yotvata",
+   "name": "יטבתה",
+   "orig": "Yotvata",
+   "type": "restaurant",
+   "area": "ghetto",
+   "address": "Piazza Cenci 70, 00186 Roma",
+   "lat": 41.89272,
+   "lng": 12.47545,
+   "kosher": {
+    "kind": "dairy",
+    "cert": "רבנות רומא — חלב ישראל למהדרין (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": "15:00",
+    "satNight": "20:00"
+   },
+   "veg": 3,
+   "price": 2,
+   "order": "ארטישוק יהודי, קונצ'ה, פריטורה מעורבת (fritto misto), בקלה או דג בציפוי תפוח אדמה, ספגטי עם בוטרגה, סופלי; לקינוח קרוסטטה ריקוטה וויצ'ולה",
+   "reserve": "recommended",
+   "hours": "א׳–ה׳ 12:00–15:00 ו-18:30–23:00 · ו׳ 12:00–15:00 (ערב שבת סגור) · מוצ״ש מ-20:00",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ]
+    ],
+    "6": [
+     [
+      "20:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "מסעדה חלבית כשרה למהדרין (חלב ישראל), משפחתית, בכיכר Piazza Cenci שבפאתי הגטו. מצוינת לצמחונים ולאוהבי דגים.",
+   "tips": "שולחן אפשר להזמין באתר. מנות דגים בסביבות €20 לפי ביקורות. קבוצות בשישי/שבת — על פי בקשה (לברר מראש). מציעים גם סדנאות בישול ופסטה כשרה.",
+   "url": "https://www.yotvata.it/",
+   "phone": "+39 06 6813 4481",
+   "verified": true,
+   "note": "Hours from yotvata.it: Sun-Thu 12-15 and 18-23:30, Fri 12-15, Sat 20-23:45. Eating Europe (Jan 2025) and EasyKosherTravel (Mar 2026) say dinner from 18:30 to 23:00 and Saturday from 18:30; I used the overlap (18:30-23:00) and the later Saturday opening (20:00). Site header says 'Kosher Lemehadrin Chalav Israel'; community list says 'Milk - Chalav Israel lemehadrin'. TableJourney re-checked the listing 27 Oct 2026. Coordinates: centre of Piazza dei Cenci (OSM) - building number 70 not geocoded separately, accuracy about 25 m."
+  },
+  {
+   "id": "casalino-osteria",
+   "name": "קזלינו אוסטריה",
+   "orig": "Casalino Osteria Kosher",
+   "type": "trattoria",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 1/e, 00186 Roma",
+   "lat": 41.89318,
+   "lng": 12.477,
+   "kosher": {
+    "kind": "dairy",
+    "cert": "רבנות רומא — חלב ישראל (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": "15:00",
+    "satNight": "21:00"
+   },
+   "veg": 3,
+   "price": 2,
+   "order": "ארטישוק יהודי, בקלה 'אל קזלינו', טונרלי ביצים עם חמאה וכמהין טרי (בעונה — נובמבר הוא עונת הכמהין)",
+   "reserve": "recommended",
+   "hours": "א׳–ה׳ 10:00–23:30 · ו׳ 10:00–15:00 (ערב שבת סגור) · מוצ״ש מ-21:00 (באתר: מ-18:00)",
+   "open": {
+    "0": [
+     [
+      "10:00",
+      "23:30"
+     ]
+    ],
+    "1": [
+     [
+      "10:00",
+      "23:30"
+     ]
+    ],
+    "2": [
+     [
+      "10:00",
+      "23:30"
+     ]
+    ],
+    "3": [
+     [
+      "10:00",
+      "23:30"
+     ]
+    ],
+    "4": [
+     [
+      "10:00",
+      "23:30"
+     ]
+    ],
+    "5": [
+     [
+      "10:00",
+      "15:00"
+     ]
+    ],
+    "6": [
+     [
+      "21:00",
+      "23:30"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "lunch",
+    "dinner"
+   ],
+   "desc": "אוסטריה חלבית כשרה בקצה הגטו, פתוחה מהבוקר ועד מאוחר — נוחה לארוחה בשעות לא שגרתיות.",
+   "tips": "בנובמבר עונת הכמהין — שאלו על מנת הכמהין הטרי. שעת הפתיחה במוצ״ש לא ברורה (האתר 18:00, גוגל 21:00) — להתקשר: +39 06 7978 1514 או וואטסאפ +39 347 875 6324. ארוחות שבת — אירוע פרטי או טייק-אווי, בהזמנה בלבד. יש גם טעימות יין כשר וסדנת בישול.",
+   "url": "https://casalinoosteriakosher.it/",
+   "phone": "+39 06 7978 1514",
+   "verified": true,
+   "note": "Own site: Sun-Thu 10-24, Fri 10-15, Sat 18-24. Google-derived listing (Foodle) and EasyKosherTravel (Mar 2026): Sun-Thu 10-23:30, Fri 10-15:30, Sat from 21:00; I used the more conservative values. On the Rome Jewish Community's official list ('Milk - Chalav Israel'); the site names no certifier (EasyKosherTravel: Rabbinate of Rome). Coordinates approximate (no OSM node for 1/e; placed next to Boccione at no. 1), accuracy about 30 m."
+  },
+  {
+   "id": "baghetto-bistrot",
+   "name": "בא'גטו ביסטרו",
+   "orig": "Ba'Ghetto Bistrot (pastry bistrot)",
+   "type": "coffee",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 3, 00186 Roma",
+   "lat": 41.89312,
+   "lng": 12.47718,
+   "kosher": {
+    "kind": "dairy",
+    "cert": "רבנות רומא — חלב ישראל (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": "16:00",
+    "satNight": "18:00"
+   },
+   "veg": 3,
+   "price": 2,
+   "order": "שקשוקה (€14), קרוקט בקלה (€9), חומוס עם פלאפל (€12), סלמון טריאקי (€20), מאפים ולחם מהתנור, קוקטיילים",
+   "reserve": "no",
+   "hours": "א׳–ה׳ 7:30–24:00 · ו׳ 7:30–16:00 · מוצ״ש מ-18:00 עד 24:00",
+   "open": {
+    "0": [
+     [
+      "07:30",
+      "23:59"
+     ]
+    ],
+    "1": [
+     [
+      "07:30",
+      "23:59"
+     ]
+    ],
+    "2": [
+     [
+      "07:30",
+      "23:59"
+     ]
+    ],
+    "3": [
+     [
+      "07:30",
+      "23:59"
+     ]
+    ],
+    "4": [
+     [
+      "07:30",
+      "23:59"
+     ]
+    ],
+    "5": [
+     [
+      "07:30",
+      "16:00"
+     ]
+    ],
+    "6": [
+     [
+      "18:00",
+      "23:59"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "desc": "קונדיטוריה-ביסטרו חלבי כשר: לחם ומאפים הנאפים במקום, מנות בוקר וארוחות קלות. אחת הדרכים הטובות לאכול ארוחת בוקר כשרה בגטו.",
+   "tips": "פותח כבר ב-7:30, מתאים לפני ביקור במוזיאון היהודי (ו׳ נפתח ב-9:00). בימי שישי נסגר ב-16:00 — השבת נכנסת ב-16:33, אז לא להשאיר לרגע האחרון. מטבח חלבי: אין מנות בשר.",
+   "url": "https://www.baghettobistrot.com/",
+   "phone": "+39 06 8530 3477",
+   "verified": true,
+   "note": "Hours and prices from baghettobistrot.com. Listed as 'Dairy - Chalav Israel' in the Rome Jewish Community's fast-food list; the site says only 'pastry bistrot kosher'. Coordinates interpolated between OSM address nodes no. 1 and no. 5 on the same street (accuracy about 20 m). Midnight closings written as 23:59."
+  },
+  {
+   "id": "bellacarne-street-food",
+   "name": "בלה קרנה סטריט פוד",
+   "orig": "Bellacarne StreetFood",
+   "type": "street",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 14, 00186 Roma",
+   "lat": 41.89279,
+   "lng": 12.47802,
+   "kosher": {
+    "kind": "meat",
+    "cert": "רבנות רומא (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": "16:00",
+    "satNight": "20:00"
+   },
+   "veg": 1,
+   "price": 2,
+   "order": "פאניני בלחם שנאפה בבוקר (bel panino), פסטרמה, פיצטות, לזניה/קנלוני בקופסה, מנות קטנות (בקלה, סופלי), מנות צמחוניות; קינוח: ציורוס או טירמיסו",
+   "reserve": "no",
+   "hours": "א׳–ה׳ 12:00–23:00 · ו׳ 12:00–16:00 (ערב שבת סגור) · מוצ״ש מ-20:00 עד 23:00",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "16:00"
+     ]
+    ],
+    "6": [
+     [
+      "20:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "desc": "אוכל רחוב בשרי כשר של בלה קרנה — מהיר, זול יותר מהמסעדה, עם אפשרות טייק-אווי ומשלוח.",
+   "tips": "לפי האתר יש משלוחים דרך Deliveroo ו-Glovo ברומא — אופציה לארוחה כשרה במלון (לוודא בכתובת המשלוח). לשבת יש 'Shabbat Kit' לטייק-אווי (מזמינים לפני שבת). המטבח ללא חלב.",
+   "url": "https://www.bcstreetfood.it/",
+   "phone": "+39 06 3032 1239",
+   "verified": true,
+   "note": "Hours, menu and delivery claim from bcstreetfood.it (site says 100% kosher meat, dairy-free menu, Deliveroo + Glovo in Rome). Listed in the Rome Jewish Community fast-food list ('Meat'). Delivery apps' availability for a specific hotel address was not tested. Coordinates interpolated between OSM address nodes no. 13 and no. 16 (accuracy about 20 m)."
+  },
+  {
+   "id": "fonzie-burger",
+   "name": "פונזי ברגר",
+   "orig": "Fonzie - The Burger's House",
+   "type": "street",
+   "area": "ghetto",
+   "address": "Via di Santa Maria del Pianto 13, 00186 Roma",
+   "lat": 41.89336,
+   "lng": 12.47624,
+   "kosher": {
+    "kind": "meat",
+    "cert": "רבנות רומא (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": "15:00",
+    "satNight": "19:30"
+   },
+   "veg": 1,
+   "price": 2,
+   "order": "המבורגר בקר או עוף (לפי ביקורת 2023 יש גם המבורגר צמחי), בייגל עם בקר או עוף",
+   "reserve": "no",
+   "hours": "א׳–ה׳ 12:00–15:00 ו-19:00–23:00 · ו׳ 12:00–15:00 · מוצ״ש מ-19:30",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ]
+    ],
+    "6": [
+     [
+      "19:30",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "המבורגריה כשרה בסגנון שנות ה-50, צעד מהגטו. פתרון מהיר ולא יקר כשלא רוצים ארוחת מסעדה.",
+   "tips": "יש אחות לפלאפל ושווארמה ברחוב עצמו (Oriental Fonzie, מס׳ 65). בישיבה מהירה כדאי להגיע אחרי 12:00 או אחרי 19:00 — בין לבין יש הפסקה.",
+   "url": null,
+   "phone": "+39 338 285 5955",
+   "verified": true,
+   "note": "On the Rome Jewish Community fast-food list ('Fonzie Burger', 'Meat'). Hours: EasyKosherTravel (Mar 2026) Sun-Thu 12-15 and 19-23, Fri 12-15, Sat 19-23; OSM has Su-Th 12-23, Fr 12-16, Sa 19:30-23; Howard Blas (2023) 12-15:30 and 19-23 daily - I used the overlap. No working official website found (fonzieburgers.com does not resolve). Street numbers 13 vs 65 are mixed between the community list and other directories; OSM and EasyKosherTravel place Burger at no. 13 and Oriental at no. 65. Coordinates: OSM node."
+  },
+  {
+   "id": "fonzie-oriental",
+   "name": "פונזי אוריינטל",
+   "orig": "Oriental Fonzie",
+   "type": "street",
+   "area": "ghetto",
+   "address": "Via di Santa Maria del Pianto 65, 00186 Roma",
+   "lat": 41.89333,
+   "lng": 12.47652,
+   "kosher": {
+    "kind": "meat",
+    "cert": "רבנות רומא (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": "15:00",
+    "satNight": "19:00"
+   },
+   "veg": 2,
+   "price": 1,
+   "order": "פלאפל וחומוס (אופציה צמחונית מהירה), שווארמה כשרה, מנות ים-תיכוניות",
+   "reserve": "no",
+   "hours": "א׳–ה׳ 12:00–22:30 · ו׳ 12:00–15:00 · מוצ״ש מ-19:00 עד 22:30",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "22:30"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "22:30"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "22:30"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "22:30"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "22:30"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ]
+    ],
+    "6": [
+     [
+      "19:00",
+      "22:30"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "desc": "דוכן ים-תיכוני כשר לפלאפל ושווארמה בסמטה ליד הגטו — מנה מהירה ובתקציב.",
+   "tips": "מטבח בשרי — הפלאפל והחומוס בכל זאת צמחוניים. מקום עמידה/טייק-אווי, לא ישיבה מסודרת.",
+   "url": null,
+   "phone": "+39 06 683 2673",
+   "verified": true,
+   "note": "On the Rome Jewish Community fast-food list as 'Fonzie Oriental' (street number listed as 13 there, but OSM and EasyKosherTravel place Oriental Fonzie at no. 65). Hours from OSM (Su-Fr 12-22:30; Sa 19-22:30) and EasyKosherTravel (Mar 2026: Fri 12-15, Sat 19-22:30). Coordinates: OSM node."
+  },
+  {
+   "id": "bona-pizza",
+   "name": "בונה פיצה",
+   "orig": "Bona Pizza (kosher pizza al taglio)",
+   "type": "pizza",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 7, 00186 Roma",
+   "lat": 41.89298,
+   "lng": 12.47759,
+   "kosher": {
+    "kind": "dairy",
+    "cert": "רבנות רומא — חלב ישראל (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": "15:00",
+    "satNight": null
+   },
+   "veg": 3,
+   "price": 1,
+   "order": "פיצה אל טאליו לפי משקל (כולן צמחוניות), פיצה תפוחי אדמה ורוזמרין, מרובעים עם גבינות, פסטה ומנות רומאיות",
+   "reserve": "no",
+   "hours": "א׳ 9:30–21:30 · ב׳–ה׳ 7:30–21:30 · ו׳ עד ~15:00 (הערכה) · שבת סגור",
+   "open": {
+    "0": [
+     [
+      "09:30",
+      "21:30"
+     ]
+    ],
+    "1": [
+     [
+      "07:30",
+      "21:30"
+     ]
+    ],
+    "2": [
+     [
+      "07:30",
+      "21:30"
+     ]
+    ],
+    "3": [
+     [
+      "07:30",
+      "21:30"
+     ]
+    ],
+    "4": [
+     [
+      "07:30",
+      "21:30"
+     ]
+    ],
+    "5": [
+     [
+      "07:30",
+      "15:00"
+     ]
+    ]
+   },
+   "closed": [
+    6
+   ],
+   "meals": [
+    "breakfast",
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "desc": "פיצריה חלבית כשרה במשקל בלב הגטו — כל הפיצות צמחוניות, מושלמת לארוחה קלה וזולה.",
+   "tips": "בימי שישי נסגרת מוקדם — אל תתכננו אותה לשעות אחה״צ. נוח לקנות פרוסות לטיול (חלבי — לא לערבב עם בשר).",
+   "url": null,
+   "phone": "+39 06 6880 5820",
+   "verified": true,
+   "note": "On the Rome Jewish Community fast-food list ('Dairy - Chalav Israel, pizza'). Hours from Google data via spinach.guide (refreshed 3 Nov 2026): Mon-Thu 07:30-21:30, Fri 07:30-17:00, Sat closed, Sun 09:30-21:30. Friday close set to about 15:00 as my estimate because Shabbat enters at 16:33 on 13 Nov, so a 17:00 close cannot be right for a kosher shop in November. OSM still labels the unit 'Alice'. Coordinates: OSM node at no. 7."
+  },
+  {
+   "id": "antico-forno-del-ghetto",
+   "name": "אנטיקו פורנו דל גטו",
+   "orig": "Antico Forno del Ghetto (Urbani)",
+   "type": "bakery",
+   "area": "ghetto",
+   "address": "Piazza Costaguti 30-32, 00186 Roma",
+   "lat": 41.89334,
+   "lng": 12.47681,
+   "kosher": {
+    "kind": "parve",
+    "cert": "פת ישראל — רבנות רומא (ברשימת מאפיות פת ישראל של הקהילה)",
+    "shabbat": true,
+    "fri": "14:30",
+    "satNight": null
+   },
+   "veg": 3,
+   "price": 1,
+   "order": "פיצה בלנקה ופיצה רוסה (במשקל), לחם, פוקאצ'ות",
+   "reserve": "no",
+   "hours": "ב׳–ה׳ 8:00–14:30 ו-16:30–19:00 · ו׳ 8:00–14:30 · א׳ 9:00–14:00 · שבת סגור",
+   "open": {
+    "0": [
+     [
+      "09:00",
+      "14:00"
+     ]
+    ],
+    "1": [
+     [
+      "08:00",
+      "14:30"
+     ],
+     [
+      "16:30",
+      "19:00"
+     ]
+    ],
+    "2": [
+     [
+      "08:00",
+      "14:30"
+     ],
+     [
+      "16:30",
+      "19:00"
+     ]
+    ],
+    "3": [
+     [
+      "08:00",
+      "14:30"
+     ],
+     [
+      "16:30",
+      "19:00"
+     ]
+    ],
+    "4": [
+     [
+      "08:00",
+      "14:30"
+     ],
+     [
+      "16:30",
+      "19:00"
+     ]
+    ],
+    "5": [
+     [
+      "08:00",
+      "14:30"
+     ]
+    ]
+   },
+   "closed": [
+    6
+   ],
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "desc": "תנור היסטורי בכיכר Costaguti (נפתח ב-1927 לפי מדריך משנת 2011) — פיצה לבנה ואדומה ולחם בפת ישראל, פרווה וצמחוני. החטיף הכשר הזול ביותר בגטו.",
+   "tips": "מצוין לפיקניק או לטיול יום: קונים פיצה לבנה ויוצאים לדרך. אל תבלבלו עם בוצ'ונה (קונדיטוריה, ברחוב הראשי) — שניהם באותו בלוק.",
+   "url": null,
+   "phone": "+39 06 6880 3012",
+   "verified": true,
+   "note": "Listed in the Rome Jewish Community's 'Bakeries Pat Israel' (Piazza Costaguti 30/31/32; 'Pizza and bread only'). Hours from Google data via spinach.guide for 'Forno del Ghetto, Piazza Costaguti 30' (refreshed 3 Nov 2026). OSM lists different hours for 'Antico Forno Urbani' at no. 31 including Saturday morning - treated as unreliable for a Pat Israel bakery. 1927 opening date from The American (2011). No website. Coordinates: OSM node."
+  },
+  {
+   "id": "boccione",
+   "name": "פסטיצ'ריה בוצ'ונה",
+   "orig": "Pasticceria Boccione (Il Forno del Ghetto)",
+   "type": "bakery",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 1, 00186 Roma",
+   "lat": 41.89322,
+   "lng": 12.47691,
+   "kosher": {
+    "kind": "dairy",
+    "cert": "רבנות רומא — חלבי ופרווה (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": "15:30",
+    "satNight": null
+   },
+   "veg": 3,
+   "price": 1,
+   "order": "crostata di ricotta e visciole (טארט ריקוטה ודובדבן חמוץ — המפורסם), pizza ebraica (עוגת פירות יבשים ושקדים), ג'ינטי (עוגיות צימוקים), עוגיות שקדים וקינמון; בימי שישי גם חלות (trecce)",
+   "reserve": "no",
+   "hours": "א׳ 8:00–17:30 · ב׳–ה׳ 8:00–19:00 · ו׳ 8:00–15:30 · שבת סגור",
+   "open": {
+    "0": [
+     [
+      "08:00",
+      "17:30"
+     ]
+    ],
+    "1": [
+     [
+      "08:00",
+      "19:00"
+     ]
+    ],
+    "2": [
+     [
+      "08:00",
+      "19:00"
+     ]
+    ],
+    "3": [
+     [
+      "08:00",
+      "19:00"
+     ]
+    ],
+    "4": [
+     [
+      "08:00",
+      "19:00"
+     ]
+    ],
+    "5": [
+     [
+      "08:00",
+      "15:30"
+     ]
+    ]
+   },
+   "closed": [
+    6
+   ],
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "desc": "הקונדיטוריה היהודית המפורסמת ביותר ברומא, מאז 1815. בלי שלט בחוץ — רק תור. הטארט עם הריקוטה והויצ'ולה נחשב לטוב בעיר.",
+   "tips": "אין שלט בחוץ — מחפשים את התור. עדיף להגיע בבוקר, כי הדברים מתחילים להיגמר (במיוחד בימי ראשון). קחו פרוסת טארט וגם חתיכה של pizza ebraica לדרך. ו׳ נסגר 15:30, שבת סגור.",
+   "url": null,
+   "phone": "+39 06 687 8637",
+   "verified": true,
+   "note": "Rome Jewish Community pastry-shop list: 'Boccione - Dairy and parve', Via Portico d'Ottavia 1; EasyKosherTravel: Rabbinate of Rome, Chalav Yisrael. Closed Saturday per every source. Weekday hours conflict: Michelin Guide Italia (27 Jan 2025) Mon-Thu 7:30-19:00, Fri 7:30-15:30, Sun 7:30-17:30; OSM/TableJourney Sun-Thu 8:00-19:30, Fri 8:00-15:30 - I used the narrower overlap. TableJourney re-checked the listing 27 Oct 2026. Torta di ricotta e visciole about 24 EUR/kg (Gambero Rosso, 9 Jan 2025). Cash preference is a general tip, not confirmed."
+  },
+  {
+   "id": "marlenes-gelateria",
+   "name": "מרלנס ג'לטריה",
+   "orig": "Marlene's Gelateria",
+   "type": "gelato",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 1/B, 00186 Roma",
+   "lat": 41.8932,
+   "lng": 12.47695,
+   "kosher": {
+    "kind": "dairy",
+    "cert": "בית דין רומא — חלב ישראל, ללא קצפת; יש גם פרווה (לפי חב״ד)",
+    "shabbat": true,
+    "fri": "15:30",
+    "satNight": "21:00"
+   },
+   "veg": 3,
+   "price": 1,
+   "order": "גלידה חלבית כשרה — שוקולד, קפה ופיסטוק מומלצים",
+   "reserve": "no",
+   "hours": "א׳–ה׳ 10:00–22:30 · ו׳ עד ~15:30 (הערכה) · מוצ״ש מ-21:00",
+   "open": {
+    "0": [
+     [
+      "10:00",
+      "22:30"
+     ]
+    ],
+    "1": [
+     [
+      "10:00",
+      "22:30"
+     ]
+    ],
+    "2": [
+     [
+      "10:00",
+      "22:30"
+     ]
+    ],
+    "3": [
+     [
+      "10:00",
+      "22:30"
+     ]
+    ],
+    "4": [
+     [
+      "10:00",
+      "22:30"
+     ]
+    ],
+    "5": [
+     [
+      "10:00",
+      "15:30"
+     ]
+    ],
+    "6": [
+     [
+      "21:00",
+      "23:59"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "snack"
+   ],
+   "desc": "גלידריה כשרה בגטו — מקום קל לקינוח אחרי ארוחה חלבית.",
+   "tips": "בנובמבר גלידה פחות מתבקשת, אבל זו הגלידריה הכשרה המוכרת בגטו. חלבית — מתאימה אחרי ארוחה חלבית או פרווה, לא אחרי בשר.",
+   "url": null,
+   "phone": "+39 06 4423 3067",
+   "verified": true,
+   "note": "Rome Jewish Community pastry/gelato list: 'Marlene's gelateria - Gelato (dairy)', Via Portico d'Ottavia 1/b. Chabad guide: Via Portico d'Ottavia 1b, Chalav Yisrael except whipped cream, Rome Bet Din hashgacha, pareve available. Hours from Google data via spinach.guide (refreshed 3 Nov 2026): Sun-Thu 10-22:30, Fri 10-17, Sat 21-24; Friday close lowered to about 15:30 as an estimate (Shabbat enters 16:33). Some directories also list the shop as 'Cremeria Romana'. Coordinates approximate (no OSM node for 1/B; placed next to Boccione at no. 1), accuracy about 30 m."
+  },
+  {
+   "id": "kosher-delight",
+   "name": "קושר דיליט",
+   "orig": "Kosher Delight (butcher and kosher grocery)",
+   "type": "grocery",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 11, 00186 Roma",
+   "lat": 41.89287,
+   "lng": 12.47781,
+   "kosher": {
+    "kind": "meat",
+    "cert": "רבנות רומא (לפי האתר: פיקוח ארוך שנים של הרבנות; ברשימת האטליזים של הקהילה)",
+    "shabbat": true,
+    "fri": "15:00",
+    "satNight": null
+   },
+   "veg": 1,
+   "price": 2,
+   "order": "עוף ובשר מכושרים, סלמי כשר מייצור עצמי, מנות מוכנות לבישול, מוצרים ארוזים כשרים (Osem, Elite ועוד) — מתאים לקניית חטיפים וכריכים למלון או לטיול",
+   "reserve": "no",
+   "hours": "א׳ 8:00–14:00 · ב׳–ה׳ 7:00–19:30 · ו׳ 7:00–15:00 · שבת סגור",
+   "open": {
+    "0": [
+     [
+      "08:00",
+      "14:00"
+     ]
+    ],
+    "1": [
+     [
+      "07:00",
+      "19:30"
+     ]
+    ],
+    "2": [
+     [
+      "07:00",
+      "19:30"
+     ]
+    ],
+    "3": [
+     [
+      "07:00",
+      "19:30"
+     ]
+    ],
+    "4": [
+     [
+      "07:00",
+      "19:30"
+     ]
+    ],
+    "5": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ]
+   },
+   "closed": [
+    6
+   ],
+   "meals": [
+    "snack"
+   ],
+   "desc": "אטליז ומכולת כשרים בלב הגטו — הבחירה לקניית מוצרים כשרים ארוזים, בשר ונקניק.",
+   "tips": "מוגבל במבחר אבל נוח. בדקו חותמת כשרות על האריזות. החנות באינטרנט (kosherdelightshop.it) לא פעילה כרגע לפי האתר.",
+   "url": "https://www.kosherdelight.it/",
+   "phone": "+39 06 6813 5002",
+   "verified": true,
+   "note": "Listed by the Rome Jewish Community as a butcher/kosher products shop at Via del Portico d'Ottavia 11 (plus 3 other branches); kosherdelight.it says products are certified under long-standing Rabbinate of Rome oversight. No official hours found; hours from EasyKosherTravel (updated Mar 2026): Mon-Thu 7:00-19:30, Fri 7:00-15:00, Sun 8:00-14:00. Coordinates: OSM node."
+  },
+  {
+   "id": "little-tripoli",
+   "name": "ליטל טריפולי",
+   "orig": "Little Tripoli",
+   "type": "restaurant",
+   "area": "other",
+   "address": "Via Cremona 42, 00161 Roma (פיאצה בולוניה)",
+   "lat": 41.91071,
+   "lng": 12.51939,
+   "kosher": {
+    "kind": "meat",
+    "cert": "רבנות רומא — בשר גלאט (ברשימה הרשמית של הקהילה); חב״ד: היחיד שכולו גלאט",
+    "shabbat": true,
+    "fri": null,
+    "satNight": null
+   },
+   "veg": 1,
+   "price": 2,
+   "order": "בורקס בשר, חומוס ופלאפל ביתיים, קוסקוס טריפוליטאי עם קציצות או עוף, קבב, בבא גנוש",
+   "reserve": "recommended",
+   "hours": "ב׳–ה׳ 19:30–22:00 · א׳ 12:30–14:00 ו-19:30–22:00 · ו׳ ושבת סגור",
+   "open": {
+    "0": [
+     [
+      "12:30",
+      "14:00"
+     ],
+     [
+      "19:30",
+      "22:00"
+     ]
+    ],
+    "1": [
+     [
+      "19:30",
+      "22:00"
+     ]
+    ],
+    "2": [
+     [
+      "19:30",
+      "22:00"
+     ]
+    ],
+    "3": [
+     [
+      "19:30",
+      "22:00"
+     ]
+    ],
+    "4": [
+     [
+      "19:30",
+      "22:00"
+     ]
+    ]
+   },
+   "closed": [
+    5,
+    6
+   ],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "מסעדה משפחתית של יהודי לוב: אוכל טריפוליטאי-ים-תיכוני בבשר גלאט. ליד תחנת המטרו Bologna (קו B), בשכונה היהודית השנייה של רומא — מחוץ למרכז ההיסטורי.",
+   "tips": "סגור גם בשישי וגם במוצ״ש — מתאים לכל יום אחר, בעיקר ערבים. מומלץ להתקשר/להזמין. האתר הישן מציג כתובת קודמת (Via Polesine 16) — המסעדה עברה ל-Via Cremona 42.",
+   "url": "https://littletripoli.wordpress.com/",
+   "phone": "+39 06 6422 0481",
+   "verified": true,
+   "note": "Address: Via Cremona 42 per Rome Jewish Community list (restaurants page), Rabbanut-linked directories and EasyKosherTravel (Mar 2026: 'recently moved to nearby renovated site'); the old site littletripoli.wordpress.com still shows Via Polesine 16. Hours: old site lists Mon-Thu dinner 19:30-22:00, Sun lunch 12:30-14:00 + dinner 19:30-22:00, Fri/Sat closed; EasyKosherTravel (Mar 2026) also lists Mon-Thu lunch 12:30-15:00 and dinners until 23:00 - I used the narrower overlap, so call to check lunch. Glatt per community list; Chabad Piazza Bologna guide: glatt, Bishul Israel. Coordinates from OSM building at Via Cremona 42 (accuracy about 20 m)."
+  },
+  {
+   "id": "flour-roma",
+   "name": "פלאור",
+   "orig": "Flour Farina e Cucina",
+   "type": "bakery",
+   "area": "other",
+   "address": "Via Padova 78, 00161 Roma (פיאצה בולוניה)",
+   "lat": 41.91078,
+   "lng": 12.51966,
+   "kosher": {
+    "kind": "dairy",
+    "cert": "רבנות רומא — חלב ישראל ופת ישראל (ברשימה הרשמית של הקהילה); חלב טרי לקפה לא תמיד חלב ישראל",
+    "shabbat": true,
+    "fri": "15:00",
+    "satNight": "20:30"
+   },
+   "veg": 3,
+   "price": 2,
+   "order": "ארוחת בוקר (קרואסון, קפוצ'ינו), פיצה בפרוסה או עגולה, פסטה ודגים, סלטים, המבורגרים, לחם ומאפים; הקינוחים פרווה וללא חלב",
+   "reserve": "no",
+   "hours": "א׳ 8:00–23:00 · ב׳–ה׳ 7:00–23:00 · ו׳ 7:00–15:00 · מוצ״ש מ-20:30",
+   "open": {
+    "0": [
+     [
+      "08:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "07:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "07:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "07:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "07:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "6": [
+     [
+      "20:30",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "desc": "בית קפה, מאפייה ופיצריה חלבי כשר בפיאצה בולוניה — פתוח מהבוקר ועד מאוחר בלילה, עם מנות בוקר, פיצה ופסטה.",
+   "tips": "אם תגיעו לשכונה לליטל טריפולי, אפשר לשלב ארוחת בוקר/קפה כאן. בקשו חלב ישראל ארוז בנפרד לקפה.",
+   "url": "https://www.flour-roma.com/",
+   "phone": "+39 06 4423 6816",
+   "verified": true,
+   "note": "Listed by the Rome Jewish Community (fast food: 'Milk - Chalav Israel'; Pat Israel bakeries), Via Padova 78. Hours: OSM Mo-Th 07-23, Fr 07-15, Sa 19-23, Su 08-03 (as listed); EasyKosherTravel (Mar 2026) similar with Shabbat 21:30-23:30; GoKosher says Sat 20:30-23:30. I used Sunday 8-23 and Saturday night 20:30 (middle value). Chabad guide: Cholov Yisroel, ask for single-serve milk. Coordinates: OSM node."
+  },
+  {
+   "id": "ce-pasta-e-pizza",
+   "name": "צ'ה פסטה אה פיצה",
+   "orig": "C'è Pasta e Pizza (kosher pizzeria)",
+   "type": "pizza",
+   "area": "other",
+   "address": "Via Giuseppe Massari 8 (4/10), 00152 Roma (מונטוורדה)",
+   "lat": 41.8824,
+   "lng": 12.45978,
+   "kosher": {
+    "kind": "dairy",
+    "cert": "רבנות רומא — חלב ישראל (ברשימה הרשמית של הקהילה)",
+    "shabbat": true,
+    "fri": null,
+    "satNight": null
+   },
+   "veg": 3,
+   "price": 2,
+   "order": "פיצה דקה בתנור עצים, מטוגנים פריכים, פסטת ביצים טרייה ביתית",
+   "reserve": "recommended",
+   "hours": "א׳–ה׳ 19:30–23:30 · ו׳ סגור · מוצ״ש נפתחת אחרי צאת השבת (שעה לא מוגדרת)",
+   "open": {
+    "0": [
+     [
+      "19:30",
+      "23:30"
+     ]
+    ],
+    "1": [
+     [
+      "19:30",
+      "23:30"
+     ]
+    ],
+    "2": [
+     [
+      "19:30",
+      "23:30"
+     ]
+    ],
+    "3": [
+     [
+      "19:30",
+      "23:30"
+     ]
+    ],
+    "4": [
+     [
+      "19:30",
+      "23:30"
+     ]
+    ]
+   },
+   "closed": [
+    5
+   ],
+   "meals": [
+    "dinner"
+   ],
+   "desc": "פיצריה-מסעדה כשרה חלבית בשכונת מונטוורדה (מעל טרסטוורה) עם תנור עצים, פסטה טרייה וגינה. הכי קרוב לפיצריה כשרה 'רגילה' ברשימת הקהילה.",
+   "tips": "רחוק מהמרכז (תחבורה/מונית מטרסטוורה); ערבים בלבד. מוצ״ש — להתקשר ולברר שעה: +39 06 5806517.",
+   "url": "https://www.cepastaepizza.it/",
+   "phone": "+39 06 5806517",
+   "verified": true,
+   "note": "Rome Jewish Community list: 'C'e Pasta e pizza - Milk (Chalav Israel)', Via Giuseppe Massari 8. Own site cepastaepizza.it: Via G. Massari 4/10, Mon-Thu and Sun 19:30-23:30, Friday closed, Saturday opens after sunset (no fixed time). Coordinates: OSM node at no. 8 (matches Turismo Roma). Sat-night time is unknown, so satNight is null and Saturday is not in 'open'."
+  },
+  {
+   "id": "dolce-kosher",
+   "name": "דולצ'ה קושר",
+   "orig": "Dolce Kosher",
+   "type": "bakery",
+   "area": "other",
+   "address": "Via Fonteiana 18, 00152 Roma (מונטוורדה)",
+   "lat": 41.88165,
+   "lng": 12.45465,
+   "kosher": {
+    "kind": "dairy",
+    "cert": "רבנות רומא — חלב ישראל (ברשימה הרשמית של הקהילה); חב״ד: חוץ מהחלב בקפה",
+    "shabbat": true,
+    "fri": "15:50",
+    "satNight": null
+   },
+   "veg": 3,
+   "price": 1,
+   "order": "מאפים, קפה, כריכים, פיצה וקינוחים חלביים",
+   "reserve": "no",
+   "hours": "א׳–ה׳ 7:00–19:30 · ו׳ 7:00–15:50 · שבת סגור (ייתכן שנפתח במוצ״ש — לברר)",
+   "open": {
+    "0": [
+     [
+      "07:00",
+      "19:30"
+     ]
+    ],
+    "1": [
+     [
+      "07:00",
+      "19:30"
+     ]
+    ],
+    "2": [
+     [
+      "07:00",
+      "19:30"
+     ]
+    ],
+    "3": [
+     [
+      "07:00",
+      "19:30"
+     ]
+    ],
+    "4": [
+     [
+      "07:00",
+      "19:30"
+     ]
+    ],
+    "5": [
+     [
+      "07:00",
+      "15:50"
+     ]
+    ]
+   },
+   "closed": [
+    6
+   ],
+   "meals": [
+    "breakfast",
+    "lunch",
+    "snack"
+   ],
+   "desc": "קונדיטוריה-בית קפה חלבית כשרה במונטוורדה — בוקר ומאפים, כריכים ופיצה. רחוק מהמרכז; רלוונטי רק אם אתם בצד הזה של העיר.",
+   "tips": "מתאים לארוחת בוקר או קפה כשרים אם אתם באזור מונטוורדה. ב-ו׳ נסגר כשעה לפני השקיעה.",
+   "url": "https://www.dolcekosher.it/",
+   "phone": "+39 06 580 9940",
+   "verified": true,
+   "note": "Rome Jewish Community lists it in the restaurants, fast-food and pastry lists (dairy, Chalav Israel). Hours from Sluurpy (updated 16 Nov 2025): Mon-Thu & Sun 07-19:30, Fri 07-15:50, Sat closed; GoKosher says it closes one hour before sunset on Friday and reopens Saturday evening (time not found). dolcekosher.it failed to load (expired certificate) so the official site could not be read. Coordinates from Turismo Roma page (41 52 53.9 N, 12 27 16.7 E)."
+  },
+  {
+   "id": "nonna-betta",
+   "name": "נונה בטה",
+   "orig": "Nonna Betta",
+   "type": "trattoria",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 16, 00186 Roma",
+   "lat": 41.89275,
+   "lng": 12.47812,
+   "kosher": null,
+   "veg": 2,
+   "price": 3,
+   "order": "(לצמחונים) ארטישוק בסגנון יהודי (carciofi alla giudia) אם יש בתפריט, קונצ'ה, ירקות מטוגנים ופסטות — לוודא מול התפריט הנוכחי",
+   "reserve": "recommended",
+   "hours": "ב׳ 12:00–15:00 ו-18:45–22:45 · ג׳ סגור · ד׳ 12:00–15:00 ו-18:45–22:15 · ה׳ 12:00–15:00 ו-19:00–22:15 · ו׳–א׳ 12:00–15:00 ו-18:45–22:45 (פתוח בשבת)",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:45",
+      "22:45"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:45",
+      "22:45"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:45",
+      "22:15"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "22:15"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:45",
+      "22:45"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:45",
+      "22:45"
+     ]
+    ]
+   },
+   "closed": [
+    2
+   ],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "מסעדה יהודית-רומאית משפחתית ומוכרת בגטו — אבל לא כשרה בתעודה. לפי האתר שלהם אין 'מטבח כשר' אלא מתכונים מקומיים 'מסוננים'. מגישים גם בשר וגם חלב.",
+   "tips": "זה מקום לא כשר — לפי הכלל שלכם: רק צמחוני. יתרון: פתוח בשבת בצהריים כשכל המקומות הכשרים סגורים. אם חשוב לכם כשרות אמיתית — Bellacarne/Renato/Ba'Ghetto.",
+   "url": "https://www.nonnabetta.it/",
+   "phone": "+39 06 6880 6263",
+   "verified": false,
+   "note": "NOT certified: the restaurant's own site says 'Non esiste una cucina kasher ma una serie di ricette locali setacciate' (kosher-style); it is absent from the Rome Jewish Community's official list of 10 kosher restaurants; Frommer's and the owner (Cronache di Gusto interview) say it serves both meat and dairy; Google-derived hours show it open on Friday night and Saturday. Tripadvisor still carries a 'Kosher' tag, which is misleading. Included only as a non-kosher Saturday option; kosher.kind 'none' on purpose - do not show a kosher badge. Hours from Foodle (Google-derived, undated). Coordinates: OSM node.",
+   "kosherStyle": true
+  },
+  {
+   "id": "taverna-del-ghetto",
+   "name": "לה טברנה דל גטו",
+   "orig": "La Taverna del Ghetto",
+   "type": "trattoria",
+   "area": "ghetto",
+   "address": "Via del Portico d'Ottavia 8, 00186 Roma",
+   "lat": 41.89294,
+   "lng": 12.47769,
+   "kosher": null,
+   "veg": 2,
+   "price": 3,
+   "order": "(אם בוחרים צמחוני) carciofi alla giudia, קונצ'ה די זוקיני, פסטות — לבקש לראות תעודת כשרות עדכנית אם חשוב לכם",
+   "reserve": "recommended",
+   "hours": "מדווח כפתוח כל יום 12:00–23:00 (נתוני גוגל) — לא אומת",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "מסעדה ותיקה בגטו שמציגה עצמה כמסעדה כשרה (kosher), אך אינה ברשימת המסעדות הכשרות של הקהילה היהודית ברומא. הכשרות ושעות הפתיחה לא אומתו.",
+   "tips": "אל תסתמכו עליה ככשרה בלי לראות תעודה בתוקף. נתוני גוגל מציגים פתיחה גם ביום שבת, מה שמעיד שהיא לא שומרת שבת (בניגוד לרישום ישן של Accademia Italiana della Cucina שאומר שהיא סגורה בליל שבת ובשבת בצהריים).",
+   "url": "https://www.latavernadelghetto.com/",
+   "phone": "+39 06 6880 9771",
+   "verified": false,
+   "note": "UNVERIFIED certification. Site latavernadelghetto.com titles itself 'ristorante kosher Roma' but names no certifier and shows no teudah; not on the Rome Jewish Community's official restaurant list (romaebraica.it/en/restaurants). Accademia Italiana della Cucina listing (undated) says Rabbinate-delegated staff check kashrut daily and that it closes Friday evening and Saturday lunch; Restaurant Guru/MenudiRoma (Google-derived) show it open daily 12-23, and MenudiRoma's menu lists non-kosher items (pajata, coda alla vaccinara). Open per Sept 2026 Yelp reviews. kosher.kind 'none' on purpose until a current teudah is seen - do not show a kosher badge. Coordinates: OSM node.",
+   "kosherStyle": true
+  },
+  {
+   "id": "armando-al-pantheon",
+   "name": "ארמנדו אל פנתאון",
+   "orig": "Armando al Pantheon",
+   "type": "trattoria",
+   "area": "centro",
+   "address": "Salita de' Crescenzi 31, 00186 Roma",
+   "lat": 41.899059,
+   "lng": 12.47619,
+   "kosher": null,
+   "veg": 2,
+   "price": 3,
+   "top": true,
+   "order": "קאצ'ו א פפה (cacio e pepe) – המנה הסמלית של המקום, צמחונית כברירת מחדל. שאר המנות משתנות – שאלו את המלצר מה בלי בשר היום. שימו לב: קרבונרה, גריצ'ה ואמטריצ'אנה עם גואנצ'לה (לחי חזיר); חלק גדול מהתפריט הוא בשר ופנים (quinto quarto).",
+   "reserve": "required",
+   "hours": "ב׳–ו׳ 12:30–15:00 ו-18:00–23:00 · ש׳ 12:30–15:00 בלבד · א׳ סגור",
+   "open": {
+    "1": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:30",
+      "15:00"
+     ]
+    ]
+   },
+   "closed": [
+    0
+   ],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "טרטוריה רומאית משפחתית, קטנה וצפופה, ליד הפנתאון. מטבח רומי קלאסי והקאצ'ו א פפה שלהם נחשב לאחד הטובים בעיר.",
+   "tips": "הזמנות רק אונליין דרך האתר (לא במייל) – כדאי להזמין כמה שבועות מראש. שבת בערב וכל יום א׳ סגור.",
+   "url": "https://www.armandoalpantheon.it",
+   "phone": "+39 06 6880 3034",
+   "verified": true,
+   "note": "Hours per official site: lunch 12:30-15:00, dinner Mon-Fri 18:00-23:00, closed Sat evening and Sun; reservations online only. The May 2026 menu PDFs could not be parsed, so the vegetarian pick relies on the signature cacio e pepe - confirm daily options with staff."
+  },
+  {
+   "id": "pizzeria-da-baffetto",
+   "name": "פיצריה דה בפטו",
+   "orig": "Pizzeria Da Baffetto",
+   "type": "pizza",
+   "area": "centro",
+   "address": "Via del Governo Vecchio 114, 00186 Roma",
+   "lat": 41.898315,
+   "lng": 12.47033,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "מרגריטה, מרינרה (בלי גבינה), פיצה ביאנקה ופיצות ירקות/ארטישוק (תשאלו מה יש). הימנעו מפיצות עם נקניק (salsiccia), פרושוטו ואנשובי (alici/acciughe), וגם מ'נפוליטנה' (אנשובי).",
+   "reserve": "no",
+   "hours": "א׳–ב׳ וד׳–ש׳ 12:00–15:30 ו-18:00–00:00 · ג׳ סגור",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "18:00",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "18:00",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "18:00",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "18:00",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "18:00",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "18:00",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [
+    2
+   ],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "פיצריה רומית ותיקה (בצק דק ופריך) ליד פיאצה נבונה – פשוטה, רועשת וצפופה, עם קהל מקומי ותיירים.",
+   "tips": "לפי ביקורות – מזומן בלבד ובלי הזמנות. בואו בדיוק בפתיחה (12:00 / 18:00) כדי לא לעמוד בתור. יושבים בצפיפות.",
+   "url": "https://www.turismoroma.it/en/hospitality/pizzeria-da-baffetto",
+   "phone": "+39 06 686 1617",
+   "verified": true,
+   "note": "Closed Tuesday per Turismo Roma (city tourism site) and Google; times from Google. 'Cash only / no reservations' comes from reviews. The restaurant's own site (pizzeriabaffetto.it) was unreachable, so the URL points to the Turismo Roma page."
+  },
+  {
+   "id": "emma-pizzeria",
+   "name": "אמה פיצריה",
+   "orig": "Emma Pizzeria",
+   "type": "pizza",
+   "area": "centro",
+   "address": "Via del Monte della Farina 28, 00186 Roma",
+   "lat": 41.89478,
+   "lng": 12.475215,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "פיצה רומית דקה עם חומרי גלם איכותיים: מרגריטה ופיצות ירקות/גבינות עונתיות (תפריט באתר), אנטיפסטי ירקות, מוצרלה וריקוטה. הימנעו מפיצות עם אנשובי, גואנצ'לה ונקניקים.",
+   "reserve": "recommended",
+   "hours": "כל יום 12:30–15:30 ו-18:30–23:30",
+   "open": {
+    "0": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:30"
+     ]
+    ],
+    "1": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:30"
+     ]
+    ],
+    "2": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:30"
+     ]
+    ],
+    "3": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:30"
+     ]
+    ],
+    "4": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:30"
+     ]
+    ],
+    "5": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:30"
+     ]
+    ],
+    "6": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:30"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "פיצריה־מסעדה ליד קמפו דה פיורי עם דגש על חומרי גלם אורגניים ומרתף יין ענק (יותר מ-1,000 תוויות).",
+   "tips": "כדאי להזמין, במיוחד לערב בסוף השבוע. יש גם מטבח איטלקי רחב מעבר לפיצה.",
+   "url": "https://www.emmapizzeria.com",
+   "phone": "+39 06 6476 0475",
+   "verified": true,
+   "note": "Operating in 2026 (Google reviews through mid-2026). Hours from Google via Wanderlog; the official site lists no hours. Wine cellar size per official site."
+  },
+  {
+   "id": "forno-campo-de-fiori",
+   "name": "פורנו קמפו דה פיורי",
+   "orig": "Forno Campo de' Fiori",
+   "type": "street",
+   "area": "centro",
+   "address": "Campo de' Fiori 22, 00186 Roma",
+   "lat": 41.89583,
+   "lng": 12.471545,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "פיצה ביאנקה (pizza bianca) פשוטה, פיצה רוסה (עם רוטב עגבניות), פיצה עם זוקיני או תפוחי אדמה, מוצרלה ועגבניות. שימו לב: פיצה עם פרחי זוקיני (fiori di zucca) לרוב עם אנשובי, ויש גם סלייסים עם מורטדלה/נקניקים.",
+   "reserve": "no",
+   "hours": "ב׳–ש׳ 8:00–14:30 ו-16:30–19:30 · א׳ סגור",
+   "open": {
+    "1": [
+     [
+      "08:00",
+      "14:30"
+     ],
+     [
+      "16:30",
+      "19:30"
+     ]
+    ],
+    "2": [
+     [
+      "08:00",
+      "14:30"
+     ],
+     [
+      "16:30",
+      "19:30"
+     ]
+    ],
+    "3": [
+     [
+      "08:00",
+      "14:30"
+     ],
+     [
+      "16:30",
+      "19:30"
+     ]
+    ],
+    "4": [
+     [
+      "08:00",
+      "14:30"
+     ],
+     [
+      "16:30",
+      "19:30"
+     ]
+    ],
+    "5": [
+     [
+      "08:00",
+      "14:30"
+     ],
+     [
+      "16:30",
+      "19:30"
+     ]
+    ],
+    "6": [
+     [
+      "08:00",
+      "14:30"
+     ],
+     [
+      "16:30",
+      "19:30"
+     ]
+    ]
+   },
+   "closed": [
+    0
+   ],
+   "meals": [
+    "breakfast",
+    "lunch",
+    "snack"
+   ],
+   "desc": "מאפייה ותיקה בצד הכיכר של שוק קמפו דה פיורי, עם פיצה ביאנקה ורוסה פריכות וסלייסים לפי משקל. לוקחים ואוכלים בעמידה.",
+   "tips": "משלמים לפי משקל – אומרים כמה גרם רוצים. פתוח מוקדם, מתאים לארוחת בוקר. שאלו מה יש בכל תבנית לפני שמזמינים.",
+   "url": "https://www.fornocampodefiori.com",
+   "phone": "+39 06 6880 6662",
+   "verified": true,
+   "note": "Closed Sundays per Turismo Roma (which also says Saturday afternoon is closed in summer); weekday hours per Google via Wanderlog (other listings show 7:30-14:30 / 16:45-20:00). Official site was unreachable."
+  },
+  {
+   "id": "antico-forno-roscioli",
+   "name": "אנטיקו פורנו רושולי",
+   "orig": "Antico Forno Roscioli",
+   "type": "street",
+   "area": "centro",
+   "address": "Via dei Chiavari 34, 00186 Roma",
+   "lat": 41.8946,
+   "lng": 12.474265,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": true,
+   "order": "פיצה ביאנקה (פשוטה או עם בורטה), פיצה רוסה, פיצה עם תפוחי אדמה או זוקיני לפי עונה, לחם ומאפים. הימנעו מביאנקה עם מורטדלה, פרושוטו וסלמי.",
+   "reserve": "no",
+   "hours": "כל יום 7:30–20:00",
+   "open": {
+    "0": [
+     [
+      "07:30",
+      "20:00"
+     ]
+    ],
+    "1": [
+     [
+      "07:30",
+      "20:00"
+     ]
+    ],
+    "2": [
+     [
+      "07:30",
+      "20:00"
+     ]
+    ],
+    "3": [
+     [
+      "07:30",
+      "20:00"
+     ]
+    ],
+    "4": [
+     [
+      "07:30",
+      "20:00"
+     ]
+    ],
+    "5": [
+     [
+      "07:30",
+      "20:00"
+     ]
+    ],
+    "6": [
+     [
+      "07:30",
+      "20:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "lunch",
+    "snack"
+   ],
+   "desc": "מאפייה מפורסמת של משפחת רושולי בין קמפו דה פיורי לגטו: פיצה ביאנקה אוורירית, פיצות בתבנית ומאפים.",
+   "tips": "יש תור לפני 12:00 ואחרי 13:00 ומעט מאוד מקום לעמוד – עדיף לקחת ולאכול בחוץ. המחיר לפי משקל.",
+   "url": "https://anticofornoroscioli.it",
+   "phone": "+39 06 686 4045",
+   "verified": true,
+   "note": "Hours per official site (Mon-Sun 7:30-20:00, copyright 2026)."
+  },
+  {
+   "id": "giolitti",
+   "name": "ג'וליטי",
+   "orig": "Giolitti",
+   "type": "gelato",
+   "area": "centro",
+   "address": "Via degli Uffici del Vicario 40, 00186 Roma",
+   "lat": 41.90104,
+   "lng": 12.477225,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": true,
+   "order": "גלידות קלאסיות – פיסטקיו, נוצות (nocciola), שוקולד, זבאיונה; 'קופה' בכוס עם קצפת. טעמי הגלידה הרגילים צמחוניים; מוסים וקינוחים קרים אחרים עלולים להכיל ג'לטין מן החי.",
+   "reserve": "no",
+   "hours": "כל יום 7:30–00:00",
+   "open": {
+    "0": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "desc": "הגלידריה ההיסטורית של רומא (מ-1900) בעיצוב ליברטי, ליד הפנתאון. גם קפה, מאפים וקינוחים.",
+   "tips": "קודם משלמים בקופה (scontrino) ואז מזמינים בדלפק. עמוס אחר הצהריים – אפשר לשבת בפנים.",
+   "url": "https://www.giolitti.it",
+   "phone": "+39 06 699 1243",
+   "verified": true,
+   "note": "Hours per official site ('from 7:30 until midnight')."
+  },
+  {
+   "id": "gelateria-del-teatro",
+   "name": "ג'לטריה דל טאטרו",
+   "orig": "Gelateria del Teatro",
+   "type": "gelato",
+   "area": "centro",
+   "address": "Via dei Coronari 65, 00186 Roma",
+   "lat": 41.900485,
+   "lng": 12.46953,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": true,
+   "order": "גלידה אומנותית עם טעמי אגוזים (פיסטקיו, שקדים, נוצות) ושילובי צמחים כמו מרווה־פטל או רוזמרין־לימון (לפי ביקורות). בקשו טעימה לפני שבוחרים.",
+   "reserve": "no",
+   "hours": "כל יום 11:00–23:00",
+   "open": {
+    "0": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "snack"
+   ],
+   "desc": "גלידריה אומנותית ברחוב העתיקות Via dei Coronari ליד פיאצה נבונה – אחת המדורגות בעיר, עם טעמים לא שגרתיים.",
+   "tips": "בדרך כלל תור קצר־בינוני. שווה לשלב עם הליכה ברחוב דל קורונרי ובפיאצה נבונה.",
+   "url": "http://www.gelateriadelteatro.it",
+   "phone": "+39 06 4547 4880",
+   "verified": true,
+   "note": "Daily 11:00-23:00 per both Google (Wanderlog) and Mes Prestiges (reviewed Jun 2026); another blog says 10:30-midnight. Winter hours may be slightly shorter."
+  },
+  {
+   "id": "sant-eustachio-il-caffe",
+   "name": "סנט'אוסטקיו איל קפה",
+   "orig": "Sant'Eustachio Il Caffè",
+   "type": "coffee",
+   "area": "centro",
+   "address": "Piazza di Sant'Eustachio 82, 00186 Roma",
+   "lat": 41.898265,
+   "lng": 12.475426,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": true,
+   "order": "ה'גראן קפה' (gran caffè) – אספרסו עם קצף סוכר, שמוכנים בדלפק בשיטה סודית; מאפים וקורנטי. הקפה מגיע מתוק כברירת מחדל – בקשו 'amaro' אם לא רוצים סוכר.",
+   "reserve": "no",
+   "hours": "א׳–ה׳ 7:30–01:00 · ו׳ 7:30–01:30 · ש׳ 7:30–02:00",
+   "open": {
+    "0": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "desc": "בית קפה היסטורי ליד הפנתאון (מ-1938) שצולה את הפולים במקום. אחד מאתרי האספרסו המפורסמים ברומא.",
+   "tips": "הכי זול ואותנטי בדלפק (עומדים). בישיבה במדרכה המחירים גבוהים בהרבה.",
+   "url": "https://caffesanteustachio.com",
+   "phone": "+39 06 6880 2048",
+   "verified": true,
+   "note": "Hours per official site; closing after midnight is capped at 24:00 in the machine-readable field."
+  },
+  {
+   "id": "tazza-d-oro",
+   "name": "טצה ד'אורו",
+   "orig": "Tazza d'Oro Casa del Caffè",
+   "type": "coffee",
+   "area": "centro",
+   "address": "Via degli Orfani 84, 00186 Roma",
+   "lat": 41.899497,
+   "lng": 12.477386,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "אספרסו בדלפק; גרניטה די קפה עם קצפת (granita di caffè con panna) – בעיקר בעונה החמה, תשאלו אם יש; פולי קפה ושוקולד לקחת הביתה.",
+   "reserve": "no",
+   "hours": "ב׳–ש׳ 7:00–20:00 · א׳ 10:00–19:00",
+   "open": {
+    "0": [
+     [
+      "10:00",
+      "19:00"
+     ]
+    ],
+    "1": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ],
+    "2": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ],
+    "3": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ],
+    "4": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ],
+    "5": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ],
+    "6": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "desc": "בר קפה וקלייה ממש מאחורי הפנתאון (מ-1946). עמידה בדלפק, ריח קפה חזק וקצת תיירים.",
+   "tips": "בימי א׳ שעות קצרות. מקום טוב לקנות פולי קפה כמתנות.",
+   "url": "http://www.tazzadorocoffeeshop.com",
+   "phone": "+39 06 679 2768",
+   "verified": true,
+   "note": "Hours per Google (Wanderlog) and Time Out; some guides list Sunday 10:30-19:30. Beware of other 'Tazza d'Oro' venues in Rome."
+  },
+  {
+   "id": "supplizio",
+   "name": "סופליציו",
+   "orig": "Supplizio",
+   "type": "street",
+   "area": "centro",
+   "address": "Via dei Banchi Vecchi 143, 00186 Roma",
+   "lat": 41.89748,
+   "lng": 12.467907,
+   "kosher": null,
+   "veg": 2,
+   "price": 1,
+   "top": true,
+   "order": "סופלי קאצ'ו א פפה, סופלי 'pomodoro & basilico' (עגבניות ומוצרלה), קרוקטה אפומיקטה (תפוח אדמה וגבינות מעושנות), קציצות חצילים עם ריקוטה, קרמה פריטה (crema fritta). לא צמחוני: 'קלאסיקו' (עם בשר), אמטריצ'אנה וקרבונרה (גואנצ'לה), מוצרלה אין קרוצ'ה (אנשובי).",
+   "reserve": "no",
+   "hours": "ב׳–ש׳ 12:00–15:30 ו-17:00–21:30 · א׳ סגור",
+   "open": {
+    "1": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "17:00",
+      "21:30"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "17:00",
+      "21:30"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "17:00",
+      "21:30"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "17:00",
+      "21:30"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "17:00",
+      "21:30"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "17:00",
+      "21:30"
+     ]
+    ]
+   },
+   "closed": [
+    0
+   ],
+   "meals": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "desc": "חנות הסופלי של השף ארקנג'לו דנדיני ליד קמפו דה פיורי – סופלי פריך בגרסאות קלאסיות ומודרניות, בעמידה או לקחת.",
+   "tips": "כ-3€ לסופלי; בחרו בעיקר את הצמחוניים (רשימה למעלה). במקום כמעט אין ישיבה.",
+   "url": "https://www.supplizioroma.it",
+   "phone": "+39 06 8987 1920",
+   "verified": true,
+   "note": "Menu and hours taken from the official site (copyright 2016-2026); closed Sundays. Mozzarella in carrozza lists anchovy."
+  },
+  {
+   "id": "mater-terrae",
+   "name": "מאטר טרה",
+   "orig": "Mater Terrae (Bio Hotel Raphaël)",
+   "type": "fine",
+   "area": "centro",
+   "address": "Largo Febo 2, 00186 Roma",
+   "lat": 41.899945,
+   "lng": 12.472105,
+   "kosher": null,
+   "veg": 3,
+   "price": 4,
+   "top": false,
+   "order": "הכול צמחוני/טבעוני – אין צורך לבדוק. מוכרת בפסטה אלה נורמה בגרסה מעודנת (לפי ביקורות); יש תפריט À la carte וכן בר־ביסטרו קל וזול יותר.",
+   "reserve": "recommended",
+   "hours": "מסעדה כל יום 12:00–15:00 (הזמנה אחרונה 14:30) ו-19:30–23:00 (הזמנה אחרונה 22:00) · בר־ביסטרו כל יום 12:00–23:00",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "מסעדה צמחונית־אורגנית על גג מלון Bio Hotel Raphaël ליד פיאצה נבונה, עם טרסות ונוף לכיפות רומא. הערב הרומנטי והיקר ברשימה הצמחונית.",
+   "tips": "בנובמבר שאלו מראש אילו אזורים בטרסה פתוחים/מחוממים ובקשו שולחן על הגג. מי שלא רוצה להוציא הרבה – הבר־ביסטרו (12:00–23:00).",
+   "url": "https://www.biohotelraphael.com/ristorante-lusso-con-terrazza-hotel-roma.htm",
+   "phone": "+39 06 6828 3762",
+   "verified": true,
+   "note": "Hours per hotel's official page. Michelin Guide page (fetched via summarizer) describes it as a fully vegetarian restaurant with a Green Star (sustainability award); one reviewer says it no longer holds a regular star - not claimed here. Price tier 4 is an estimate from reviews calling à-la-carte prices high."
+  },
+  {
+   "id": "da-enzo-al-29",
+   "name": "דה אנצו אל 29",
+   "orig": "Trattoria Da Enzo al 29",
+   "type": "trattoria",
+   "area": "trastevere",
+   "address": "Via dei Vascellari 29, 00153 Roma",
+   "lat": 41.888086,
+   "lng": 12.47783,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": true,
+   "order": "קאצ'ו א פפה (טונרלי עם פקורינו ופלפל), קרצ'ופו אלה ג'ודיה (ארטישוק מטוגן בסגנון יהודי־רומי – בעונה), ריקוטה וירקות צלויים (לפי האתר שלהם). הימנעו מקרבונרה, אמטריצ'אנה וגריצ'ה (גואנצ'לה) ומפרחי זוקיני ממולאים שעלולים להיות עם אנשובי – שאלו.",
+   "reserve": "no",
+   "hours": "ב׳–ש׳ 12:00–15:00 ו-18:30–22:30 · א׳ סגור",
+   "open": {
+    "1": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "22:30"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "22:30"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "22:30"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "22:30"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "22:30"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "22:30"
+     ]
+    ]
+   },
+   "closed": [
+    0
+   ],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "טרטוריה קטנה ואהובה בטרסטוורה עם מטבח רומי מסורתי. אין הזמנות, ולפעמים יש תור ארוך.",
+   "tips": "אין הזמנות – מתיישבים לפי סדר הגעה. בואו 15–20 דקות לפני 12:00 או 18:30. סגור בימי א׳.",
+   "url": "https://www.daenzoal29.com",
+   "phone": "+39 06 581 2260",
+   "verified": true,
+   "note": "Official site: Mon-Sat 12:00-15:00 and 18:30-22:30, no reservations accepted; Sunday not stated but all other sources say closed. Cacio e pepe, carciofo alla giudia, ricotta and grilled vegetables are listed on the official site."
+  },
+  {
+   "id": "dar-poeta",
+   "name": "דאר פואטה",
+   "orig": "Dar Poeta",
+   "type": "pizza",
+   "area": "trastevere",
+   "address": "Vicolo del Bologna 45, 00153 Roma",
+   "lat": 41.8914,
+   "lng": 12.468555,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "מרגריטה, מרינרה, ארבע גבינות ופיצות ירקות. הבצק שלהם 'לא רומי דק ולא נפוליטני גבוה' אלא סגנון משלהם. הימנעו מפיצות עם אנשובי ונקניקים.",
+   "reserve": "recommended",
+   "hours": "כל יום 12:00–24:00 (ללא הפסקה)",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "פיצריה ותיקה בסמטה ליד פיאצה טרילוסה – פופולרית אצל תיירים ורומאים, פתוחה כל היום ללא הפסקה.",
+   "tips": "בשעות הערב ממתינים בתור/רשימת המתנה (לפי האתר) – כדאי לבוא מוקדם או באמצע אחר הצהריים.",
+   "url": "https://www.darpoeta.com",
+   "phone": "+39 06 588 0516",
+   "verified": true,
+   "note": "Official site: open daily 12:00-24:00 non-stop; mentions a frequent waiting list. 'Four cheeses' is a generic suggestion - check the menu."
+  },
+  {
+   "id": "pizzeria-ai-marmi",
+   "name": "פיצריה איי מארמי",
+   "orig": "Pizzeria Ai Marmi (Panattoni)",
+   "type": "pizza",
+   "area": "trastevere",
+   "address": "Viale di Trastevere 53, 00153 Roma",
+   "lat": 41.888255,
+   "lng": 12.47374,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "פיצה דקה ופריכה: מרגריטה, מרינרה, ארבע גבינות ופיצות ירקות. מנות פתיחה מטוגנות – סופלי (בדקו אם עם ראגו בשר) וקרוקטות תפו״א. פרחי זוקיני לרוב עם אנשובי; הימנעו מ'נפוליטנה' ומפיצות נקניק.",
+   "reserve": "no",
+   "hours": "ד׳ סגור · שאר הימים ערב בלבד מ-18:30 עד 01:00–02:00 (בחלק מהרישומים גם צהריים בסוף השבוע)",
+   "open": {
+    "0": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [
+    3
+   ],
+   "meals": [
+    "dinner"
+   ],
+   "desc": "פיצריה רומית ותיקה על שדרת טרסטוורה, עם שולחנות שיש (ומכאן השם) ואווירה רועשת ושמחה.",
+   "tips": "ייתכן תור – בואו מוקדם (18:30) או מאוחר. עדיף לשבת בחוץ אם יש מקום.",
+   "url": "https://m.facebook.com/aimarmi/",
+   "phone": "+39 06 580 0919",
+   "verified": false,
+   "note": "Wednesday closure and evening opening (~18:30) agree across Fodor's, AFAR and Google; closing time (01:00-02:20) and weekend lunch differ between listings, and no 2026 reviews were seen. Confirm by phone."
+  },
+  {
+   "id": "suppli-roma",
+   "name": "סופלי רומה",
+   "orig": "Supplì Roma (i supplì di Giacomo)",
+   "type": "street",
+   "area": "trastevere",
+   "address": "Via di San Francesco a Ripa 137, 00153 Roma",
+   "lat": 41.887142,
+   "lng": 12.471742,
+   "kosher": null,
+   "veg": 2,
+   "price": 1,
+   "top": false,
+   "order": "סופלי קאצ'ו א פפה; ארנצ'יני עם פטריות, אפונה או חציל (לא אלה עם בשר/ספק); קרוקטות תפו״א וארבע גבינות; פרמיג'אנה די מלנזנה; פסטה (נורמה, קאצ'ו א פפה, קנלוני ריקוטה־תרד); פיצה ביאנקה/מרגריטה. לא צמחוני: סופלי 'al ragù coda' (זנב שור), אמטריצ'אנה וקרבונרה.",
+   "reserve": "no",
+   "hours": "ב׳–ש׳ 10:00–21:00 · א׳ סגור",
+   "open": {
+    "1": [
+     [
+      "10:00",
+      "21:00"
+     ]
+    ],
+    "2": [
+     [
+      "10:00",
+      "21:00"
+     ]
+    ],
+    "3": [
+     [
+      "10:00",
+      "21:00"
+     ]
+    ],
+    "4": [
+     [
+      "10:00",
+      "21:00"
+     ]
+    ],
+    "5": [
+     [
+      "10:00",
+      "21:00"
+     ]
+    ],
+    "6": [
+     [
+      "10:00",
+      "21:00"
+     ]
+    ]
+   },
+   "closed": [
+    0
+   ],
+   "meals": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "desc": "דוכן־רוטיסרי של אוכל רחוב בטרסטוורה (מאז 1979), עם סופלי, ארנצ'יני, פיצה ופסטה מוכנה – זול ומהיר.",
+   "tips": "המבחר גדול – קראו את התוויות, חלק מהסופלי בבשר. מעט מקומות ישיבה.",
+   "url": "https://www.suppliroma.it",
+   "phone": "+39 06 589 7110",
+   "verified": false,
+   "note": "Menu per official site; the opening hours come from a single source (Google via Wanderlog, Sunday closed) and no 2026 reviews were seen."
+  },
+  {
+   "id": "forno-la-renella",
+   "name": "פורנו לה רנלה",
+   "orig": "Forno La Renella",
+   "type": "street",
+   "area": "trastevere",
+   "address": "Via del Moro 15, 00153 Roma",
+   "lat": 41.89081,
+   "lng": 12.47076,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "פיצה ביאנקה חמה מהתנור (תנור עצים), פיצה רוסה, פיצות ירקות או תפוחי אדמה, מאפים ועוגיות. הימנעו מפיצות עם נקניק/מורטדלה.",
+   "reserve": "no",
+   "hours": "כל יום 7:00–20:30",
+   "open": {
+    "0": [
+     [
+      "07:00",
+      "20:30"
+     ]
+    ],
+    "1": [
+     [
+      "07:00",
+      "20:30"
+     ]
+    ],
+    "2": [
+     [
+      "07:00",
+      "20:30"
+     ]
+    ],
+    "3": [
+     [
+      "07:00",
+      "20:30"
+     ]
+    ],
+    "4": [
+     [
+      "07:00",
+      "20:30"
+     ]
+    ],
+    "5": [
+     [
+      "07:00",
+      "20:30"
+     ]
+    ],
+    "6": [
+     [
+      "07:00",
+      "20:30"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "lunch",
+    "snack"
+   ],
+   "desc": "מאפייה בטרסטוורה עם תנור עצים – פיצה ביאנקה, פיצה רוסה ומאפים. פותחים מוקדם, מצוין לארוחת בוקר או נשנוש.",
+   "tips": "הפיצה הכי טובה חמה, ישר מהתנור. בשעות העומס יש תור קצר.",
+   "url": "https://www.eatingeurope.com/vendors/la-renella/",
+   "phone": "+39 06 581 7265",
+   "verified": true,
+   "note": "Hours per Google (Wanderlog, 2026 reviews); Petit Futé also shows closing at 20:30. The bakery's own domain could not be confirmed (larenella.com is parked), so the URL is a third-party page."
+  },
+  {
+   "id": "fior-di-luna",
+   "name": "פיורדילונה",
+   "orig": "Fiordiluna Gelato & Cioccolato",
+   "type": "gelato",
+   "area": "trastevere",
+   "address": "Via della Lungaretta 96, 00153 Roma",
+   "lat": 41.88962,
+   "lng": 12.47261,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "גלידה אומנותית – נסו פיסטקיו, שוקולד מריר ופירות העונה; יש גם שוקולד חם. בקשו טעימה.",
+   "reserve": "no",
+   "hours": "כל יום ~11:00–24:00 (שישי–שבת עד 01:00) לפי Google",
+   "open": {
+    "0": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "snack"
+   ],
+   "desc": "גלידריה אומנותית קטנה בלב טרסטוורה, אהובה על המקומיים – גלידה ושוקולד.",
+   "tips": "ברחוב Via della Lungaretta, ממש בדרך בין פיאצה טרילוסה לסנטה מריה בטרסטוורה.",
+   "url": "http://www.fiordiluna.com",
+   "phone": "+39 06 6456 1314",
+   "verified": false,
+   "note": "Operating in 2026 (Google reviews July 2026) but hours conflict: Google shows ~11:00-24:00/01:00, an older blog says 11:30-23:00. Winter hours may be shorter."
+  },
+  {
+   "id": "freni-e-frizioni",
+   "name": "פרני א פריציוני",
+   "orig": "Freni e Frizioni",
+   "type": "aperitivo",
+   "area": "trastevere",
+   "address": "Via del Politeama 4, 00153 Roma",
+   "lat": 41.891284,
+   "lng": 12.470669,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "בופה האפריטיבו (סלטים, פסטות, פיצה, מנות עונתיות לפי ביקורות) + ספריץ או קוקטייל – בחרו רק ירקות וגבינות ושאלו מה יש בפסטות (רוטב בשר/נקניק).",
+   "reserve": "no",
+   "hours": "כל יום מ-18:30 עד 02:00 (הבופה בערך 18:30–21:00)",
+   "open": {
+    "0": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "18:30",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "snack",
+    "dinner"
+   ],
+   "desc": "בר אפריטיבו מפורסם בטרסטוורה (מוסך לשעבר) ליד פיאצה טרילוסה, עם בופה וקוקטיילים וקהל צעיר.",
+   "tips": "בופה כ-12€ כולל משקה (לפי Time Out – לוודא במקום). הקהל מגיע אחרי 19:30, בואו מוקדם לשבת.",
+   "url": "https://www.freniefrizioni.com",
+   "phone": "+39 06 4549 7499",
+   "verified": true,
+   "note": "Official site says 'open everyday till late'; hours 18:30-02:00 per Mes Prestiges (May 2026); buffet price and exact buffet window vary by source."
+  },
+  {
+   "id": "bar-san-calisto",
+   "name": "בר סן קליסטו",
+   "orig": "Bar San Calisto",
+   "type": "coffee",
+   "area": "trastevere",
+   "address": "Piazza di San Calisto 3, 00153 Roma",
+   "lat": 41.889065,
+   "lng": 12.470745,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "שוקולד חם סמיך (cioccolata calda) עם קצפת – מנה חורפית מפורסמת של המקום; קפה בדלפק, קורנטי וגרניטה. מקום פשוט וזול.",
+   "reserve": "no",
+   "hours": "כל יום 6:30–01:30",
+   "open": {
+    "0": [
+     [
+      "06:30",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "06:30",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "06:30",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "06:30",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "06:30",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "06:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "06:30",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "desc": "בר שכונתי מ-1969 בלב טרסטוורה, קטן וצפוף ואהוב על המקומיים.",
+   "tips": "בדרך כלל עומדים בדלפק (זול יותר). טוב לעצירה קצרה אחרי טיול בטרסטוורה.",
+   "url": "https://barsancalisto.it",
+   "phone": "+39 06 583 5869",
+   "verified": true,
+   "note": "Hours per Google (Wanderlog, 2026 reviews); official site updated July 2026. Hot chocolate fame is from general reputation - not on the official site excerpt."
+  },
+  {
+   "id": "trattoria-monti",
+   "name": "טרטוריה מונטי",
+   "orig": "Trattoria Monti",
+   "type": "trattoria",
+   "area": "monti",
+   "address": "Via di San Vito 13a, 00185 Roma",
+   "lat": 41.895675,
+   "lng": 12.501985,
+   "kosher": null,
+   "veg": 2,
+   "price": 3,
+   "top": false,
+   "order": "טורטלו ממולא ריקוטה ותרד עם חלמון ביצה בפנים (tortello al rosso d'uovo) – המנה הסמלית, לפעמים עם כמהין בעונה; טורטינו ירקות ולזניה צמחונית לפי התפריט היומי. הימנעו מאמטריצ'אנה, מנות נקניק ובשר; שאלו מה בלי בשר היום.",
+   "reserve": "required",
+   "hours": "ג׳–ש׳ 13:00–14:30 ו-20:00–22:30 · ב׳ סגור · א׳: לפי חלק מהמקורות צהריים בלבד (לאשר)",
+   "open": {
+    "2": [
+     [
+      "13:00",
+      "14:30"
+     ],
+     [
+      "20:00",
+      "22:30"
+     ]
+    ],
+    "3": [
+     [
+      "13:00",
+      "14:30"
+     ],
+     [
+      "20:00",
+      "22:30"
+     ]
+    ],
+    "4": [
+     [
+      "13:00",
+      "14:30"
+     ],
+     [
+      "20:00",
+      "22:30"
+     ]
+    ],
+    "5": [
+     [
+      "13:00",
+      "14:30"
+     ],
+     [
+      "20:00",
+      "22:30"
+     ]
+    ],
+    "6": [
+     [
+      "13:00",
+      "14:30"
+     ],
+     [
+      "20:00",
+      "22:30"
+     ]
+    ]
+   },
+   "closed": [
+    1
+   ],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "טרטוריה עונתית ויצירתית עם מטבח מחבל מארקה, בין מונטי לפיאצה ויטוריו. הטורטלו עם החלמון הפך לסמל שלה.",
+   "tips": "מזמינים שבועות מראש (נסו צהריים – קל יותר). אל תגיעו ביום ב׳ – סגור.",
+   "url": "https://turismoroma.it/en/node/130732",
+   "phone": "+39 06 446 6573",
+   "verified": false,
+   "note": "Sources conflict on Sunday: Google shows closed, Mes Prestiges (May 2026) shows Sunday lunch 12:45-14:30; Sunday is therefore omitted from the machine-readable hours. Dish info from restaurant reviews/summaries, not a current official menu; no official website found."
+  },
+  {
+   "id": "cavour-313",
+   "name": "קאבור 313",
+   "orig": "Enoteca Cavour 313",
+   "type": "wine",
+   "area": "monti",
+   "address": "Via Cavour 313, 00184 Roma",
+   "lat": 41.89372,
+   "lng": 12.489126,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "יין בכוס עם צלחת גבינות (taglieri), בורטה/מוצרלה, לחם וירקות. בקשו מנות בלי נקניק – ברוב הצלחות יש בשרים. התפריט מתחלף.",
+   "reserve": "recommended",
+   "hours": "ג׳–ש׳ 12:00–15:00 ו-18:00–23:00 · א׳–ב׳ סגור",
+   "open": {
+    "2": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [
+    0,
+    1
+   ],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "וינבר מוכר ממש ליד הפורום הרומי, עם מבחר ענק של יינות ואוכל קל. פופולרי אצל תיירים ורומאים כאחד.",
+   "tips": "נוח לאפריטיבו אחרי הפורום. אחרי 20:00 עמוס – הזמינו.",
+   "url": "https://www.cavour313.it",
+   "phone": null,
+   "verified": true,
+   "note": "Hours per official site (closed Sunday-Monday; Tue-Sat 12-15 and 18-23). Menu not reviewed."
+  },
+  {
+   "id": "ai-tre-scalini",
+   "name": "איי טרה סקאליני",
+   "orig": "Ai Tre Scalini",
+   "type": "wine",
+   "area": "monti",
+   "address": "Via Panisperna 251, 00184 Roma",
+   "lat": 41.89628,
+   "lng": 12.490475,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "צלחות גבינות וריקוטה, ירקות וקרוסטיני, יין בכוס. בדקו שאין נקניק/בשר בתוספות – חלק מהצלחות כוללות סלומי.",
+   "reserve": "no",
+   "hours": "כל יום 12:00–24:00 (ללא הזמנות)",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "desc": "וינבר שכונתי ותיק בלב מונטי – שולחנות עץ, יין בכוס וצלחות לשיתוף, אווירה צפופה ושמחה.",
+   "tips": "לא מקבלים הזמנות – בערב מחכים לשולחן. טוב לכוס יין בין 16:00 ל-19:00.",
+   "url": "https://www.aitrescalini.org",
+   "phone": "+39 06 4890 7495",
+   "verified": true,
+   "note": "Hours and 'no reservations' per official site. Menu composition (cheese/cold-cut plates) is general knowledge, not from the official page."
+  },
+  {
+   "id": "fatamorgana-monti",
+   "name": "פטמורגנה מונטי",
+   "orig": "Gelateria Fatamorgana (Monti)",
+   "type": "gelato",
+   "area": "monti",
+   "address": "Piazza degli Zingari 5, 00184 Roma",
+   "lat": 41.89565,
+   "lng": 12.49323,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "טעמים יצירתיים (אגוזים, פירות, עשבי תיבול) וטעמים טבעוניים וללא גלוטן – מסומנים בדלפק. בקשו טעימה.",
+   "reserve": "no",
+   "hours": "א׳–ה׳ 13:30–21:30 · ו׳–ש׳ 13:30–22:30 (לפי Google; ייתכנו שעות חורף שונות)",
+   "open": {
+    "0": [
+     [
+      "13:30",
+      "21:30"
+     ]
+    ],
+    "1": [
+     [
+      "13:30",
+      "21:30"
+     ]
+    ],
+    "2": [
+     [
+      "13:30",
+      "21:30"
+     ]
+    ],
+    "3": [
+     [
+      "13:30",
+      "21:30"
+     ]
+    ],
+    "4": [
+     [
+      "13:30",
+      "21:30"
+     ]
+    ],
+    "5": [
+     [
+      "13:30",
+      "22:30"
+     ]
+    ],
+    "6": [
+     [
+      "13:30",
+      "22:30"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "snack"
+   ],
+   "desc": "גלידריה אומנותית מוכרת עם טעמים יצירתיים, בלי גלוטן ועם אפשרויות טבעוניות – סניף קטן במרכז מונטי.",
+   "tips": "יש עוד סניפים: בטרסטוורה (Via Roma Libera 11) ובטרידנטה (Via Laurina 10). אפשר לאכול בשבילי מונטי הסמוכים.",
+   "url": "https://www.gelateriafatamorgana.com",
+   "phone": "+39 06 4890 6955",
+   "verified": false,
+   "note": "Operating in 2026 (reviews June 2026) but hours conflict: Google 13:30-21:30/22:30 vs Time Out 13:00-24:00. Vegan/gluten-free reputation is from general sources."
+  },
+  {
+   "id": "grezzo-raw-chocolate",
+   "name": "גרצו",
+   "orig": "Grezzo Raw Chocolate",
+   "type": "bakery",
+   "area": "monti",
+   "address": "Via Urbana 130, 00184 Roma",
+   "lat": 41.896744,
+   "lng": 12.4944,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "הכול טבעוני/גולמי (raw): עוגות וקינוחי כפית, שוקולד גולמי וגלידה ללא חלב. מושלם לקינוח אחרי ארוחה.",
+   "reserve": "no",
+   "hours": "א׳–ה׳ 12:00–20:00 · ו׳–ש׳ 12:00–23:00 (לפי Google)",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "20:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "20:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "20:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "20:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "20:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "snack"
+   ],
+   "desc": "קונדיטוריית שוקולד גולמי וקינוחי כפית טבעוניים במונטי – ללא מוצרים מן החי.",
+   "tips": "יש לה סניפים נוספים ברומא (למשל ליד הגטו). גם עוגות לקחת הביתה.",
+   "url": "https://grezzorawchocolate.com",
+   "phone": "+39 06 483443",
+   "verified": true,
+   "note": "Operating in 2026 (Google reviews Aug 2026, website news Aug 2026). Raw-vegan status per Rome Actually (Feb 2026). Hours from Google only."
+  },
+  {
+   "id": "alle-carrette",
+   "name": "פיצריה אלה קארטה",
+   "orig": "Pizzeria Alle Carrette",
+   "type": "pizza",
+   "area": "monti",
+   "address": "Via della Madonna dei Monti 95, 00184 Roma",
+   "lat": 41.893974,
+   "lng": 12.488593,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "פיצה רומית: מרגריטה, מרינרה, ביאנקה ופיצות ירקות. הימנעו מפיצות עם אנשובי ונקניק; שאלו על תוספות לפני שמזמינים.",
+   "reserve": "recommended",
+   "hours": "כל יום 12:00–15:30 ו-19:00–23:30",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "פיצריה שכונתית במונטי, קרוב לפורום הרומי, עם פיצה רומית קלאסית.",
+   "tips": "בערב מתמלא – הזמינו. מתאים לפיצה פשוטה אחרי סיור בפורום.",
+   "url": "https://www.instagram.com/allecarrette1984",
+   "phone": "+39 06 679 2770",
+   "verified": true,
+   "note": "Operating in 2026 (Google reviews Aug 2026); hours from Google only; menu not reviewed, so toppings are generic. No dedicated website - Instagram link used."
+  },
+  {
+   "id": "il-margutta",
+   "name": "איל מרגוטה",
+   "orig": "Il Margutta Veggy Food & Art (Margutta RistorArte)",
+   "type": "restaurant",
+   "area": "tridente",
+   "address": "Via Margutta 118, 00187 Roma",
+   "lat": 41.909525,
+   "lng": 12.47836,
+   "kosher": null,
+   "veg": 3,
+   "price": 2,
+   "top": true,
+   "order": "הכול צמחוני וטבעוני (מסומן בתפריט). בצהריים בופה גדול של ירקות, קטניות, פסטות וקינוחים; בסוף השבוע ברנץ' בופה; בערב תפריט À la carte.",
+   "reserve": "recommended",
+   "hours": "כל יום: בופה צהריים 12:30–15:30, ביסטרו ערב 18:30–23:00",
+   "open": {
+    "0": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "מסעדה צמחונית־טבעונית בסמטת האמנים Via Margutta, עם גלריית אמנות. המסעדה הצמחונית הידועה ביותר ברומא.",
+   "tips": "מחיר הבופה בצהריים – כ-15€ באמצע השבוע וכ-25€ בסוף השבוע (לפי מקורות, לאשר במקום). הרחוב עצמו שקט ויפה, שווה הליכה.",
+   "url": "https://ilmargutta.bio",
+   "phone": "+39 06 3265 0577",
+   "verified": true,
+   "note": "Operating in 2026 (Google reviews Apr-May 2026; Rome Actually update Feb 2026: buffet 12:30-15:30, bistro 18:30-23:30); Google shows 12:30-23:00 daily. Buffet prices differ between guides. The official site is a JS page with no readable text."
+  },
+  {
+   "id": "enoteca-antica-via-della-croce",
+   "name": "אנוטקה אנטיקה (ויה דלה קרוצ'ה)",
+   "orig": "Antica Enoteca di Via della Croce",
+   "type": "wine",
+   "area": "tridente",
+   "address": "Via della Croce 76b, 00187 Roma",
+   "lat": 41.906305,
+   "lng": 12.47977,
+   "kosher": null,
+   "veg": 1,
+   "price": 2,
+   "top": false,
+   "order": "יין בכוס עם גבינות, ירקות וברוסקטה. רוב התפריט איטלקי קלאסי עם בשר ונקניקים – בקשו מנות בלי בשר ושאלו בפסטות על רוטב בשר/גואנצ'לה.",
+   "reserve": "recommended",
+   "hours": "כל יום 11:30–00:30",
+   "open": {
+    "0": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "desc": "וינבר־מסעדה במרחק דקות מכיכר ספרד, מתאים לכוס יין וחטיף בין ההליכות.",
+   "tips": "הרחוב Via della Croce עמוס בתיירים – בחרו שעות לא שיא. פחות מתאים לארוחה צמחונית מלאה.",
+   "url": null,
+   "phone": "+39 06 2097 6008",
+   "verified": true,
+   "note": "Operating in 2026 (Google reviews Aug 2026); hours from Google only; menu not reviewed so veg rated 1."
+  },
+  {
+   "id": "felice-on-the-go-carrozze",
+   "name": "פליצ'ה א טסטצ'יו – On The Go",
+   "orig": "Felice a Testaccio – On The Go",
+   "type": "street",
+   "area": "tridente",
+   "address": "Via delle Carrozze 12A, 00187 Roma",
+   "lat": 41.905591,
+   "lng": 12.479595,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "קאצ'ו א פפה – הקלאסיקה של פליצ'ה בגרסה מהירה (לשבת או לקחת); תפריט ה-On The Go כולל עוד קלאסיקות רומיות – בקשו לראות אילו בלי בשר. הימנעו מקרבונרה, אמטריצ'אנה וגריצ'ה.",
+   "reserve": "no",
+   "hours": "ב׳–ד׳ 11:30–21:00 · ה׳–א׳ 11:30–22:00",
+   "open": {
+    "0": [
+     [
+      "11:30",
+      "22:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:30",
+      "21:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:30",
+      "22:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:30",
+      "22:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:30",
+      "22:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "סניף מהיר של הטרטוריה המפורסמת פליצ'ה, ליד כיכר ספרד – קלאסיקות רומיות מוכנות בדקות, בישיבה או בהליכה בין חנויות.",
+   "tips": "פתרון מצוין לצהריים באזור אם אין הזמנה בטסטצ'יו. פתוח ברצף כל היום.",
+   "url": "https://feliceatestaccio.com/en/",
+   "phone": null,
+   "verified": true,
+   "note": "Hours per the official site. The On The Go menu PDF could not be parsed; cacio e pepe is the group's signature dish but not confirmed on this particular menu."
+  },
+  {
+   "id": "caffe-rosati",
+   "name": "קפה רוזאטי",
+   "orig": "Caffè Rosati",
+   "type": "coffee",
+   "area": "tridente",
+   "address": "Piazza del Popolo 5A, 00187 Roma",
+   "lat": 41.91005,
+   "lng": 12.47607,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "קפוצ'ינו וקורנטו לארוחת בוקר, אפריטיבו עם נשנושים, מאפים וקינוחים. סנדוויצ'ים וסלטים – בדקו תוספות בשר.",
+   "reserve": "no",
+   "hours": "כל יום 7:30–23:30",
+   "open": {
+    "0": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ],
+    "1": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ],
+    "2": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ],
+    "3": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ],
+    "4": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ],
+    "5": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ],
+    "6": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "snack",
+    "dinner"
+   ],
+   "desc": "בית קפה היסטורי על פיאצה דל פופולו, עם שולחנות מול הכיכר והאובליסק.",
+   "tips": "במושב המחיר גבוה פי כמה מבדלפק. מתאים לעצירה ארוכה לפני/אחרי טיול בפינצ'יו.",
+   "url": "https://www.barrosati.it",
+   "phone": "+39 06 322 5859",
+   "verified": true,
+   "note": "Operating in 2026 (Google reviews July 2026); hours from Google. This replaces Antico Caffè Greco, which closed in Oct 2025 after an eviction and has no confirmed reopening."
+  },
+  {
+   "id": "canova-tadolini",
+   "name": "קנובה טדולוני",
+   "orig": "Caffè Canova-Tadolini",
+   "type": "coffee",
+   "area": "tridente",
+   "address": "Via del Babuino 150/A, 00187 Roma",
+   "lat": 41.90779,
+   "lng": 12.47957,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "קפה וקינוח בין פסלי סטודיו קנובה; ארוחת בוקר או נשנוש קל, סלטים ופסטות פשוטות (שאלו על בשר ברוטב).",
+   "reserve": "no",
+   "hours": "ב׳–ש׳ 8:00–23:00 · א׳ 10:00–23:00",
+   "open": {
+    "0": [
+     [
+      "10:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "08:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "08:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "08:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "08:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "08:00",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "08:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "snack",
+    "lunch"
+   ],
+   "desc": "בית קפה בתוך סטודיו הפיסול של קנובה וטדולוני, מלא פסלי גבס – מקום מיוחד, אם כי יקר יחסית.",
+   "tips": "המחירים גבוהים בגלל המקום; מצוין לצילום ולקפה אחד.",
+   "url": "https://www.canovatadolini.com",
+   "phone": "+39 06 3211 0702",
+   "verified": true,
+   "note": "Operating in 2026 (Google reviews Sept 2026); hours from Google only; menu not reviewed."
+  },
+  {
+   "id": "bonci-pizzarium",
+   "name": "בונצ'י פיצריום",
+   "orig": "Bonci Pizzarium",
+   "type": "street",
+   "area": "vatican",
+   "address": "Via della Meloria 43, 00136 Roma",
+   "lat": 41.906685,
+   "lng": 12.446665,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": true,
+   "order": "פיצה אל טליו (ברבועים, לפי משקל) – חפשו את הצמחוניות: עגבניות/מרגריטה, תפוחי אדמה, זוקיני, חצילים, ריקוטה וירקות עונתיים; יש גם סופלי (שאלו אם ברוטב בשר). הימנעו מפרוסות עם מורטדלה, פרושוטו ואנשובי – התפריט מתחלף בכל יום.",
+   "reserve": "no",
+   "hours": "כל יום 11:00–22:00",
+   "open": {
+    "0": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:00",
+      "22:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "snack",
+    "dinner"
+   ],
+   "desc": "מקום הפיצה אל טליו (בתבנית) הכי מפורסם ברומא, של גבריאל בונצ'י – בצק ארוך־התפחה עם תוספות עונתיות. אין ישיבה, אוכלים בעמידה.",
+   "tips": "כ-10 דקות הליכה ממוזיאוני הוותיקן (ליד מטרו Cipro). שיא צהריים עמוס; אומרים כמה רוצים לפי גודל הפרוסה.",
+   "url": "https://bonci.it",
+   "phone": "+39 06 3974 5416",
+   "verified": true,
+   "note": "Daily 11:00-22:00 per Google (11:15), Time Out and Mes Prestiges ('approx'); the official site lists no hours. Menu rotates daily so specific slices are indicative."
+  },
+  {
+   "id": "gelateria-dei-gracchi",
+   "name": "ג'לטריה דיי גרקי",
+   "orig": "Gelateria dei Gracchi",
+   "type": "gelato",
+   "area": "vatican",
+   "address": "Via dei Gracchi 272, 00192 Roma",
+   "lat": 41.90919,
+   "lng": 12.46693,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "גלידה אומנותית – פיסטקיו, נוצות, שוקולד ופירות עונתיים; יש גם סורבה. בקשו טעימה.",
+   "reserve": "no",
+   "hours": "כל יום 11:30–24:00",
+   "open": {
+    "0": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "snack"
+   ],
+   "desc": "אחת הגלידריות האומנותיות המוערכות ברובע פראטי, קרוב לוותיקן.",
+   "tips": "מתאימה לסיום יום בפראטי – אפשר לשלב עם ארוחה ב-Flower Burger ברחוב הסמוך.",
+   "url": "https://gelateriadeigracchi.it",
+   "phone": "+39 06 321 6668",
+   "verified": true,
+   "note": "Hours per official site ('open every day 11:30-24:00', copyright 2025)."
+  },
+  {
+   "id": "old-bridge-gelateria",
+   "name": "אולד ברידג'",
+   "orig": "Old Bridge Gelateria",
+   "type": "gelato",
+   "area": "vatican",
+   "address": "Viale dei Bastioni di Michelangelo 5, 00192 Roma",
+   "lat": 41.906395,
+   "lng": 12.456405,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "גלידה בכוס או בקונוס עם קצפת – פיסטקיו, שוקולד, אגוזים; מנות נדיבות. מתאימה לסיום ביקור בוותיקן.",
+   "reserve": "no",
+   "hours": "כל יום בערך 11:00–24:00 (חלק מהמקורות: עד 01:30; לאשר)",
+   "open": {
+    "0": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "snack"
+   ],
+   "desc": "גלידריה קטנה ממש ליד חומת הוותיקן (פועלת מ-1987), ידועה במנות הנדיבות.",
+   "tips": "ממש בדרך החוצה ממוזיאוני הוותיקן; בימים עמוסים יש תור.",
+   "url": "https://gelateriaoldbridge.com",
+   "phone": null,
+   "verified": false,
+   "note": "Operating in 2026 (Google reviews June 2026) but opening hours are inconsistent: Cylex (Nov 2025) says 11:00-01:30 Mon-Sat and until 24:00 Sun; the shop's site mentions delivery 11-23; a reviewer notes Google hours are wrong. Opening year per official site."
+  },
+  {
+   "id": "flower-burger-prati",
+   "name": "פלאואר בורגר (פראטי)",
+   "orig": "Flower Burger Roma Gracchi",
+   "type": "restaurant",
+   "area": "vatican",
+   "address": "Via dei Gracchi 87, 00192 Roma",
+   "lat": 41.907825,
+   "lng": 12.46216,
+   "kosher": null,
+   "veg": 3,
+   "price": 2,
+   "top": false,
+   "order": "הכול טבעוני. מהתפריט באתר: Flower Burger, Spicy Cecio, Avo Cecio, Cheeze Burger, Flirty Burger, Funghetto, סלטים (Punk Salad / Pop Salad) ו-Flower Bowl. לחמניות צבעוניות.",
+   "reserve": "no",
+   "hours": "א׳ 12:00–15:30, 19:00–22:00 · ב׳–ה׳ 12:00–15:00, 19:00–22:00 · ו׳ 12:00–15:00, 19:00–22:30 · ש׳ 12:00–15:30, 19:00–22:30",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "22:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "22:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "22:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "22:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "22:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "22:30"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "22:30"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "רשת בורגרים טבעוניים וצבעוניים – ארוחה מהירה ושונה, בפראטי ליד הוותיקן.",
+   "tips": "מתאים אם רוצים משהו שונה מפסטה ופיצה. אין צורך בהזמנה.",
+   "url": "https://www.flowerburger.it",
+   "phone": "+39 06 540 4267",
+   "verified": true,
+   "note": "Operating in 2026 (Google reviews May 2026; official site lists 'Roma Gracchi'). Hours from Google; Rome Actually says 12:30-15:00 and 19:00-22:30 daily. Burger names from the official site."
+  },
+  {
+   "id": "il-sorpasso",
+   "name": "איל סורפאסו",
+   "orig": "Il Sorpasso",
+   "type": "wine",
+   "area": "vatican",
+   "address": "Via Properzio 31-33, 00193 Roma",
+   "lat": 41.905505,
+   "lng": 12.461315,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "יין טבעי בכוס עם צלחת גבינות, מוצרלה/בורטה, ירקות מבושלים ופסטה פשוטה כשיש. התפריט משתנה – שאלו מה בלי בשר היום. הימנעו מצלחות נקניקים (salumi).",
+   "reserve": "recommended",
+   "hours": "ב׳–ש׳ 8:30–01:00 · א׳ סגור",
+   "open": {
+    "1": [
+     [
+      "08:30",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "08:30",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "08:30",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "08:30",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "08:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "08:30",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [
+    0
+   ],
+   "meals": [
+    "breakfast",
+    "lunch",
+    "dinner"
+   ],
+   "desc": "אוסטריה־וינבר פופולרי בפראטי, מהבוקר ועד הלילה, עם יין טבעי ואווירה שכונתית.",
+   "tips": "הזמנות בטלפון בלבד בשעות 10:00–12:00 ו-16:00–18:00 (לפי האתר). באזור פיאצה דל ריסורג'ימנטו.",
+   "url": "https://sorpasso.info",
+   "phone": "+39 06 8902 4554",
+   "verified": true,
+   "note": "Hours and phone-reservation windows per official site (Mon-Sat 8:30-1:00, Sunday closed); Mes Prestiges shows Mon-Fri from 7:30. Menu composition is not from the official site."
+  },
+  {
+   "id": "terrazza-les-etoiles",
+   "name": "טרצה לה אטואל",
+   "orig": "Terrazza Les Étoiles (Hotel Atlante Star)",
+   "type": "aperitivo",
+   "area": "vatican",
+   "address": "Via dei Bastioni 1, 00193 Roma",
+   "lat": 41.90473,
+   "lng": 12.46195,
+   "kosher": null,
+   "veg": 1,
+   "price": 3,
+   "top": false,
+   "order": "מגיעים בעיקר בשביל הנוף לכיפת סן פיטרו: אפריטיבו או קוקטייל על הגג. במסעדה יש מטבח איטלקי־ים־תיכוני – לא בדקנו אילו מנות צמחוניות יש, בקשו מראש.",
+   "reserve": "recommended",
+   "hours": "בר הגג כל יום 10:00–24:00 · מסעדה כל יום 12:30–15:00 ו-19:30–22:30",
+   "open": {
+    "0": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "snack",
+    "dinner"
+   ],
+   "desc": "מסעדה ובר גג במלון Atlante Star עם נוף 360° לגגות רומא ולכיפת סן פיטרו – מקום רומנטי לשקיעה.",
+   "tips": "השקיעה בנובמבר סביב 16:50 – הגיעו לפחות שעה לפני. חלק מהגג בחוץ: קחו מעיל ושאלו על חימום.",
+   "url": "https://www.terrazzalesetoiles.com",
+   "phone": "+39 06 686386",
+   "verified": true,
+   "note": "Hours per official site (updated April 2026). Restaurant menu not reviewed, so veg rated 1; a Christmas events page exists, suggesting winter operation. Sunset time is an approximation."
+  },
+  {
+   "id": "felice-a-testaccio",
+   "name": "פליצ'ה א טסטצ'יו",
+   "orig": "Felice a Testaccio",
+   "type": "trattoria",
+   "area": "aventine",
+   "address": "Via Mastro Giorgio 29, 00153 Roma",
+   "lat": 41.878515,
+   "lng": 12.47745,
+   "kosher": null,
+   "veg": 2,
+   "price": 3,
+   "top": true,
+   "order": "קאצ'ו א פפה – 'מנת הדגל' שמתערבבת ליד השולחן; מנות ירקות וקינוחים לפי התפריט היומי (בקשו לראות). הימנעו מקרבונרה, אמטריצ'אנה וגריצ'ה (גואנצ'לה) ומרוב המנות העיקריות שהן בשר.",
+   "reserve": "required",
+   "hours": "כל יום 12:30–15:30 ו-19:00–23:30",
+   "open": {
+    "0": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "1": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "2": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "3": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "4": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "5": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "6": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "טרטוריה אגדית בטסטצ'יו (מ-1936) – הקאצ'ו א פפה שלה נחשב לסטנדרט בעיר. פתוחה בכל ימות השבוע.",
+   "tips": "חובה להזמין מראש (ימים עד שבוע לפני). באתר כתוב שלא מתקבלים ביטולים בטלפון/מייל/רשתות – ביטול רק דרך מערכת ההזמנות.",
+   "url": "https://feliceatestaccio.com/en/",
+   "phone": "+39 06 574 6800",
+   "verified": true,
+   "note": "Hours per official site (open every day; page updated 2026). The menu PDF could not be parsed; cacio e pepe is the official signature dish, other veg items unconfirmed. 'Since 1936' per Michelin Guide article title."
+  },
+  {
+   "id": "pizzeria-da-remo",
+   "name": "פיצריה דה רמו",
+   "orig": "Pizzeria Remo a Testaccio",
+   "type": "pizza",
+   "area": "aventine",
+   "address": "Piazza di Santa Maria Liberatrice 44, 00153 Roma",
+   "lat": 41.880915,
+   "lng": 12.4754,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "פיצה דקה ופריכה: מרגריטה, מרינרה, ביאנקה ופיצות ירקות/גבינות; ברוסקטה בעגבניות. פרחי זוקיני לרוב עם אנשובי, והמנות המטוגנות (סופלי, פילה בקלה) – שאלו או דלגו. הימנעו מפיצות נקניק.",
+   "reserve": "no",
+   "hours": "ב׳–ש׳ 19:00–00:00 (לפעמים עד 01:00) · א׳ סגור",
+   "open": {
+    "1": [
+     [
+      "19:00",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "19:00",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "19:00",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "19:00",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "19:00",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "19:00",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [
+    0
+   ],
+   "meals": [
+    "dinner"
+   ],
+   "desc": "פיצריה פשוטה ומקומית בטסטצ'יו – שולחנות עם מפות נייר, בצק דק ופריך ותור ארוך בערב.",
+   "tips": "בלי הזמנות – בואו ב-19:00 בדיוק או קצת לפני כדי לחכות פחות. אווירה רועשת ומקומית.",
+   "url": null,
+   "phone": "+39 06 574 6270",
+   "verified": true,
+   "note": "Mon-Sat 19:00-24:00 and closed Sunday agree across Wanted in Rome, Arte.it and Mes Prestiges (reviewed June 2026); Google shows later closing and some lunch hours. Gambero Rosso (2 Apr 2026) reported the death of founder Remo Stecconi; no change in opening reported. No official website."
+  },
+  {
+   "id": "mercato-di-testaccio",
+   "name": "שוק טסטצ'יו",
+   "orig": "Mercato di Testaccio (Nuovo Mercato Testaccio)",
+   "type": "market",
+   "area": "aventine",
+   "address": "Via Beniamino Franklin / Via Aldo Manuzio 66b, 00153 Roma",
+   "lat": 41.87765,
+   "lng": 12.47372,
+   "kosher": null,
+   "veg": 2,
+   "price": 1,
+   "top": false,
+   "order": "פיצה אל טליו מ-Casa Manco (פיצות ירקות עונתיות), ברוסקטה עם עגבניות, ירקות ופירות טריים, גבינות וריקוטה, קינוחים וגלידה. דלגו על דוכני הכריכים עם בשר ופנים.",
+   "reserve": "no",
+   "hours": "ב׳–ש׳ 7:00–15:00 (חלק מהדוכנים עד 15:30; דוכנים נסגרים בהדרגה) · א׳ סגור",
+   "open": {
+    "1": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "2": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "3": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "4": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "5": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ],
+    "6": [
+     [
+      "07:00",
+      "15:00"
+     ]
+    ]
+   },
+   "closed": [
+    0
+   ],
+   "meals": [
+    "breakfast",
+    "lunch",
+    "snack"
+   ],
+   "desc": "שוק שכונתי של טסטצ'יו במבנה מודרני, עם דוכני אוכל רחוב, גבינות, ירקות ופיצה – מקום פשוט וטוב לצהריים קליל.",
+   "tips": "הכי כדאי בין 11:00 ל-14:00. סגור בימי א׳. יש גם אזור ארכיאולוגי בתוך מתחם השוק (לפי האתר שלו).",
+   "url": "https://www.mercatoditestaccio.it",
+   "phone": null,
+   "verified": true,
+   "note": "Mon-Sat 7:00-15:30 per Google (Wanderlog, 2026 reviews); most guides say 15:00, so 15:00 is used; the official site lists no hours. Casa Manco is cited in a pizza-al-taglio guide."
+  },
+  {
+   "id": "pasticceria-linari",
+   "name": "פסטיצ'ריה ליננרי",
+   "orig": "Pasticceria Linari",
+   "type": "bakery",
+   "area": "aventine",
+   "address": "Via Nicola Zabaglia 9, 00153 Roma",
+   "lat": 41.87938,
+   "lng": 12.474775,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "מריטוצו עם קצפת (maritozzo con la panna – ממולא קצפת, לא בשר), קורנטי, עוגיות וקינוחים; קפה בדלפק.",
+   "reserve": "no",
+   "hours": "כל יום מ-6:30 עד ~21:00 (בחלק מהימים נסגר מוקדם יותר – לאשר)",
+   "open": {
+    "0": [
+     [
+      "06:30",
+      "21:00"
+     ]
+    ],
+    "1": [
+     [
+      "06:30",
+      "14:00"
+     ]
+    ],
+    "2": [
+     [
+      "06:30",
+      "21:00"
+     ]
+    ],
+    "3": [
+     [
+      "06:30",
+      "21:00"
+     ]
+    ],
+    "4": [
+     [
+      "06:30",
+      "21:00"
+     ]
+    ],
+    "5": [
+     [
+      "06:30",
+      "21:00"
+     ]
+    ],
+    "6": [
+     [
+      "06:30",
+      "21:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "desc": "קונדיטוריה ותיקה בטסטצ'יו, ידועה במריטוצי ובקינוחים קלאסיים.",
+   "tips": "נוח לשלב עם שוק טסטצ'יו הסמוך. מריטוצו הכי טוב טרי, ביום האפייה.",
+   "url": "https://www.pasticcerialinari1971.com",
+   "phone": "+39 06 578 2358",
+   "verified": false,
+   "note": "Operating in 2026 (Google reviews to Aug 2026) but hours conflict: Google shows Mon 6:30-14:00 and Tue-Sun until 21:00-21:45, Mes Prestiges shows daily 6:30-21:30 with Tue 6:30-13:30. Monday short day is taken from Google."
+  },
+  {
+   "id": "trapizzino-testaccio",
+   "name": "טרפיצ'ינו טסטצ'יו",
+   "orig": "Trapizzino Testaccio",
+   "type": "street",
+   "area": "aventine",
+   "address": "Via Giovanni Branca 88, 00153 Roma",
+   "lat": 41.879705,
+   "lng": 12.473775,
+   "kosher": null,
+   "veg": 1,
+   "price": 1,
+   "top": false,
+   "order": "טרפיצ'ינו פרמיג'אנה (חצילים בפרמזן) – הצמחוני הקבוע; סופלי קאצ'ו א פפה או עם רוטב חצילים כשיש (תלוי יום). הימנעו: פולפטה, צ'אקיאטורה, לשון, וסופלי קלאסי/אמטריצ'אנה.",
+   "reserve": "no",
+   "hours": "א׳–ה׳ 12:00–00:00 · ו׳–ש׳ 12:00–01:00",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "desc": "'עריסת הטרפיצ'ינו' – כיס פיצה משולש ממולא ברוטבים רומיים. בחירה צמחונית קטנה אבל שווה טעימה.",
+   "tips": "אפשר לשבת ליד הבר עם בירה/יין. ברחוב Via Branca גם דוכני אוכל נוספים.",
+   "url": "https://www.trapizzino.it/trapizzino/trapizzino-roma-testaccio/",
+   "phone": null,
+   "verified": true,
+   "note": "Hours per the chain's official Testaccio page. Veg items (parmigiana trapizzino, cacio e pepe and eggplant-sauce supplì) are from the chain's official Trastevere page (fixed menu + rotating supplì); the Testaccio menu may differ."
+  },
+  {
+   "id": "piperno",
+   "name": "פיפרנו",
+   "orig": "Ristorante Piperno",
+   "type": "restaurant",
+   "area": "ghetto",
+   "address": "Via Monte de' Cenci 9, 00186 Roma",
+   "lat": 41.892345,
+   "lng": 12.47606,
+   "kosher": null,
+   "veg": 2,
+   "price": 3,
+   "top": false,
+   "order": "מהתפריט שלהם: קרצ'ופו אלה ג'ודיה (ארטישוק מטוגן, 11€), ג'וליין זוקיני בטמפורה, ראוויולי ריקוטה ותרד בקרם חלב (ספיישל), ניוקי עם פונטינה, פרמיג'אנה די מלנזנה, קפרזה, ציקוריה מוקפצת ותפוחי אדמה צלויים, וקינוחים (טורטה די ריקוטה, קרם קרמל). הימנעו: פרחי זוקיני ממולאים באנשובי, קרבונרה וניוקי אמטריצ'אנה (פנצ'טה), 'קאצ'ו אד אונטו' (ייתכן שומן חזיר) והפריטו מיקסטו (כולל פנים).",
+   "reserve": "required",
+   "hours": "ג׳–ו׳ 19:45–22:30 · ש׳ 12:45–14:30 ו-19:45–22:30 · א׳ 12:45–14:30 · ב׳ סגור",
+   "open": {
+    "0": [
+     [
+      "12:45",
+      "14:30"
+     ]
+    ],
+    "2": [
+     [
+      "19:45",
+      "22:30"
+     ]
+    ],
+    "3": [
+     [
+      "19:45",
+      "22:30"
+     ]
+    ],
+    "4": [
+     [
+      "19:45",
+      "22:30"
+     ]
+    ],
+    "5": [
+     [
+      "19:45",
+      "22:30"
+     ]
+    ],
+    "6": [
+     [
+      "12:45",
+      "14:30"
+     ],
+     [
+      "19:45",
+      "22:30"
+     ]
+    ]
+   },
+   "closed": [
+    1
+   ],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "מסעדה יהודית־רומית ותיקה לא-כשרה (יש חזיר בתפריט) ליד פורטיקו ד'אוטביה, מפורסמת בארטישוק המטוגן.",
+   "tips": "חובה להזמין. צהריים רק בשבת ובראשון. מקום מתאים לארוחה חגיגית; המנות הצמחוניות די יקרות.",
+   "url": "https://www.ristorantepiperno.it",
+   "phone": "+39 06 6880 6629",
+   "verified": true,
+   "note": "Hours and menu per official site (menu prices as published; items marked from the menu text - 'cacio ed unto' lard comes from a summarizer's reading, so confirm). Not kosher: menu includes carbonara, pancetta and Iberico ham."
+  },
+  {
+   "id": "sora-margherita",
+   "name": "סורה מרגריטה",
+   "orig": "Trattoria Sora Margherita",
+   "type": "trattoria",
+   "area": "ghetto",
+   "address": "Piazza delle Cinque Scole 30, 00186 Roma",
+   "lat": 41.89299,
+   "lng": 12.47653,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "אין תפריט צמחוני קבוע – שאלו על: ארטישוק (בעונה), פסטה בחמאה/עגבניות/ריקוטה, ירקות מבושלים ועוגת ריקוטה עם דובדבנים חמוצים (visciole) אם יש. הימנעו מקרבונרה, אמטריצ'אנה וגריצ'ה.",
+   "reserve": "recommended",
+   "hours": "צהריים כל יום 12:30–15:00 · ערב ב׳, ד׳, ו׳ ו-ש׳ ~19:30–23:00 (ה׳ לא ברור)",
+   "open": {
+    "0": [
+     [
+      "12:30",
+      "15:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:30",
+      "15:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:30",
+      "15:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "טרטוריה לא־מתיימרת בלב הגטו עם אווירה משפחתית ומנות רומיות־יהודיות.",
+   "tips": "לפי חלק מהמקורות מזומן בלבד, ויש שולחנות מעטים – הזמינו. צהריים קל יותר מערב.",
+   "url": "https://www.soramargherita.com",
+   "phone": "+39 06 687 4216",
+   "verified": false,
+   "note": "Operating in 2026 (Google review April 2026) but evening days conflict: Google shows dinner Mon, Wed-Sat; Time Out shows Mon, Wed, Fri, Sat. Thursday dinner is therefore omitted. Cash-only claim is from older reviews; dishes are suggestions to ask about, not from a menu."
+  },
+  {
+   "id": "roscioli-caffe-pasticceria",
+   "name": "רושולי קפה פסטיצ'ריה",
+   "orig": "Roscioli Caffè Pasticceria",
+   "type": "bakery",
+   "area": "ghetto",
+   "address": "Piazza Benedetto Cairoli 16, 00186 Roma",
+   "lat": 41.894146,
+   "lng": 12.47444,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "מאפי בוקר וקורנטי, קרוסטטות ועוגות; מריטוצו עם קצפת אם יש (שאלו). קפה ואספרסו בדלפק.",
+   "reserve": "no",
+   "hours": "ב׳–ו׳ 7:00–18:00 · ש׳ 7:30–18:00 · א׳ 8:00–18:00",
+   "open": {
+    "0": [
+     [
+      "08:00",
+      "18:00"
+     ]
+    ],
+    "1": [
+     [
+      "07:00",
+      "18:00"
+     ]
+    ],
+    "2": [
+     [
+      "07:00",
+      "18:00"
+     ]
+    ],
+    "3": [
+     [
+      "07:00",
+      "18:00"
+     ]
+    ],
+    "4": [
+     [
+      "07:00",
+      "18:00"
+     ]
+    ],
+    "5": [
+     [
+      "07:00",
+      "18:00"
+     ]
+    ],
+    "6": [
+     [
+      "07:30",
+      "18:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "desc": "קפה־קונדיטוריה של משפחת רושולי בפיאצה קאירולי, בין לארגו ארג'נטינה לגטו – מאפים טריים וקפה טוב.",
+   "tips": "נוחה לארוחת בוקר לפני סיור בגטו. מתאימה לשילוב עם פורנו רושולי (דקות הליכה).",
+   "url": "http://www.rosciolicaffe.com",
+   "phone": "+39 06 8916 5330",
+   "verified": true,
+   "note": "Operating in 2026 (Google reviews July 2026); hours from Google only. Maritozzo availability not confirmed."
+  },
+  {
+   "id": "mercato-centrale-roma",
+   "name": "מרקאטו צ'נטרלה רומא",
+   "orig": "Mercato Centrale Roma (Termini)",
+   "type": "market",
+   "area": "esquilino",
+   "address": "Via Giovanni Giolitti 36, 00185 Roma",
+   "lat": 41.8987,
+   "lng": 12.50362,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": true,
+   "order": "בחרו מדוכני אומנים: פיצה (בצק איכותי), פסטה טרייה, מוצרלה וגבינות, אמפנדס ארגנטיניות (חלק צמחוניות – שאלו), גלידה ובראנץ'. דלגו על דוכני הבשר והנקניקים; בדקו תוספות (נקניק/אנשובי) בפיצה ובפסטה.",
+   "reserve": "no",
+   "hours": "א׳–ה׳ 7:30–23:30 · ו׳–ש׳ 7:30–00:00",
+   "open": {
+    "0": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ],
+    "1": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ],
+    "2": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ],
+    "3": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ],
+    "4": [
+     [
+      "07:30",
+      "23:30"
+     ]
+    ],
+    "5": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "breakfast",
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "desc": "היכל אוכל בבניין התחנה של טרמיני עם דוכנים של בעלי מלאכה (פיצה, גבינות, פסטה, גלידה ועוד). נוח כשרוצים מבחר גדול במקום אחד.",
+   "tips": "מושבים משותפים; שיא ארוחות 13:00 ו-20:30. נוח לצהריים קל ולגלידה אחרי ההגעה/לפני הנסיעה.",
+   "url": "https://www.mercatocentrale.it/roma/",
+   "phone": "+39 06 462029",
+   "verified": true,
+   "note": "Operating in 2026 (Google reviews to Sept 2026); hours from Google via Wanderlog; vendor list (mozzarella and cheeses, pizza, empanadas, gelato, brunch, Trapizzino) from the official site and OSM."
+  },
+  {
+   "id": "pasticceria-regoli",
+   "name": "פסטיצ'ריה רגולי",
+   "orig": "Pasticceria Regoli",
+   "type": "bakery",
+   "area": "esquilino",
+   "address": "Via dello Statuto 60, 00185 Roma",
+   "lat": 41.894845,
+   "lng": 12.500925,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": true,
+   "order": "מריטוצו עם קצפת (המפורסם בעיר), קורנטי, קרוסטטה ועוגות. הכול צמחוני. הגיעו מוקדם – המריטוצי נגמרים.",
+   "reserve": "no",
+   "hours": "א׳–ב׳ וד׳–ש׳ ~7:00–19:00 · ג׳ סגור",
+   "open": {
+    "0": [
+     [
+      "07:00",
+      "19:00"
+     ]
+    ],
+    "1": [
+     [
+      "07:00",
+      "19:00"
+     ]
+    ],
+    "3": [
+     [
+      "07:00",
+      "19:00"
+     ]
+    ],
+    "4": [
+     [
+      "07:00",
+      "19:00"
+     ]
+    ],
+    "5": [
+     [
+      "07:00",
+      "19:00"
+     ]
+    ],
+    "6": [
+     [
+      "07:00",
+      "19:00"
+     ]
+    ]
+   },
+   "closed": [
+    2
+   ],
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "desc": "קונדיטוריה משפחתית (מ-1916) ליד פיאצה ויטוריו, ידועה כמקום למריטוצי הטובים ברומא.",
+   "tips": "סגור בימי שלישי. בסופי שבוע המריטוצי נגמרים מוקדם (לפי מקורות עד ~11:00).",
+   "url": "http://www.pasticceriaregoli.com",
+   "phone": "+39 06 487 2812",
+   "verified": true,
+   "note": "Closed Tuesday and open Wed-Mon agree across Google, Mes Prestiges (reviewed June 2026) and guides; closing time listed as 19:00, 19:30 or 20:00, so 19:00 is used. Official site returned an error."
+  },
+  {
+   "id": "gelateria-fassi",
+   "name": "פאלאצו דל פרדו – ג'לטריה פאסי",
+   "orig": "Palazzo del Freddo di Giovanni Fassi",
+   "type": "gelato",
+   "area": "esquilino",
+   "address": "Via Principe Eugenio 65, 00185 Roma",
+   "lat": 41.89361,
+   "lng": 12.508055,
+   "kosher": null,
+   "veg": 3,
+   "price": 1,
+   "top": false,
+   "order": "גלידה אומנותית קלאסית – פיסטקיו, שוקולד, נוצות וסורבה פירות; בכוס או בקונוס.",
+   "reserve": "no",
+   "hours": "א׳ 10:00–22:00 · ב׳–ה׳ 12:00–22:00 · ו׳–ש׳ 12:00–24:00 (יום ב׳ לא ודאי)",
+   "open": {
+    "0": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "22:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "22:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "22:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "22:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "snack"
+   ],
+   "desc": "גלידריה היסטורית (מ-1880) בבניין ענק בסגנון ליברטי ליד פיאצה ויטוריו.",
+   "tips": "מתאימה לשילוב עם פסטיצ'ריה רגולי ושוק האסקווילינו הסמוכים.",
+   "url": "http://www.gelateriafassi.com",
+   "phone": "+39 06 446 4740",
+   "verified": false,
+   "note": "Hours conflict: BookingAgency/Autoreserve show Monday open (12-22), Mes Prestiges says closed Monday (Tue-Sun 12-22); no 2026 reviews seen on Wanderlog. Opening year (1880) per Google listing title."
+  },
+  {
+   "id": "rifugio-romano",
+   "name": "ריפוג'ו רומאנו",
+   "orig": "Rifugio Romano - Cucina vegetale",
+   "type": "restaurant",
+   "area": "esquilino",
+   "address": "Via Volturno 39-41, 00185 Roma",
+   "lat": 41.90446,
+   "lng": 12.499595,
+   "kosher": null,
+   "veg": 3,
+   "price": 2,
+   "top": false,
+   "order": "מטבח רומי 'צמחי' (plant-based) – גרסאות טבעוניות של קלאסיקות רומיות, פסטות, פרמיג'אנה וקינוחים. התפריט משתנה – בדקו באתר.",
+   "reserve": "recommended",
+   "hours": "ג׳–א׳ 12:30–23:00 · ב׳ סגור",
+   "open": {
+    "0": [
+     [
+      "12:30",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:30",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:30",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:30",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:30",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:30",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [
+    1
+   ],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "מסעדה טבעונית ('Cucina romana vegetale') במרחק הליכה מטרמיני, באווירת אוסטריה רומית חמה וכהה.",
+   "tips": "כ-8 דקות הליכה מהתחנה – נוח ביום ההגעה או לפני הטיסה. אפשר להזמין דרך האתר.",
+   "url": "https://www.rifugioromano.com",
+   "phone": "+39 06 488 0945",
+   "verified": true,
+   "note": "Official site (2026) describes the kitchen as plant-based/vegan; Rome Actually (Feb 2026) called it vegetarian-meat mixed with a full vegan menu - treat as plant-based but confirm. Hours Tue-Sun 12:30-23:00 per Rome Actually (Google shows from 11:00). Dishes are generic, not from a menu."
+  },
+  {
+   "id": "50-kalo-roma",
+   "name": "50 קאלו",
+   "orig": "50 Kalò di Ciro Salvo - Roma",
+   "type": "pizza",
+   "area": "borghese",
+   "address": "Via Flavia 3, 00187 Roma",
+   "lat": 41.906015,
+   "lng": 12.49576,
+   "kosher": null,
+   "veg": 2,
+   "price": 2,
+   "top": false,
+   "order": "פיצה נפוליטנית: מרגריטה, מרינרה, ארבע גבינות ופיצות ירקות עונתיות; הבצק קל ומאוורר מאוד ('הקסם של הקלילות' לפי האתר). הימנעו מפיצות עם אנשובי ונקניקים.",
+   "reserve": "recommended",
+   "hours": "כל יום 12:30–15:30 ו-18:30–24:00 (בימי ב׳–ה׳ ערב מ-18:00 לפי מקור אחד)",
+   "open": {
+    "0": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:30",
+      "15:30"
+     ],
+     [
+      "18:30",
+      "24:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "הסניף הרומי של צ'ירו סלבו (נאפולי) – פיצה נפוליטנית קלילה ומאווררת, בין הטובות בעיר. נמצא באזור ויה ונטו ופיאצה ברבריני.",
+   "tips": "כדאי להזמין, במיוחד בערב. קרוב לוויה ונטו ולפיאצה ברבריני.",
+   "url": "https://www.50kalo.it",
+   "phone": "+39 06 6942 9875",
+   "verified": true,
+   "note": "Opened in Rome in 2022 (Dissapore); Gambero Rosso 91/100 (2025); a July 2026 article lists it among the best Neapolitan pizzerias. Hours from Google (daily lunch and dinner); Dissapore gives 12:30-15:30 and 18:00-24:00 for Mon-Thu. Official site is a minimal page with the Rome location."
+  },
+  {
+   "id": "aroma-palazzo-manfredi",
+   "name": "ארומה (פאלאצו מנפרדי)",
+   "orig": "Aroma - Palazzo Manfredi",
+   "type": "fine",
+   "area": "ancient",
+   "address": "Via Labicana 125, 00184 Roma",
+   "lat": 41.890155,
+   "lng": 12.495525,
+   "kosher": null,
+   "veg": 2,
+   "price": 4,
+   "top": false,
+   "order": "תפריט הטעימות הצמחוני 'Colle Oppio' (לפי תפריט המלון; כ-190€ לאדם לפי רישום 2026 – לאשר במחיר בהזמנה). ציינו 'vegetarian' בהזמנה.",
+   "reserve": "required",
+   "hours": "צהריים ד׳–א׳ מ-12:30 · ערב כל יום מ-19:00",
+   "open": {
+    "0": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:00"
+     ]
+    ]
+   },
+   "closed": [],
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "desc": "מסעדה בכוכב מישלן על גג מלון Palazzo Manfredi, עם נוף ישיר לקולוסיאום – הארוחה הרומנטית והיקרה ברשימה.",
+   "tips": "הזמנה מוקדמת חובה. בנובמבר החושך יורד סביב 17:00, אז ארוחת הערב (מ-19:00) היא עם הקולוסיאום המואר; צהריים רק ד׳–א׳. ילדים מגיל 10 בלבד. שאלו על ישיבה בחוץ בחורף.",
+   "url": "https://www.manfredihotels.com/aroma/",
+   "phone": "+39 06 9761 5109",
+   "verified": true,
+   "note": "Days (lunch Wed-Sun from 12:30, dinner daily from 19:00) per official site; closing times from Google. Vegetarian menu 'Colle Oppio' appears in the hotel's 2025 menu PDF; the 2026 price (~EUR 190) is from a listing and the 2025 PDF shows different prices, so confirm."
+  }
+ ],
+ "notes": {
+  "veg": {
+   "vegClassics": [
+    {
+     "name": "cacio e pepe",
+     "he": "קאצ'ו א פפה",
+     "desc": "פסטה (טונרלי/ספגטי) עם פקורינו רומנו ופלפל שחור – הקלאסיקה הרומית הצמחונית ביותר. אם כתוב 'cacio ed unto' זה עם שומן חזיר – לא צמחוני."
+    },
+    {
+     "name": "carciofi alla giudia",
+     "he": "קרצ'ופי אלה ג'ודיה",
+     "desc": "ארטישוק מטוגן פריך בסגנון יהודי־רומי, מנה סמלית של הגטו. העונה העיקרית של הארטישוק הרומי היא פברואר–מאי, ובנובמבר יש מקומות שמגישים אותו וחלקם לא."
+    },
+    {
+     "name": "carciofi alla romana",
+     "he": "קרצ'ופי אלה רומנה",
+     "desc": "ארטישוק מבושל בשום, נענע ושמן זית – צמחוני וקליל (שוב: תלוי עונה, שאלו אם יש)."
+    },
+    {
+     "name": "gnocchi alla romana",
+     "he": "ניוקי אלה רומנה",
+     "desc": "ניוקי סולת אפויים עם חמאה ופרמזן – מסורת של יום חמישי במסעדות רומאיות; צמחוני (בדקו שאין בשר מעל)."
+    },
+    {
+     "name": "supplì",
+     "he": "סופלי",
+     "desc": "קרוקט אורז מטוגן. הקלאסי הוא עם ראגו בשר – חפשו 'pomodoro e basilico', 'cacio e pepe' או גרסאות ירקות (למשל עם חציל), ושאלו לפני שמזמינים."
+    },
+    {
+     "name": "pizza bianca / rossa / margherita",
+     "he": "פיצה ביאנקה / רוסה / מרגריטה",
+     "desc": "ביאנקה = שמן זית ומלח; רוסה = עם רוטב עגבניות; מרגריטה = עגבניות ומוצרלה. בפיצות עם תוספות שימו לב למורטדלה ולאנשובי."
+    },
+    {
+     "name": "pasta alla norma",
+     "he": "פסטה אלה נורמה",
+     "desc": "פסטה עם עגבניות, חציל מטוגן וריקוטה סלאטה – מנה סיציליאנית פופולרית גם ברומא, צמחונית."
+    },
+    {
+     "name": "pasta al pomodoro / arrabbiata",
+     "he": "פסטה אל פומודורו / אראביאטה",
+     "desc": "פסטה ברוטב עגבניות פשוט או חריף עם צ'ילי – הבחירה הבטוחה כשלא בטוחים במנה; בקשו 'senza guanciale'."
+    },
+    {
+     "name": "parmigiana di melanzane",
+     "he": "פרמיג'אנה די מלנזנה",
+     "desc": "חצילים בשכבות עם עגבניות, מוצרלה ופרמזן – מנה ראשונה או עיקרית צמחונית."
+    },
+    {
+     "name": "cicoria ripassata",
+     "he": "צ'יקוריה ריפאסטה",
+     "desc": "עלי ציקוריה מוקפצים עם שום וצ'ילי – תוספת רומית צמחונית נפוצה."
+    },
+    {
+     "name": "burrata / mozzarella di bufala / ricotta",
+     "he": "בורטה / מוצרלה די בופלה / ריקוטה",
+     "desc": "גבינות טריות עם עגבניות ולחם – ארוחה קלה וצמחונית כמעט בכל מקום."
+    },
+    {
+     "name": "castagne arrosto e tiramisù",
+     "he": "ערמונים צלויים וטירמיסו",
+     "desc": "בנובמבר מוכרים ערמונים צלויים ברחובות; טירמיסו ומריטוצו (לחמניה עם קצפת) הם קינוחים צמחוניים. פנה קוטה ומוסים עלולים להכיל ג'לטין מן החי."
+    }
+   ],
+   "watchOut": "מנות שנראות צמחוניות אבל לרוב לא:\n• קרבונרה, גריצ'ה, אמטריצ'אנה – גואנצ'לה (לחי חזיר) או פנצ'טה; 'קאצ'ו אד אונטו' עשוי בשומן חזיר.\n• פיורי די זוקה (פרחי זוקיני מטוגנים) – לרוב ממולאים באנשובי (alici/acciughe); גם 'מוצרלה אין קרוצ'ה' עם אנשובי.\n• פונטרלה (puntarelle) – ציקוריה עונתית עם רוטב שום־אנשובי.\n• סופלי קלאסי – ראגו בשר, ולפעמים פנים.\n• פסטה אי צ'צ'י / אי פאג'ולי, מינסטרונה ומרקי ירקות – לרוב עם פנצ'טה או שומן חזיר או ציר בשר.\n• ריזוטו, ראוויולי וטורטליני בציר בשר; כל 'סוגו' או 'ראגו' = בשר.\n• פיצה נפוליטנה = אנשובי; פיצה ביאנקה/פוקאצ'ה עם 'לרדו' (שומן חזיר) או מורטדלה.\n• מאפים מסורתיים ובצק עלים לפעמים עם שומן חזיר (strutto); פנה קוטה ומוסים – ג'לטין.\n• גבינות קשות (פרמיג'אנו, פקורינו) מיוצרות עם רנט מן החי – רלוונטי רק למקפידים מאוד.\n• סלט קיסר – אנשובי ברוטב.\nאומרים תמיד: 'senza carne, senza pesce, senza guanciale e senza acciughe' ושואלים אם 'il brodo è di carne'.",
+   "phrases": [
+    {
+     "it": "Sono vegetariano / vegetariana",
+     "he": "אני צמחוני / צמחונית",
+     "say": "סונו וג'טריאנו / וג'טריאנה"
+    },
+    {
+     "it": "Non mangio carne né pesce",
+     "he": "אני לא אוכל בשר ולא דגים",
+     "say": "נון מנג'ו קרנה נה פשה"
+    },
+    {
+     "it": "C'è carne o pesce in questo piatto?",
+     "he": "יש בשר או דגים במנה הזו?",
+     "say": "צ'ה קרנה או פשה אין קוואסטו פיאטו"
+    },
+    {
+     "it": "Avete piatti vegetariani?",
+     "he": "יש לכם מנות צמחוניות?",
+     "say": "אבטה פיאטי וג'טריאני"
+    },
+    {
+     "it": "Senza guanciale, pancetta e prosciutto, per favore",
+     "he": "בלי גואנצ'לה, פנצ'טה ופרושוטו, בבקשה",
+     "say": "סנצה גואנצ'לה, פנצ'טה אה פרושוטו, פר פבורה"
+    },
+    {
+     "it": "Senza acciughe (alici), per favore",
+     "he": "בלי אנשובי, בבקשה",
+     "say": "סנצה אצ'וגה (אליצ'י), פר פבורה"
+    },
+    {
+     "it": "Il brodo è di carne?",
+     "he": "המרק/הציר על בסיס בשר?",
+     "say": "איל ברודו אה די קרנה"
+    },
+    {
+     "it": "C'è lardo o strutto?",
+     "he": "יש שומן חזיר?",
+     "say": "צ'ה לרדו או סטרוטו"
+    },
+    {
+     "it": "Il conto, per favore",
+     "he": "החשבון, בבקשה",
+     "say": "איל קונטו, פר פבורה"
+    },
+    {
+     "it": "Un tavolo per due, per favore",
+     "he": "שולחן לשניים, בבקשה",
+     "say": "און טבולו פר דואה, פר פבורה"
+    }
+   ],
+   "etiquette": "קופרטו (coperto): תוספת קבועה על כל סועד (לרוב €2–3, עד €4 במקומות תיירותיים) – זה לא טיפ. אם כתוב 'servizio incluso' אין צורך בטיפ; אחרת טיפ לא חובה – אפשר להשאיר €1–2 לאדם או לעגל בשירות טוב.\nשעות אוכל: צהריים 12:30–15:00, ארוחת ערב אצל האיטלקים 20:00–22:00 (מטבחים רבים נפתחים בערב ב-19:00–19:30). בין 15:00 ל-19:00 הרבה מטבחים סגורים – לנשנוש יש פיצה אל טליו, מאפיות וברים. הרבה מסעדות סגורות בימי א׳ בערב או בימי ב׳ – בדקו את שעות הפתיחה של כל מקום.\nקפה: 'un caffè' = אספרסו. בדלפק (al banco) עומדים ומשלמים קצת (~€1.2–1.5); בישיבה במקומות מרכזיים זה יקר פי 2–3. קפוצ'ינו ומריטוצו הם לבוקר – אחרי ארוחה מזמינים אספרסו.\nאפריטיבו: בערך 18:30–21:00 – משלמים על משקה (€8–15) ובחלק מהמקומות כלול בופה/חטיפים; בדקו שאין בשר בבופה.\nמים: 'acqua naturale' או 'frizzante' בבקבוק (€2–4); מי הברז ברומא טובים ובכל פינה יש ברזיות 'נזוני' בחינם.\nפיצה: כל אחד מזמין פיצה משלו; פיצריות רומאיות קלאסיות רבות פתוחות רק בערב.\nבקשת חשבון: המלצר לא יביא חשבון עד שתבקשו (il conto, per favore). חלק מהמקומות הקטנים רק מזומן או דורשים מינימום לכרטיס.\nהזמנות: מומלץ מראש בערבי ו׳–ש׳ ובמסעדות הפופולריות, גם בנובמבר."
+  },
+  "kosher": {
+   "intro": "ברומא יש כעשר מסעדות כשרות בהשגחת הרבנות, כמעט כולן ברחוב Via del Portico d'Ottavia בגטו, ועוד כמה מאפיות וחנויות. ביום שישי הכול נסגר בערך ב-15:00–15:30 ונפתח שוב במוצאי שבת (בערך 19:00–21:00). מקומות ׳בסגנון יהודי׳ כמו Nonna Betta אינם כשרים, והאפליקציה מסמנת אותם כלא כשרים.",
+   "shabbat": "🕯️ כניסת שבת (ו׳ 13.11): 16:33 · צאת שבת (ש׳ 14.11): 17:34\n\n🍷 ארוחות שבת: ארוחות שבת למי שרוצה: מסעדות בגטו מגישות ליל שבת וצהרי שבת רק בהזמנה ובתשלום מראש אונליין (בלי כסף בשבת) — Renato al Ghetto: ליל שבת €50, צהרי שבת €50, טייק-אווי €45; Bellacarne: ליל שבת €50 (קלאסית או צמחונית), צהרי שבת €45 (לבדוק זמינות); Ba'Ghetto: תפריט שבת בהזמנה באתר; לפי חב״ד גם Yotvata אפשרית על בסיס בקשה. בשישי כל המסעדות נסגרות ב-15:00–15:30 — מי שמזמין טייק-אווי חייב לאסוף לפני כן. משלוח למלון: Bellacarne Street Food בשבועות הרגילים דרך Deliveroo/Glovo (לפי האתר); קייטרינג פרטי שמגיע למלון (הזמנה בדרך כלל עד יום חמישי): Elite Kosher +39 320 0358325 (בשרי, חלב ישראל לפי בקשה), Le Bon Ton Catering +39 06 7026889 (בשרי וחלבי, בהזמנה מראש) — לפי רשימת הקהילה וחב״ד פיאצה בולוניה; יכולות משלוח למלון לא נבדקו מול הספקים.\n\n🕍 תפילות: תפילות בבית הכנסת הגדול (Tempio Maggiore, Largo Stefano Gaj Taché): מבקרים שאינם חברי קהילה חייבים להירשם מראש בטופס security.romaebraica.it — ההרשמה תקפה עד יום שישי 14:00 (13/11). בכניסה בדיקת ביטחון ומציגים דרכון או תעודה מזהה (לפי הקהילה לא נדרש להביא תעודה בשבת עצמה). גברים: כיפה (אפשר להשאיל), מכנסיים ארוכים (גם להשאלה) ונעליים סגורות; נשים: כתפיים מכוסות, בלי מחשוף וחצאית קצרה. זמני התפילות בחורף לא מפורסמים באתר — בקיץ: ערבית ליל שבת 19:30, שחרית 8:30 בבית הכנסת הגדול (8:00 בספרדי, באותו מבנה); בנובמבר מקדימים — לאשר בטלפון +39 06 6840061 (או 06 68400651/2). אין עירוב ברומא (אסור לשאת בשבת); בבית הכנסת יש חגורת מפתח להשאלה. המוזיאון והסיור בבית הכנסת סגורים בשבת; ביום שישי פתוחים 9:00–14:00. שבת 14/11: פרשת תולדות.\n\n🤝 חב״ד: Chabad Hamerkaz (Rabbi Shaikevitz), מרכז בעיר: Via dei Greci 30, 00187 Roma (ליד כיכר ספרד) · טל׳/וואטסאפ +39 348 249 6037 · hamerkazroma@gmail.com · פתוח ב׳–ה׳ 12:30–15:30; ארוחות ליל שבת בהרשמה מראש באתר (chabadhamerkazrome.com/dinner-registration); תפילות שבת 'עונתיות ולפי דרישה' — לתאם. Chabad Piazza Bologna (הרב מנחם לזר): Viale di Villa Massimo 39, 00161 Roma · +39 06 94368049 · וואטסאפ +39 333 813 0919 · info@chabadpbrome.com — שימו לב: בעקבות שריפה ב-24 באוגוסט המבנה אינו שמיש ואין כרגע סעודות שבת בבית חב״ד; אפשר לבקש משפחה מארחת בטופס באתר (chabadpbrome.com/shabbat-meals-by-family, תרומה מבוקשת).",
+   "dishes": [
+    {
+     "name": "carciofi alla giudia",
+     "he": "ארטישוק בסגנון יהודי",
+     "desc": "ארטישוק שלם שמטגנים פעמיים בשמן עמוק עד שהעלים נפתחים כמו פרח פריך וזהוב — מנת הדגל של המטבח היהודי-רומאי. העונה העיקרית היא פברואר–מאי; באמצע נובמבר זה מחוץ לעונה — חלק מהמסעדות מגישות אותו כל השנה (לא תמיד מהזן הרומי), אז הרמה משתנה, אבל עדיין שווה לטעום."
+    },
+    {
+     "name": "concia di zucchine",
+     "he": "קונצ'ה די זוקיני",
+     "desc": "קישואים מטוגנים שנשרים בחומץ, שום ונענע ומוגשים קרים כמתאבן. נמצא בתפריטי Ba'Ghetto Milky, Yotvata ועוד, וזמין כל השנה."
+    },
+    {
+     "name": "baccalà fritto",
+     "he": "פילה בקלה מטוגן",
+     "desc": "דג מלוח (בקלה/קוד) בציפוי קליל ופריך — קלאסיקה של בתי האוכל היהודיים ברומא, במיוחד בחלביים. כל השנה."
+    },
+    {
+     "name": "supplì",
+     "he": "סופלי",
+     "desc": "כדורי אורז מטוגנים עם מוצרלה נמתחת בלב (supplì al telefono). מופיעים בתפריטי בתי האוכל החלביים (Ba'Ghetto Milky, Yotvata). כל השנה."
+    },
+    {
+     "name": "carbonara / amatriciana kasher",
+     "he": "קרבונרה ואמטריצ'יאנה כשרות",
+     "desc": "הקלאסיקות הרומאיות בלי חזיר ובלי חלב: בבתי הבשר מחליפים את לחי החזיר (guanciale) באווז מעושן (Ba'Ghetto), בלחי בקר (Renato) או בבשר מיובש ביתי (Bellacarne). בבתי החלב אפשר tonnarelli cacio e pepe. כל השנה."
+    },
+    {
+     "name": "pizza ebraica (pizza di beridde)",
+     "he": "פיצה יהודית",
+     "desc": "לא פיצה: עוגה צפופה ואפלה מפירות יבשים, שקדים, צנוברים, צימוקים ופירות מסוכרים שאפויה כמעט עד שרופה. הכי מפורסמת אצל Boccione. כל השנה."
+    },
+    {
+     "name": "crostata di ricotta e visciole",
+     "he": "טארט ריקוטה וויצ'ולה (דובדבן חמוץ)",
+     "desc": "טארט בצק פריך עם מילוי ריקוטה וריבת דובדבנים חמוצים — המנה המפורסמת של Boccione, נמכרת בפרוסה או שלמה, ומופיעה גם כקינוח במסעדות חלביות. כל השנה."
+    },
+    {
+     "name": "pizza bianca e rossa",
+     "he": "פיצה לבנה ואדומה",
+     "desc": "פוקאצ'ה רומאית דקה — לבנה (שמן זית ומלח) או אדומה (עגבניות) — נמכרת במשקל ב-Antico Forno del Ghetto (פת ישראל, פרווה). זול, מהיר וצמחוני. כל השנה."
+    },
+    {
+     "name": "couscous tripolitano",
+     "he": "קוסקוס טריפוליטאי (לוב)",
+     "desc": "מטבח יהודי לוב ב-Little Tripoli (בשר גלאט): קוסקוס עם קציצות או עוף, בורקס בשר, חומוס ופלאפל ביתיים. כל השנה."
+    }
+   ],
+   "dayTrips": "פירנצה (כ-1.5 שעות ברכבת מהירה): שתי כתובות כשרות ממש ליד בית הכנסת הגדול, ב-Via Luigi Carlo Farini. 1) Ba'Ghetto Firenze, Via L.C. Farini 5/r, טל׳ +39 055 2302567 — מסעדת בשר כשרה; לפי האתר: א׳–ה׳ 12:00–15:00 ו-18:00–23:00, ו׳ 12:00–15:00, ליל שבת סגור (ארוחות שבת בהזמנה ובתשלום מראש), מוצ״ש מ-19:00. 2) Ruth's, Via L.C. Farini 2a — מסעדה כשרה בפיקוח הרב הראשי של פירנצה לפי Eating Europe (פברואר 2026): ו׳ 10:30–15:30, מוצ״ש 18:30–22:00 (סוג המסעדה בשר/חלב לא אומת — לברר). נאפולי ופומפיי: לא מצאתי מסעדה כשרה מאומתת (בנאפולי יש קהילה קטנה וחב״ד, אך לא מצאתי מקום אכילה מאומת) — להביא אוכל מרומא. טיבולי: אין אוכל כשר (לפי Totally Jewish Travel, מאי 2025, אין אוכל כשר גם בויטרבו, קפרארולה ואוסטיה אנטיקה); אורוויטו: לא מצאתי מידע על אוכל כשר. הצעה: לקנות מראש ברומא — פיצה לבנה בפת ישראל (Antico Forno del Ghetto), מאפים (Boccione), נקניק ומוצרים ארוזים (Kosher Delight, Via del Portico d'Ottavia 11) — ולזכור שהכול נסגר בערב שבת ובשבת."
+  }
+ }
+}
