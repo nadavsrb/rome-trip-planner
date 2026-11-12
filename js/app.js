@@ -11,10 +11,11 @@ import { renderFood } from './views/food.js';
 import { renderHotels } from './views/hotels.js';
 import { renderMap } from './views/map.js';
 import { renderInfo } from './views/info.js';
+import { renderNear } from './views/near.js';
 import { openSettings, applyTheme, openShareSheet } from './views/settings.js';
 import { initSync, joinSync, parseJoinToken, onSyncChange, syncConfig } from './sync.js';
 
-const ROUTES = { plan: renderPlan, explore: renderExplore, food: renderFood, hotels: renderHotels, map: renderMap, info: renderInfo };
+const ROUTES = { plan: renderPlan, near: renderNear, explore: renderExplore, food: renderFood, hotels: renderHotels, map: renderMap, info: renderInfo };
 const scrolls = {};
 let lastRoute = null;
 
