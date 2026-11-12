@@ -121,12 +121,24 @@ function registerSW() {
   if (!('serviceWorker' in navigator)) return;
   const local = ['localhost', '127.0.0.1'].includes(location.hostname);
   if (local && !location.search.includes('sw=1')) return;
+  // When a new version takes over, reload into it right away (not on the very first install).
+  const hadController = !!navigator.serviceWorker.controller;
+  let reloading = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!hadController || reloading) return;
+    reloading = true;
+    location.reload();
+  });
   navigator.serviceWorker.register('sw.js').then(reg => {
     reg.update().catch(() => {});
+    // Check again whenever the app comes back to the foreground (phones keep it in memory).
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') reg.update().catch(() => {});
+    });
     reg.addEventListener('updatefound', () => {
       const nw = reg.installing;
       nw?.addEventListener('statechange', () => {
-        if (nw.state === 'activated' && navigator.serviceWorker.controller) {
+        if (nw.state === 'activated' && hadController && !reloading) {
           toast('יש גרסה חדשה של האפליקציה', { action: 'רענון', onAction: () => location.reload(), ms: 12000 });
         }
       });
