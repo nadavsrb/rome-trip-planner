@@ -10,8 +10,11 @@ export function esc(v) {
 }
 
 // Keeps "9:00–17:00" or "€150–250" reading left-to-right inside Hebrew text.
-export const ltr = s => `<span dir="ltr">${s}</span>`;
-const RANGE = /(€?\d[\d.,:]*\s?[–-]\s?€?\d[\d.,:]*°?|\d{1,2}:\d{2})/g;
+export const ltr = s => `<span dir="ltr" class="ltr">${s}</span>`;
+// Phone numbers, ranges ("20–30", "€25–35", "9:00–17:00") and times. A range ends in a digit,
+// so the full stop after it stays outside and the sentence keeps its punctuation in place.
+const NUM = '€?\\d(?:[\\d.,:]*\\d)?';
+const RANGE = new RegExp(`(\\+?\\d[\\d ]{6,}\\d|${NUM}\\s?[–-]\\s?${NUM}°?|\\d{1,2}:\\d{2})`, 'g');
 export const bidi = v => esc(v).replace(RANGE, m => ltr(m));
 
 // Turns "line\n• bullet" text from the data files into safe HTML.
