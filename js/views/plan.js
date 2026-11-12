@@ -204,6 +204,7 @@ function nowCardHtml(st) {
   }
   const wxLine = nowWeatherLine(n.today, now);
   if (wxLine) lines.push(wxLine);
+  if (lines.length) lines.push('<a class="chip chip-sm now-near" href="#/near">📍 מה טוב סביבי עכשיו</a>');
   if (!lines.length) return '';
   return `<section class="card now-card" data-nowcard>${lines.join('')}</section>`;
 }
