@@ -1,13 +1,14 @@
 // Offline support. App files are precached per version; data files are network-first
 // so plan updates show up right away; map tiles are cached as you browse.
-const VERSION = 'rome26-v1';
+const VERSION = 'rome26-v2';
 const SHELL = [
   './', './index.html', './manifest.webmanifest', './css/app.css',
   './js/app.js', './js/util.js', './js/geo.js', './js/store.js', './js/data.js', './js/planner.js',
-  './js/weather.js', './js/ui.js',
+  './js/weather.js', './js/ui.js', './js/sync.js',
   './js/views/common.js', './js/views/plan.js', './js/views/explore.js', './js/views/food.js',
   './js/views/hotels.js', './js/views/map.js', './js/views/info.js', './js/views/settings.js', './js/views/locate.js',
   './data/places.json', './data/food.json', './data/hotels.json', './data/daytrips.json', './data/plan.json', './data/info.json',
+  './data/ours.json', './data/schedule.json',
   './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png',
 ];
 const CDN = [

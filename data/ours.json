@@ -1,0 +1,2069 @@
+{
+ "items": [
+  {
+   "id": "said",
+   "name": "Said dal 1923",
+   "orig": "SAID dal 1923 · Antica Fabbrica del Cioccolato",
+   "type": "chocolate",
+   "icon": "🍫",
+   "area": "sanlorenzo",
+   "address": "Via Tiburtina 135, 00185 Roma",
+   "lat": 41.8991863,
+   "lng": 12.5150761,
+   "price": 2,
+   "meals": [
+    "snack",
+    "dinner"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "1": [],
+    "2": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "10:00",
+      "24:00"
+     ]
+    ]
+   },
+   "desc": "מפעל שוקולד היסטורי בסן לורנצו (מאז 1923), עם בית קפה ומסעדה בתוך המפעל.",
+   "order": "שוקו חם סמיך, פרלינים וקינוחי שוקולד",
+   "tips": "המקורות סותרים לגבי ראשון ושני (באחד שני סגור, באחר שני פתוח רק מ-18:00). ביום חמישי פתוח לפי כולם.",
+   "url": "https://www.said.it",
+   "phone": "+39 06 446 9204",
+   "kind": "food",
+   "ours": true,
+   "closed": [
+    1
+   ],
+   "hours": "א׳ 12:00–24:00 · ב׳ סגור · ג׳–ש׳ 10:00–24:00"
+  },
+  {
+   "id": "pastasciutta",
+   "name": "Pastasciutta",
+   "orig": "Pastasciutta · Fontana di Trevi",
+   "type": "restaurant",
+   "icon": "🍝",
+   "area": "centro",
+   "address": "Largo Pietro di Brazzà 27, Roma",
+   "lat": 41.899918,
+   "lng": 12.4837005,
+   "price": 1,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "1": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "2": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "3": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "4": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "5": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "6": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ]
+   },
+   "desc": "פסטה טרייה מהירה ליד טרווי: בוחרים פסטה ורוטב ומקבלים בקופסה תוך דקות.",
+   "order": "קרבונרה, קאצ׳ו א פפה או אמטריצ׳אנה",
+   "url": "https://www.pastasciuttaroma.it/en/",
+   "phone": "+39 06 6932 7108",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "כל יום 10:00–22:00"
+  },
+  {
+   "id": "spizzica",
+   "name": "Spizzica Roma",
+   "type": "pizza",
+   "icon": "🍕",
+   "area": "centro",
+   "address": "Via in Lucina 13, Roma",
+   "lat": 41.902766,
+   "lng": 12.4784156,
+   "price": 1,
+   "meals": [
+    "lunch",
+    "snack"
+   ],
+   "reserve": "no",
+   "hours": "לא מצאנו שעות מאומתות",
+   "desc": "פיצה ברצועות (al taglio) ליד הקורסו.",
+   "order": "כמה רצועות מהתוספות של היום",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "venchi",
+   "name": "Venchi",
+   "orig": "Venchi Cioccolato e Gelato · Via del Corso",
+   "type": "gelato",
+   "icon": "🍦",
+   "area": "centro",
+   "address": "Via del Corso 335, 00186 Roma",
+   "lat": 41.9001204,
+   "lng": 12.4806874,
+   "price": 2,
+   "meals": [
+    "snack"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "08:30",
+      "01:30"
+     ]
+    ],
+    "1": [
+     [
+      "08:30",
+      "01:00"
+     ]
+    ],
+    "2": [
+     [
+      "08:30",
+      "01:00"
+     ]
+    ],
+    "3": [
+     [
+      "08:30",
+      "01:00"
+     ]
+    ],
+    "4": [
+     [
+      "08:30",
+      "01:00"
+     ]
+    ],
+    "5": [
+     [
+      "08:30",
+      "01:30"
+     ]
+    ],
+    "6": [
+     [
+      "08:30",
+      "01:30"
+     ]
+    ]
+   },
+   "desc": "שוקולד וגלידה איטלקיים, עם מפל שוקולד בחלון.",
+   "order": "גלידה בגביע מצופה שוקולד, קרמינו",
+   "url": "https://www.venchi.com",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "א׳ 8:30–01:30 · ב׳–ה׳ 8:30–01:00 · ו׳–ש׳ 8:30–01:30"
+  },
+  {
+   "id": "matricianella",
+   "name": "Matricianella",
+   "type": "trattoria",
+   "icon": "🍝",
+   "area": "tridente",
+   "address": "Via del Leone 4, 00186 Roma",
+   "lat": 41.9037351,
+   "lng": 12.477405,
+   "price": 3,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "reserve": "required",
+   "open": {
+    "0": [],
+    "1": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:30",
+      "23:00"
+     ]
+    ]
+   },
+   "desc": "טרטוריה רומאית ותיקה ליד פיאצה בורגזה.",
+   "order": "ארטישוק בסגנון יהודי (carciofi alla giudia), קאצ׳ו א פפה, אמטריצ׳אנה, סלטימבוקה",
+   "tips": "חובה להזמין: בטלפון, או במייל prenotazioni@matricianella.it לפחות 24 שעות מראש. ארוחת הערב מתחילה ב-19:30 בדיוק. סגור בראשון.",
+   "url": "https://www.matricianella.it",
+   "phone": "+39 06 683 2100",
+   "kind": "food",
+   "ours": true,
+   "closed": [
+    0
+   ],
+   "hours": "א׳ סגור · ב׳–ש׳ 12:30–15:00 ו-19:30–23:00"
+  },
+  {
+   "id": "zuma",
+   "name": "Zuma",
+   "orig": "Zuma Rome · Palazzo Fendi",
+   "type": "sushi",
+   "icon": "🍣",
+   "area": "tridente",
+   "address": "Via della Fontanella di Borghese 48, 00186 Roma",
+   "lat": 41.9044854,
+   "lng": 12.4783148,
+   "price": 4,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "reserve": "required",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "15:30"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ]
+   },
+   "desc": "מסעדה יפנית עכשווית בפאלאצו פנדי, עם בר ומרפסת על הגג.",
+   "order": "בלאק קוד במיסו, מנות מהרובטה, סושי וסשימי",
+   "tips": "הזמנה דרך האתר (SevenRooms). הבר על הגג פתוח עד 01:00.",
+   "url": "https://zumarestaurant.com/en/rome",
+   "phone": "+39 06 9926 6622",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "א׳ 12:00–15:30 ו-19:00–23:00 · ב׳–ו׳ 12:00–15:00 ו-19:00–23:30 · ש׳ 12:00–15:30 ו-19:00–23:30"
+  },
+  {
+   "id": "nonna-vincenza",
+   "name": "I Dolci di Nonna Vincenza",
+   "type": "dessert",
+   "icon": "🍰",
+   "area": "centro",
+   "address": "Via dell'Arco del Monte 98/A, 00186 Roma",
+   "lat": 41.8940972,
+   "lng": 12.4730667,
+   "price": 1,
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "08:00",
+      "19:30"
+     ]
+    ],
+    "1": [
+     [
+      "07:30",
+      "19:30"
+     ]
+    ],
+    "2": [
+     [
+      "07:30",
+      "19:30"
+     ]
+    ],
+    "3": [
+     [
+      "07:30",
+      "19:30"
+     ]
+    ],
+    "4": [
+     [
+      "07:30",
+      "19:30"
+     ]
+    ],
+    "5": [
+     [
+      "07:30",
+      "19:30"
+     ]
+    ],
+    "6": [
+     [
+      "08:00",
+      "19:30"
+     ]
+    ]
+   },
+   "desc": "קונדיטוריה סיציליאנית ליד קמפו דה פיורי.",
+   "order": "קנולו שממלאים במקום, קסאטה, ארנצ׳יני",
+   "url": "https://www.dolcinonnavincenza.it",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "א׳ 8:00–19:30 · ב׳–ו׳ 7:30–19:30 · ש׳ 8:00–19:30"
+  },
+  {
+   "id": "da-fortunata",
+   "name": "Osteria da Fortunata",
+   "type": "trattoria",
+   "icon": "🍝",
+   "area": "centro",
+   "address": "Via del Pellegrino 11, 00186 Roma",
+   "lat": 41.8961166,
+   "lng": 12.4716707,
+   "price": 2,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "reserve": "recommended",
+   "open": {
+    "0": [
+     [
+      "11:30",
+      "01:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:30",
+      "01:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:30",
+      "01:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:30",
+      "01:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:30",
+      "01:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:30",
+      "01:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:30",
+      "01:00"
+     ]
+    ]
+   },
+   "desc": "אוסטריה שבה מכינים את הפסטה הטרייה בחלון.",
+   "order": "קאצ׳ו א פפה, קרבונרה, אמטריצ׳אנה",
+   "tips": "בערב יש תור. אפשר לנסות להזמין דרך האתר.",
+   "url": "https://osteriadafortunata.it/en/",
+   "phone": "+39 06 6066 7391",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "כל יום 11:30–01:00"
+  },
+  {
+   "id": "amerina",
+   "name": "Amerina la Pizzetta",
+   "type": "pizza",
+   "icon": "🍕",
+   "area": "centro",
+   "address": "Largo dei Librari 82, 00186 Roma",
+   "lat": 41.8948126,
+   "lng": 12.4736071,
+   "price": 1,
+   "meals": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "reserve": "no",
+   "hours": "לפי ההערות שלכם נפתחת ב-17:00. מקור ישן (2021): ג׳–א׳ 11:00–22:00, סגור בשני",
+   "desc": "פיצריה קטנה ליד קמפו דה פיורי, פיצטות אישיות.",
+   "order": "פיצטה רוסה וביאנקה",
+   "url": "https://www.amerinalapizzetta.it",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "forno-trevi",
+   "name": "L’Antico Forno di Fontana di Trevi",
+   "type": "bakery",
+   "icon": "☕",
+   "area": "centro",
+   "address": "Via delle Muratte 8, 00187 Roma",
+   "lat": 41.9006456,
+   "lng": 12.4830964,
+   "price": 1,
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ],
+    "1": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ],
+    "2": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ],
+    "3": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ],
+    "4": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ],
+    "5": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ],
+    "6": [
+     [
+      "07:00",
+      "20:00"
+     ]
+    ]
+   },
+   "hours": "כל יום 7:00–20:00 (לפי מקור אחד, לא אומת)",
+   "desc": "מאפייה ותיקה צמוד למזרקת טרווי.",
+   "order": "קרואסון פיסטוק, פיצה ביאנקה",
+   "tips": "שעת הפתיחה (7:00) מופיעה רק במקור אחד. אם סגור, בסביבה יש ברים שפותחים מוקדם לקפה וקורנטו.",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "vinaio",
+   "name": "All’Antico Vinaio",
+   "orig": "All'Antico Vinaio · Piazza della Maddalena",
+   "type": "street",
+   "icon": "🥪",
+   "area": "centro",
+   "address": "Piazza della Maddalena 3, 00186 Roma",
+   "lat": 41.8999637,
+   "lng": 12.4764773,
+   "price": 1,
+   "meals": [
+    "lunch",
+    "snack"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "10:30",
+      "22:00"
+     ]
+    ],
+    "1": [
+     [
+      "10:30",
+      "22:00"
+     ]
+    ],
+    "2": [
+     [
+      "10:30",
+      "22:00"
+     ]
+    ],
+    "3": [
+     [
+      "10:30",
+      "22:00"
+     ]
+    ],
+    "4": [
+     [
+      "10:30",
+      "22:00"
+     ]
+    ],
+    "5": [
+     [
+      "10:30",
+      "22:00"
+     ]
+    ],
+    "6": [
+     [
+      "10:30",
+      "22:00"
+     ]
+    ]
+   },
+   "desc": "כריכי סקיאצ׳טה פלורנטיניים ענקיים, שתי דקות מהפנתאון.",
+   "tips": "בצהריים יש תור, אבל הוא זז מהר. לוקחים ואוכלים בחוץ.",
+   "url": "https://www.allanticovinaio.com",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "כל יום 10:30–22:00"
+  },
+  {
+   "id": "alice-pizza",
+   "name": "Alice Pizza",
+   "type": "pizza",
+   "icon": "🍕",
+   "area": "centro",
+   "address": "Corso Vittorio Emanuele II, ליד לארגו ארג׳נטינה, Roma",
+   "lat": 41.8960658,
+   "lng": 12.4778505,
+   "price": 1,
+   "meals": [
+    "lunch",
+    "snack"
+   ],
+   "reserve": "no",
+   "hours": "ב׳–ש׳ 10:00–22:00 (ראשון לא ידוע)",
+   "desc": "רשת פיצה ברצועות לפי משקל.",
+   "order": "מרגריטה, רוסה, ותוספות של היום",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "birreria-viennese",
+   "name": "Antica Birreria Viennese",
+   "type": "restaurant",
+   "icon": "🍺",
+   "area": "tridente",
+   "address": "Via della Croce 21, 00187 Roma",
+   "lat": 41.9063021,
+   "lng": 12.480287,
+   "price": 2,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "reserve": "recommended",
+   "open": {
+    "0": [
+     [
+      "10:00",
+      "23:30"
+     ]
+    ],
+    "1": [
+     [
+      "10:00",
+      "23:30"
+     ]
+    ],
+    "2": [
+     [
+      "10:00",
+      "23:30"
+     ]
+    ],
+    "3": [
+     [
+      "10:00",
+      "23:30"
+     ]
+    ],
+    "4": [
+     [
+      "10:00",
+      "23:30"
+     ]
+    ],
+    "5": [
+     [
+      "10:00",
+      "00:30"
+     ]
+    ],
+    "6": [
+     [
+      "10:00",
+      "00:00"
+     ]
+    ]
+   },
+   "desc": "בית בירה בסגנון אוסטרו-הונגרי מאז 1939, ליד המדרגות הספרדיות.",
+   "order": "שניצל, גולאש, שטרודל ובירה",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "א׳–ה׳ 10:00–23:30 · ו׳ 10:00–00:30 · ש׳ 10:00–00:00"
+  },
+  {
+   "id": "divinity",
+   "name": "Divinity Rooftop",
+   "orig": "Divinity Restaurant & Lounge Bar",
+   "type": "aperitivo",
+   "icon": "🍸",
+   "area": "centro",
+   "address": "Via di Santa Chiara 4/A, 00186 Roma (קומה 6)",
+   "lat": 41.8980272,
+   "lng": 12.4760083,
+   "price": 4,
+   "meals": [
+    "snack",
+    "dinner"
+   ],
+   "reserve": "recommended",
+   "open": {
+    "0": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "24:00"
+     ]
+    ]
+   },
+   "hours": "כל יום 12:30–15:00 ו-19:00–24:00 (לא אומת לחורף)",
+   "desc": "בר ומסעדה על גג מלון The Pantheon Iconic, עם נוף לגגות ולכיפת הפנתאון.",
+   "tips": "כדאי להזמין מקום. לא ברור אם בנובמבר יושבים בחוץ או בפנים.",
+   "url": "https://www.thepantheonhotel.com",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "trapizzino-trastevere",
+   "name": "Trapizzino Trastevere",
+   "type": "street",
+   "icon": "🍕",
+   "area": "trastevere",
+   "address": "Piazza Trilussa 46, 00153 Roma",
+   "lat": 41.891494,
+   "lng": 12.4698437,
+   "price": 1,
+   "meals": [
+    "lunch",
+    "dinner",
+    "snack"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:30",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "12:00",
+      "01:00"
+     ]
+    ],
+    "3": [
+     [
+      "12:00",
+      "01:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "01:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "02:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "02:00"
+     ]
+    ]
+   },
+   "desc": "כיסי פיצה משולשים ממולאים בתבשילים רומאיים.",
+   "order": "פולפטה (קציצות), עוף קצ׳טורה, זנב שור",
+   "url": "https://www.trapizzino.it",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "א׳ 12:00–24:00 · ב׳ 11:30–24:00 · ג׳–ה׳ 12:00–01:00 · ו׳–ש׳ 12:00–02:00"
+  },
+  {
+   "id": "tavernetta29",
+   "name": "La Tavernetta 29",
+   "orig": "La Tavernetta 29 da Tony e Andrea",
+   "type": "trattoria",
+   "icon": "🍝",
+   "area": "trastevere",
+   "address": "Via della Pelliccia 29/A, 00153 Roma",
+   "lat": 41.8904071,
+   "lng": 12.4704865,
+   "price": 2,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "reserve": "recommended",
+   "closed": [
+    1
+   ],
+   "hours": "לפי ההערות שלכם: סגור בשני. שעות מלאות לא נמצאו",
+   "desc": "טרטוריה קטנה בטראסטוורה עם הקלאסיקות הרומאיות.",
+   "order": "קרבונרה, אמטריצ׳אנה, קאצ׳ו א פפה",
+   "kind": "food",
+   "ours": true
+  },
+  {
+   "id": "piccolo-buco",
+   "name": "Piccolo Buco",
+   "type": "pizza",
+   "icon": "🍕",
+   "area": "centro",
+   "address": "Via del Lavatore 91, 00187 Roma",
+   "lat": 41.9012999,
+   "lng": 12.4846381,
+   "price": 2,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "1": [],
+    "2": [
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "15:00"
+     ],
+     [
+      "18:30",
+      "23:00"
+     ]
+    ]
+   },
+   "desc": "פיצריה זעירה ליד טרווי, בלי הזמנות ועם תור.",
+   "tips": "מגיעים קצת לפני 19:00 ונעמדים בתור.",
+   "url": "https://www.pizzeriapiccolobuco.it",
+   "kind": "food",
+   "ours": true,
+   "closed": [
+    1
+   ],
+   "hours": "א׳ 12:00–15:00 ו-18:30–23:00 · ב׳ סגור · ג׳–ד׳ 18:30–23:00 · ה׳–ש׳ 12:00–15:00 ו-18:30–23:00"
+  },
+  {
+   "id": "luna-faro",
+   "name": "Luna by Faro",
+   "type": "coffee",
+   "icon": "☕",
+   "area": "centro",
+   "address": "Via delle Quattro Fontane 175, 00184 Roma",
+   "lat": 41.9031972,
+   "lng": 12.4884338,
+   "price": 2,
+   "meals": [
+    "breakfast",
+    "snack"
+   ],
+   "reserve": "no",
+   "hours": "השעות לא אומתו. לפי חלק מהמקורות בימי חול נפתח רק ב-9:00",
+   "desc": "בית קפה ספשלטי (אחות של Faro) עם בראנץ׳.",
+   "order": "בריוש מקורמל עם לבנה ודובדבנים חמוצים (visciole)",
+   "tips": "ייתכן שנפתח רק ב-9:00. La Ménagère, האופציה השנייה, פתוחה מ-8:00.",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "menagere",
+   "name": "La Ménagère",
+   "orig": "La Ménagère Roma",
+   "type": "coffee",
+   "icon": "☕",
+   "area": "tridente",
+   "address": "Via Mario de' Fiori 98, 00187 Roma",
+   "lat": 41.9036374,
+   "lng": 12.4826135,
+   "price": 3,
+   "meals": [
+    "breakfast",
+    "lunch",
+    "dinner"
+   ],
+   "reserve": "recommended",
+   "open": {
+    "0": [
+     [
+      "08:00",
+      "02:00"
+     ]
+    ],
+    "1": [
+     [
+      "08:00",
+      "02:00"
+     ]
+    ],
+    "2": [
+     [
+      "08:00",
+      "02:00"
+     ]
+    ],
+    "3": [
+     [
+      "08:00",
+      "02:00"
+     ]
+    ],
+    "4": [
+     [
+      "08:00",
+      "02:00"
+     ]
+    ],
+    "5": [
+     [
+      "08:00",
+      "02:00"
+     ]
+    ],
+    "6": [
+     [
+      "08:00",
+      "02:00"
+     ]
+    ]
+   },
+   "desc": "בית קפה, מסעדה, בר קוקטיילים וחנות פרחים במקום אחד, שתי דקות מהמלון.",
+   "order": "פרנץ׳ טוסט",
+   "url": "https://www.lamenagere.it/en/la-menagere-rome/",
+   "phone": "+39 06 9763 9976",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "כל יום 8:00–02:00"
+  },
+  {
+   "id": "gelatist",
+   "name": "The Gelatist",
+   "orig": "The Gelatist · Via del Tritone",
+   "type": "gelato",
+   "icon": "🍦",
+   "area": "centro",
+   "address": "Via del Tritone 90, 00187 Roma",
+   "lat": 41.9031576,
+   "lng": 12.4864162,
+   "price": 1,
+   "meals": [
+    "snack"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ],
+    "6": [
+     [
+      "07:30",
+      "24:00"
+     ]
+    ]
+   },
+   "desc": "גלידה וסורבה טבעוני. רק לקחת, אין מקומות ישיבה.",
+   "order": "ארטיק שוקולד דובאי, פיסטוק, שוקולד מריר טבעוני",
+   "url": "https://thegelatist.it",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "כל יום 7:30–24:00"
+  },
+  {
+   "id": "pompi",
+   "name": "Pompi",
+   "orig": "Pompi Tiramisù · Via della Croce",
+   "type": "dessert",
+   "icon": "🍰",
+   "area": "tridente",
+   "address": "Via della Croce 82, 00187 Roma",
+   "lat": 41.9065421,
+   "lng": 12.4808551,
+   "price": 1,
+   "meals": [
+    "snack"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "11:00",
+      "21:30"
+     ]
+    ],
+    "1": [
+     [
+      "11:00",
+      "21:30"
+     ]
+    ],
+    "2": [
+     [
+      "11:00",
+      "21:30"
+     ]
+    ],
+    "3": [
+     [
+      "11:00",
+      "21:30"
+     ]
+    ],
+    "4": [
+     [
+      "11:00",
+      "21:30"
+     ]
+    ],
+    "5": [
+     [
+      "11:00",
+      "21:30"
+     ]
+    ],
+    "6": [
+     [
+      "11:00",
+      "21:30"
+     ]
+    ]
+   },
+   "desc": "חנות הטירמיסו הוותיקה (מאז 1960), ליד המדרגות הספרדיות.",
+   "order": "טירמיסו קלאסי, פיסטוק או תות",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "כל יום 11:00–21:30"
+  },
+  {
+   "id": "mr100",
+   "name": "Mr. 100 Tiramisù",
+   "type": "dessert",
+   "icon": "🍰",
+   "area": "centro",
+   "address": "Via dei Sediari 11, 00186 Roma",
+   "lat": 41.897867,
+   "lng": 12.4746641,
+   "price": 2,
+   "meals": [
+    "snack"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "2": [],
+    "3": [],
+    "4": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "12:00",
+      "23:00"
+     ]
+    ]
+   },
+   "desc": "כ-100 טעמים של טירמיסו, ליד פיאצה נבונה.",
+   "url": "https://mr-100-tiramisu.shop/",
+   "kind": "food",
+   "ours": true,
+   "closed": [
+    2,
+    3
+   ],
+   "hours": "א׳–ב׳ 12:00–23:00 · ג׳–ד׳ סגור · ה׳–ש׳ 12:00–23:00"
+  },
+  {
+   "id": "tonnarello",
+   "name": "Tonnarello",
+   "type": "trattoria",
+   "icon": "🍝",
+   "area": "trastevere",
+   "address": "Via della Paglia 1, 00153 Roma",
+   "lat": 41.889804,
+   "lng": 12.4693004,
+   "price": 2,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "reserve": "no",
+   "open": {
+    "0": [
+     [
+      "11:30",
+      "23:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:30",
+      "23:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:30",
+      "23:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:30",
+      "23:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:30",
+      "23:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:30",
+      "23:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:30",
+      "23:00"
+     ]
+    ]
+   },
+   "desc": "טרטוריה פופולרית בטראסטוורה. אין הזמנות, יש תור.",
+   "order": "קאצ׳ו א פפה, קרבונרה, אמטריצ׳אנה",
+   "tips": "אין הזמנות. כדאי להיכנס לתור כבר ב-19:00, לפני הסיבוב בפיאצה.",
+   "url": "https://www.tonnarello.it",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "כל יום 11:30–23:00"
+  },
+  {
+   "id": "eos-sushi",
+   "name": "EOS The Sushi Temple",
+   "type": "sushi",
+   "icon": "🍣",
+   "area": "aventine",
+   "address": "Piazza dell'Emporio 22, 00153 Roma",
+   "lat": 41.8827907,
+   "lng": 12.4768273,
+   "price": 2,
+   "meals": [
+    "dinner"
+   ],
+   "reserve": "required",
+   "hours": "לא מצאנו שעות. לפי מקור אחד ארוחת הערב מתחילה ב-19:30",
+   "desc": "סושי במתכונת \"אכול כפי יכולתך\" (בערך €30–40 לאדם), בטסטצ׳ו.",
+   "tips": "להזמין מראש ולוודא בטלפון שפותחים ב-19:30.",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "vecchia-trastevere",
+   "name": "Vecchia Trastevere",
+   "type": "aperitivo",
+   "icon": "🍹",
+   "area": "trastevere",
+   "address": "Via del Moro 24, 00153 Roma",
+   "lat": 41.8906908,
+   "lng": 12.4707364,
+   "price": 2,
+   "meals": [
+    "snack"
+   ],
+   "reserve": "no",
+   "hours": "לא מצאנו שעות לשני (ביום חמישי פתוח עד 02:00)",
+   "desc": "בר ומסעדה בטראסטוורה.",
+   "order": "האפרול הענק",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "piazza-venezia",
+   "name": "פיאצה ונציה",
+   "orig": "Piazza Venezia",
+   "cat": "piazza",
+   "icon": "🏛️",
+   "area": "ancient",
+   "address": "Piazza Venezia, 00186 Roma",
+   "lat": 41.8957663,
+   "lng": 12.4825739,
+   "dur": 15,
+   "indoor": false,
+   "tags": [
+    "free"
+   ],
+   "priceEur": 0,
+   "price": "חינם",
+   "hours": "פתוח תמיד",
+   "desc": "הכיכר הגדולה מול הוויטוריאנו. ממנה מתחילה ויה דל קורסו צפונה.",
+   "kind": "place",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "corso-south",
+   "name": "ויה דל קורסו, החלק הדרומי",
+   "orig": "Via del Corso",
+   "cat": "shopping",
+   "icon": "🛍️",
+   "area": "centro",
+   "address": "Via del Corso, Roma",
+   "lat": 41.8995,
+   "lng": 12.4797,
+   "dur": 90,
+   "indoor": false,
+   "tags": [
+    "free"
+   ],
+   "priceEur": 0,
+   "hours": "רוב החנויות 10:00–20:00, גם בראשון",
+   "desc": "מפיאצה ונציה עד פיאצה קולונה: רשתות אופנה וחנויות לאורך הרחוב.",
+   "kind": "place",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "corso-north",
+   "name": "ויה דל קורסו, החלק הצפוני",
+   "orig": "Via del Corso",
+   "cat": "shopping",
+   "icon": "🛍️",
+   "area": "tridente",
+   "address": "Via del Corso, Roma",
+   "lat": 41.9035,
+   "lng": 12.4795,
+   "dur": 120,
+   "indoor": false,
+   "tags": [
+    "free"
+   ],
+   "priceEur": 0,
+   "hours": "רוב החנויות 10:00–20:00, גם בראשון",
+   "desc": "מפיאצה קולונה עד פיאצה דל פופולו.",
+   "kind": "place",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "shady-shack",
+   "name": "Shady Shack",
+   "cat": "shopping",
+   "icon": "🕶️",
+   "area": "monti",
+   "address": "מונטי, Roma",
+   "lat": 41.8949683,
+   "lng": 12.4929181,
+   "dur": 30,
+   "indoor": true,
+   "hours": "לפי ההערות שלכם: עד 19:00 (לא מצאנו את החנות ברשת)",
+   "desc": "חנות משקפי שמש במונטי.",
+   "kind": "place",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "borghese-boats",
+   "name": "סירות באגם של וילה בורגזה",
+   "orig": "Laghetto di Villa Borghese",
+   "cat": "park",
+   "icon": "🚣",
+   "area": "borghese",
+   "address": "Viale del Lago, Villa Borghese, Roma",
+   "lat": 41.9144797,
+   "lng": 12.4825053,
+   "dur": 40,
+   "indoor": false,
+   "tags": [
+    "view"
+   ],
+   "price": "€5 ל-20 דקות (לפי ההערות שלכם)",
+   "hours": "לפי ההערות שלכם: עד 16:45. בחורף משכירים בערך עד השקיעה",
+   "desc": "סירות משוטים באגם הקטן, מול מקדש אסקלפיוס.",
+   "kind": "place",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "faini",
+   "name": "Pastificio Faini · סדנת פסטה",
+   "orig": "Pastificio Faini · Professional Lab Pasta Experience",
+   "cat": "experience",
+   "icon": "👩‍🍳",
+   "area": "sanlorenzo",
+   "tags": [
+    "food"
+   ],
+   "address": "Via dei Latini 15, 00185 Roma (בחלק מהאתרים מספר 13)",
+   "lat": 41.8972462,
+   "lng": 12.5133818,
+   "dur": 195,
+   "indoor": true,
+   "booking": "required",
+   "hours": "הסדנה 11:30–14:30",
+   "desc": "סדנת פסטה במעבדה המשפחתית של פסטיפיצ׳ו פאיני (מאז 1980). הארוחה כלולה.",
+   "tips": "ההזמנה דרך Cookly, Viator או Airbnb. ביטול חינם עד 24–48 שעות לפני.",
+   "kind": "place",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "klass",
+   "name": "Klass",
+   "type": "restaurant",
+   "icon": "🍝",
+   "area": "centro",
+   "wish": true,
+   "address": "Via in Arcione 89, 00187 Roma",
+   "lat": 41.9017557,
+   "lng": 12.4854453,
+   "price": 2,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "hours": "לא מצאנו שעות",
+   "desc": "מסעדה כמה דקות מטרווי (בערך €30 לאדם בלי יין).",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "crazy-pizza",
+   "name": "Crazy Pizza",
+   "type": "pizza",
+   "icon": "🍕",
+   "area": "borghese",
+   "wish": true,
+   "address": "Via Vittorio Veneto 167, 00187 Roma",
+   "lat": 41.908493,
+   "lng": 12.4892918,
+   "price": 4,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "reserve": "recommended",
+   "open": {
+    "0": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "1": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "2": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "3": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "4": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "5": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ],
+    "6": [
+     [
+      "12:30",
+      "15:00"
+     ],
+     [
+      "19:00",
+      "23:30"
+     ]
+    ]
+   },
+   "desc": "הפיצריה של פלביו בריאטורה, שבה הפיצאיולים מסובבים בצק מעל הסועדים. יקרה לפיצה.",
+   "url": "https://www.crazypizza.com/rome/",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "כל יום 12:30–15:00 ו-19:00–23:30"
+  },
+  {
+   "id": "tartufi-friends",
+   "name": "Tartufi & Friends",
+   "type": "restaurant",
+   "icon": "🍝",
+   "area": "tridente",
+   "wish": true,
+   "address": "Via Borgognona 4/E, 00187 Roma",
+   "lat": 41.9045178,
+   "lng": 12.4801676,
+   "price": 3,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "hours": "המקורות סותרים",
+   "desc": "מסעדת כמהין עם חנות. לפי ההערה שלכם: אומרים שזו מלכודת תיירים.",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "rossini",
+   "name": "Ristorante Rossini",
+   "type": "restaurant",
+   "icon": "🍝",
+   "area": "centro",
+   "wish": true,
+   "address": "",
+   "lat": 41.9042148,
+   "lng": 12.4875191,
+   "price": 3,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "hours": "לא מצאנו פרטים ברשת",
+   "desc": "מסעדה עם ישיבה על הגג (לפי ההערה שלכם). כדאי לבדוק ב-Google Maps.",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "donna-sofia",
+   "name": "Donna Sofia",
+   "type": "restaurant",
+   "icon": "🍝",
+   "area": "tridente",
+   "wish": true,
+   "address": "",
+   "lat": 41.906093,
+   "lng": 12.4790289,
+   "price": 3,
+   "meals": [
+    "lunch",
+    "dinner"
+   ],
+   "hours": "לא מצאנו פרטים ברשת",
+   "desc": "מסעדה ליד המדרגות הספרדיות (לפי ההערה שלכם).",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "ginger",
+   "name": "Ginger",
+   "orig": "Ginger Sapori e Salute",
+   "type": "coffee",
+   "icon": "☕",
+   "area": "tridente",
+   "wish": true,
+   "address": "ליד פיאצה בורגזה, Roma",
+   "lat": 41.9042435,
+   "lng": 12.4795148,
+   "price": 2,
+   "meals": [
+    "breakfast",
+    "lunch"
+   ],
+   "hours": "בערך 9:30–23:00 (מקורות סותרים)",
+   "desc": "בית קפה בריא לבראנץ׳. לפי ההערה שלכם: בלי מאצ׳ה ובלי פנקייק.",
+   "tips": "לא נפתח לפני 9:00, ולכן בבוקר הטיסה (17.11) זה לא מסתדר.",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "la-romana",
+   "name": "La Romana",
+   "orig": "Gelateria La Romana",
+   "type": "gelato",
+   "icon": "🍦",
+   "area": "centro",
+   "wish": true,
+   "address": "Piazza di Sant'Andrea della Valle 1, 00186 Roma",
+   "lat": 41.8966936,
+   "lng": 12.4741213,
+   "price": 1,
+   "meals": [
+    "snack"
+   ],
+   "open": {
+    "0": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "1": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "2": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "3": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "4": [
+     [
+      "11:00",
+      "24:00"
+     ]
+    ],
+    "5": [
+     [
+      "11:00",
+      "01:00"
+     ]
+    ],
+    "6": [
+     [
+      "11:00",
+      "01:00"
+     ]
+    ]
+   },
+   "desc": "רשת גלידה רומאית ידועה, כמה דקות מפיאצה נבונה.",
+   "kind": "food",
+   "ours": true,
+   "closed": [],
+   "hours": "א׳–ה׳ 11:00–24:00 · ו׳–ש׳ 11:00–01:00"
+  },
+  {
+   "id": "eden-pistacchio",
+   "name": "Eden – Paradiso del Pistacchio",
+   "type": "dessert",
+   "icon": "🍰",
+   "area": "tridente",
+   "wish": true,
+   "address": "ליד פיאצה דל פופולו, Roma",
+   "lat": 41.9128491,
+   "lng": 12.4756017,
+   "price": 2,
+   "meals": [
+    "snack"
+   ],
+   "hours": "לא אומת",
+   "desc": "קינוחי פיסטוק.",
+   "tips": "לא הצלחנו לאמת את הסניף ליד פיאצה דל פופולו. כדאי לבדוק באינסטגרם eden.paradiso.del.pistacchio.",
+   "kind": "food",
+   "ours": true,
+   "closed": []
+  },
+  {
+   "id": "porta-di-roma",
+   "name": "Porta di Roma",
+   "cat": "shopping",
+   "icon": "🛍️",
+   "area": "other",
+   "wish": true,
+   "address": "Via Alberto Lionello 201, 00139 Roma",
+   "lat": 41.9718327,
+   "lng": 12.5402753,
+   "dur": 180,
+   "indoor": true,
+   "open": {
+    "0": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "1": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "2": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "3": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "4": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "5": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ],
+    "6": [
+     [
+      "10:00",
+      "22:00"
+     ]
+    ]
+   },
+   "desc": "קניון גדול (בערך 190 חנויות), כ-12 ק״מ צפונה מהמרכז. אופציונלי.",
+   "tips": "מטרו B1 עד Jonio ומשם אוטובוס 80, או אוטובוס 38 ישר מטרמיני. בערך 45–50 דקות לכל כיוון.",
+   "url": "https://www.klepierre.com/en/centres/porta-di-roma",
+   "kind": "place",
+   "ours": true,
+   "closed": [],
+   "hours": "כל יום 10:00–22:00"
+  },
+  {
+   "id": "castel-romano",
+   "name": "Castel Romano Designer Outlet",
+   "cat": "shopping",
+   "icon": "🛍️",
+   "area": "other",
+   "wish": true,
+   "address": "Via Ponte di Piscina Cupa 64, 00128 Roma",
+   "lat": 41.7168651,
+   "lng": 12.4444627,
+   "dur": 300,
+   "indoor": false,
+   "open": {
+    "0": [
+     [
+      "10:00",
+      "20:00"
+     ]
+    ],
+    "1": [
+     [
+      "10:00",
+      "20:00"
+     ]
+    ],
+    "2": [
+     [
+      "10:00",
+      "20:00"
+     ]
+    ],
+    "3": [
+     [
+      "10:00",
+      "20:00"
+     ]
+    ],
+    "4": [
+     [
+      "10:00",
+      "20:00"
+     ]
+    ],
+    "5": [
+     [
+      "10:00",
+      "20:00"
+     ]
+    ],
+    "6": [
+     [
+      "10:00",
+      "20:00"
+     ]
+    ]
+   },
+   "desc": "אאוטלט המעצבים של McArthurGlen, דרומית לרומא. אופציונלי.",
+   "tips": "שאטל מטרמיני (Via Giolitti 48) ב-9:30, 10:30, 11:30 ו-12:30. חזרה ב-16:30, 17:30, 19:00 ו-20:05. בערך €18 הלוך-חזור (לבדוק בהזמנה). יש גם שאטל ממטרו EUR Fermi.",
+   "url": "https://www.mcarthurglen.com/en/outlets/it/designer-outlet-castel-romano/",
+   "kind": "place",
+   "ours": true,
+   "closed": [],
+   "hours": "כל יום 10:00–20:00"
+  }
+ ],
+ "overrides": {
+  "aventine-keyhole": {
+   "icon": "🔑"
+  },
+  "campo-de-fiori": {
+   "icon": "🧺"
+  },
+  "antico-forno-roscioli": {
+   "icon": "🍕"
+  },
+  "trastevere-walk": {
+   "icon": "🌙"
+  },
+  "st-peters": {
+   "hours": "כל יום 7:00–18:30 בשעון החורף (אוקטובר–מרץ)",
+   "open": {
+    "0": [
+     [
+      "07:00",
+      "18:30"
+     ]
+    ],
+    "1": [
+     [
+      "07:00",
+      "18:30"
+     ]
+    ],
+    "2": [
+     [
+      "07:00",
+      "18:30"
+     ]
+    ],
+    "3": [
+     [
+      "07:00",
+      "18:30"
+     ]
+    ],
+    "4": [
+     [
+      "07:00",
+      "18:30"
+     ]
+    ],
+    "5": [
+     [
+      "07:00",
+      "18:30"
+     ]
+    ],
+    "6": [
+     [
+      "07:00",
+      "18:30"
+     ]
+    ]
+   }
+  }
+ }
+}

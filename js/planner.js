@@ -17,6 +17,8 @@ export const PLANNABLE_DAYS = TRIP.dates.slice(0, 5);
 
 // capacity = minutes of sightseeing (meals excluded) before a day counts as full.
 export const PACES = {
+  final: { label: 'הלו״ז שלנו', start: '09:00', buffer: 0, maxTier: 3, capacity: 99999, lunch: 60, dinner: 90, snack: 25,
+    blurb: 'השעות של הלו״ז הסופי שלנו' },
   relaxed: { label: 'רגוע', start: '09:30', buffer: 20, maxTier: 2, capacity: 300, lunch: 90, dinner: 120, snack: 30,
     blurb: 'יוצאים ב-9:30, עד כ-5 שעות פעילות ביום, הפסקות ארוכות' },
   balanced: { label: 'מאוזן', start: '09:00', buffer: 10, maxTier: 3, capacity: 450, lunch: 75, dinner: 105, snack: 25,
@@ -35,7 +37,7 @@ export const DIETS = {
   any: { label: 'בלי הגבלות' },
 };
 
-export const paceOf = state => PACES[state.settings.pace] || PACES.balanced;
+export const paceOf = state => PACES[state.settings.pace] || PACES.final;
 
 // ---------- opening hours ----------
 
@@ -138,10 +140,11 @@ export function computeDay(day, state, weather = null) {
   let prev = isArrival ? TRIP.airport : hotel;
   let leave = null, activity = 0, walkKm = 0;
 
-  for (const it of day.items) {
+  for (let k = 0; k < day.items.length; k++) {
+    const it = day.items[k];
     const e = it.id ? get(it.id) : null;
     const loc = locOf(it, e, hotel);
-    const dur = durOf(it, e, pace);
+    let dur = durOf(it, e, pace);
     const warns = [], hints = [];
     const lg = prev && loc && it.t !== 'fixed' ? leg(prev, loc) : null;
     const travel = lg ? lg.min : 0;
@@ -159,6 +162,22 @@ export function computeDay(day, state, weather = null) {
     } else {
       const nb = (it.t === 'food' || it.t === 'meal') ? MEAL_NOT_BEFORE[it.meal] : WHEN_NOT_BEFORE[e?.when];
       if (nb && start < nb) { gap += nb - start; start = nb; }
+    }
+
+    // A "fit" stop (resting at the hotel, wandering the Corso) stretches until it's time
+    // to walk to the next stop with a fixed time.
+    if (it.fit) {
+      const nx = day.items[k + 1];
+      const npin = nx ? toMin(nx.pin) : null;
+      if (npin != null) {
+        const ne = nx.id ? get(nx.id) : null;
+        const from = loc || prev;
+        const nloc = locOf(nx, ne, hotel);
+        const tl = from && nloc && nx.t !== 'fixed' ? leg(from, nloc) : null;
+        dur = Math.max(it.min || 15, npin - start - (tl ? tl.min : 0) - pace.buffer);
+      } else {
+        dur = it.dur || e?.dur || 30;
+      }
     }
 
     if (e && it.t !== 'daytrip' && e.kind !== 'hotel') {
@@ -180,6 +199,7 @@ export function computeDay(day, state, weather = null) {
         warns.push({ lvl: 'lo', text: `כבר יהיה חושך (שקיעה ${sun.sunset})` });
       }
       if (e.booking === 'required' && !state.booked[e.id]) warns.push({ lvl: 'mid', type: 'book', text: 'צריך להזמין מראש' });
+      if (e.kind === 'food' && e.reserve === 'required' && !state.booked[e.id]) warns.push({ lvl: 'mid', type: 'book', text: 'צריך להזמין מקום מראש' });
       if (e.kind === 'food' && e.kosher?.shabbat && (wd === 5 || wd === 6) && !chk.ok) {
         hints.push('✡ מסעדה כשרה — סגורה בשבת');
       }
@@ -566,6 +586,32 @@ function addFavorites(days, state) {
       inPlan.add(id);
     }
   }
+}
+
+// The final schedule from data/schedule.json, as plan days (each item gets a fresh id).
+export function scheduleDays(dates = null) {
+  const src = DB.schedule?.days || [];
+  return TRIP.dates
+    .filter(date => !dates || dates.includes(date))
+    .map(date => {
+      const d = src.find(x => x.date === date) || { date, title: 'יום חופשי', items: [] };
+      const day = { date, theme: 'final', title: d.title, items: d.items.map(it => ({ ...JSON.parse(JSON.stringify(it)), u: uid() })) };
+      if (d.noroute) day.noroute = true;
+      return day;
+    });
+}
+
+// After a time changes, put the stops back in time order. Stops without a fixed time
+// stay right after the stop they followed.
+export function sortByPins(day) {
+  let key = -1;
+  const keyed = day.items.map((it, i) => {
+    const p = toMin(it.pin);
+    key = p != null ? p : key + 0.001;
+    return { it, k: key, i };
+  });
+  keyed.sort((a, b) => (a.k - b.k) || (a.i - b.i));
+  day.items = keyed.map(x => x.it);
 }
 
 export function generatePlan(state) {

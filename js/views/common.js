@@ -10,6 +10,7 @@ export const dayLabel = date => `${WD_SHORT[weekdayOf(date)]} ${dm(date)}`;
 
 export function emojiOf(e) {
   if (!e) return '📌';
+  if (e.icon) return e.icon;
   if (e.kind === 'food') return FOOD_TYPES[e.type]?.emoji || '🍽️';
   if (e.kind === 'hotel') return '🏨';
   if (e.kind === 'daytrip') return '🚆';
@@ -31,6 +32,16 @@ export function toggleFav(id) {
   toast(isFav(id) ? 'נשמר במועדפים ♥' : 'הוסר מהמועדפים');
 }
 
+// 'required' | 'recommended' | null: tickets for places, a table for restaurants.
+export function needsBooking(e) {
+  if (!e) return null;
+  const v = e.kind === 'food' ? e.reserve : e.booking;
+  return v === 'required' || v === 'recommended' ? v : null;
+}
+
+const oursBadge = e => (e.wish ? '<span class="badge badge-sky">📍 ברשימה שלנו, עוד לא שובץ</span>'
+  : e.ours ? '<span class="badge badge-sky">📍 שלנו</span>' : '');
+
 export function toggleBooked(id) {
   update(s => { if (s.booked[id]) delete s.booked[id]; else s.booked[id] = true; });
 }
@@ -47,7 +58,7 @@ export function closedDaysText(e) {
 }
 
 export function placeBadges(e) {
-  const b = [];
+  const b = [oursBadge(e)];
   if (e.tier === 1) b.push('<span class="badge badge-accent">חובה</span>');
   else if (e.tier === 2) b.push('<span class="badge">מומלץ</span>');
   if (e.booking === 'required') b.push(`<span class="badge badge-warn">${icon('ticket')} הזמנה מראש</span>`);
@@ -58,7 +69,7 @@ export function placeBadges(e) {
 }
 
 export function foodBadges(f) {
-  const b = [];
+  const b = [oursBadge(f)];
   if (f.kosher) {
     const kind = { meat: 'בשרי', dairy: 'חלבי', parve: 'פרווה' }[f.kosher.kind] || '';
     b.push(`<span class="badge badge-kosher">✡ כשר ${kind}</span>`);
@@ -160,8 +171,8 @@ function detailBody(e) {
     e.phone ? `<a class="btn btn-soft btn-sm" href="tel:${esc(e.phone.replace(/\s/g, ''))}">${icon('phone')}${esc(e.phone)}</a>` : '',
   ].join('');
   parts.push(`<div class="link-row">${links}</div>`);
-  if (e.booking === 'required') {
-    parts.push(`<label class="check-line"><input type="checkbox" data-booked ${st.booked[e.id] ? 'checked' : ''}> הזמנו כרטיסים ✓</label>`);
+  if (needsBooking(e)) {
+    parts.push(`<label class="check-line"><input type="checkbox" data-booked ${st.booked[e.id] ? 'checked' : ''}> ${e.kind === 'food' ? 'הזמנו מקום ✓' : 'הזמנו כרטיסים ✓'}</label>`);
   }
 
   if (e.kind === 'food') {

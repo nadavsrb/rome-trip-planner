@@ -9,18 +9,18 @@ import { openSheet } from '../ui.js';
 import { tile, foodBadges, isFav, toggleFav, openDetail, dayLabel, emptyState } from './common.js';
 import { myPosition } from './locate.js';
 
-const f = { type: 'all', q: '', kosher: false, veg: false, top: false, fav: false, day: '', area: '', price: 0, sort: 'rec', diet: true };
+const f = { type: 'all', q: '', kosher: false, veg: false, top: false, fav: false, day: '', area: '', price: 0, sort: 'rec', diet: false };
 let pos = null;
 
-const TYPE_ORDER = ['restaurant', 'trattoria', 'pizza', 'street', 'gelato', 'coffee', 'bakery', 'aperitivo', 'wine', 'fine', 'market', 'grocery'];
+const TYPE_ORDER = ['restaurant', 'trattoria', 'pizza', 'sushi', 'street', 'gelato', 'dessert', 'chocolate', 'coffee', 'bakery', 'aperitivo', 'wine', 'fine', 'market', 'grocery'];
 
 function typeChips(list) {
   const counts = {};
   list.forEach(x => { counts[x.type] = (counts[x.type] || 0) + 1; });
-  const kosherN = list.filter(x => x.kosher).length;
+  const oursN = list.filter(x => x.ours).length;
   return [
     `<button class="chip ${f.type === 'all' ? 'on' : ''}" data-type="all">הכול <small>${list.length}</small></button>`,
-    `<button class="chip chip-kosher ${f.type === 'kosher' ? 'on' : ''}" data-type="kosher">✡ כשר <small>${kosherN}</small></button>`,
+    `<button class="chip ${f.type === 'ours' ? 'on' : ''}" data-type="ours">📍 שלנו <small>${oursN}</small></button>`,
     `<button class="chip ${f.type === 'experience' ? 'on' : ''}" data-type="experience">👩‍🍳 חוויות אוכל</button>`,
     ...TYPE_ORDER.filter(t => counts[t]).map(t => `<button class="chip ${f.type === t ? 'on' : ''}" data-type="${t}">${FOOD_TYPES[t].emoji} ${FOOD_TYPES[t].he} <small>${counts[t]}</small></button>`),
   ].join('');
@@ -57,7 +57,8 @@ function filtered() {
     : DB.food;
   let list = pool.filter(x => {
     if (f.type === 'kosher' && !x.kosher) return false;
-    if (!['all', 'kosher', 'experience'].includes(f.type) && x.type !== f.type) return false;
+    if (f.type === 'ours' && !x.ours) return false;
+    if (!['all', 'kosher', 'experience', 'ours'].includes(f.type) && x.type !== f.type) return false;
     if (q && !`${x.name} ${x.orig || ''} ${x.order || ''} ${x.desc || ''}`.toLowerCase().includes(q)) return false;
     if (x.kind === 'food') {
       if (f.diet && !dietOk(x, st.settings.diet) && !['gelato', 'coffee', 'bakery', 'aperitivo', 'wine', 'market', 'grocery'].includes(x.type)) return false;
@@ -79,7 +80,7 @@ function filtered() {
   return { list, ref };
 }
 
-const score = x => (x.kosher ? 30 : 0) + (x.top ? 20 : 0) + (x.veg || 0) * 4 + (x.tier ? (4 - x.tier) * 5 : 0);
+const score = x => (x.ours ? 100 : 0) - (x.wish ? 10 : 0) + (x.top ? 20 : 0) + (x.veg || 0) * 4 + (x.tier ? (4 - x.tier) * 5 : 0);
 
 function guideSheet(kind) {
   const n = DB.notes;
@@ -111,14 +112,9 @@ export function renderFood(root) {
   const st = store.state;
   const areas = [...new Set(DB.food.map(x => x.area).filter(Boolean))];
   root.innerHTML = `
-    <div class="guide-row">
-      <button class="guide-card" data-guide="kosher"><span>✡</span><b>כשר ושבת</b><small>מה סגור מתי, מנות יהודיות-רומאיות</small></button>
-      <button class="guide-card" data-guide="veg"><span>🥬</span><b>מדריך לצמחונים</b><small>מה להזמין וממה להיזהר</small></button>
-    </div>
     <div class="search"><span>${icon('search')}</span><input type="search" placeholder="חיפוש מסעדה, מנה, שכונה…" value="${esc(f.q)}" data-q></div>
     <div class="chips-scroll" data-types>${typeChips(DB.food)}</div>
     <div class="filters">
-      <button class="chip chip-sm ${f.diet ? 'on' : ''}" data-flag="diet" title="${esc(DIETS[st.settings.diet]?.label || '')}">לפי ההעדפות שלנו</button>
       <button class="chip chip-sm ${f.veg ? 'on' : ''}" data-flag="veg">🥬 צמחוני מעולה</button>
       <button class="chip chip-sm ${f.top ? 'on' : ''}" data-flag="top">⭐ חובה</button>
       <button class="chip chip-sm ${f.fav ? 'on' : ''}" data-flag="fav">♥ מועדפים</button>
@@ -141,7 +137,8 @@ export function renderFood(root) {
         <option value="price" ${f.sort === 'price' ? 'selected' : ''}>הכי זול</option>
       </select>
     </div>
-    <div class="results" data-results></div>`;
+    <div class="results" data-results></div>
+    <button class="guide-card guide-card-wide" data-guide="veg"><span>🥬</span><b>מדריך מהיר לצמחונים</b><small>מה להזמין, ממה להיזהר ומשפטים באיטלקית</small></button>`;
 
   const results = root.querySelector('[data-results]');
   const draw = () => {
