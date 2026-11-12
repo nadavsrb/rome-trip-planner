@@ -71,6 +71,12 @@
 "l": "https://www.bcstreetfood.it/",
 "s": "https://www.bcstreetfood.it/wp-content/uploads/2024/11/BC-Street-Food-Social-Apertura-8.gif"
 },
+"birreria-viennese": {
+"b": "https://citynews-romatoday.stgy.ovh/~media/original-hi/48098859168462/birreriaviennese.jpg",
+"c": "romatoday.it",
+"l": "https://www.romatoday.it/ristoranti/Birreria-Viennese-antica-centro-spagna-croce.html",
+"s": "https://citynews-romatoday.stgy.ovh/~media/original-hi/48098859168462/birreriaviennese.jpg"
+},
 "boccione": {
 "b": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Boccione_Bakery.jpg/500px-Boccione_Bakery.jpg",
 "c": "ויקיפדיה",
@@ -191,6 +197,12 @@
 "l": "https://www.scattidigusto.it/2024/01/20/osteria-da-fortunata-roma-menu-prezzi",
 "s": "https://www.scattidigusto.it/wp-content/uploads/2024/01/Osteria-da-Fortunata-Roma-copertina-scaled.jpeg"
 },
+"divinity": {
+"b": "https://www.thepantheonhotel.com/new/wp-content/uploads/2026/10/DSC01248-scaled.jpg",
+"c": "thepantheonhotel.com",
+"l": "https://www.thepantheonhotel.com/en/divinity/",
+"s": "https://www.thepantheonhotel.com/new/wp-content/uploads/2026/10/DSC01248-200x300.jpg"
+},
 "doria-pamphilj": {
 "b": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Palazzo_doria_pamphili%2C_galleria_doria%2C_01.jpg/500px-Palazzo_doria_pamphili%2C_galleria_doria%2C_01.jpg",
 "c": "ויקיפדיה",
@@ -232,6 +244,12 @@
 "c": "eatingeurope.com",
 "l": "https://www.eatingeurope.com/rome/twilight-trastevere/",
 "s": "https://www.eatingeurope.com/wp-content/uploads/2018/08/Untitled-design-2-scaled-og.jpg"
+},
+"eos-sushi": {
+"b": "https://eossushi.it/wp-content/uploads/2022/09/DSC_2321_low-768x513.jpg",
+"c": "eossushi.it",
+"l": "https://eossushi.it",
+"s": "https://eossushi.it/wp-content/uploads/2022/09/DSC_2321_low-300x200.jpg"
 },
 "ev-avedon-fireworks-esposizioni": {
 "b": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/2013-04-11_Roma_Palazzo_delle_Esposizioni.jpg/500px-2013-04-11_Roma_Palazzo_delle_Esposizioni.jpg",
@@ -329,6 +347,12 @@
 "l": "https://www.walksofitaly.com/vatican-tours/pristine-sistine-chapel-tour/",
 "s": "https://images.ctfassets.net/206xpozje0ny/20h714KsX0dOCxur60odLu/86044da13cf2a2fb0dbbcde31b50622d/7_-_Rome_Pristine_Sistine_16x9-0007.jpg"
 },
+"faini": {
+"b": "https://pastificiofaini.com/wp-content/uploads/2023/02/LAB-768x512.jpeg",
+"c": "pastificiofaini.com",
+"l": "https://pastificiofaini.com",
+"s": "https://pastificiofaini.com/wp-content/uploads/2023/02/LAB.jpeg"
+},
 "florence": {
 "b": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg/500px-Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg",
 "c": "ויקיפדיה",
@@ -358,6 +382,12 @@
 "c": "ויקיפדיה",
 "l": "https://it.wikipedia.org/wiki/Galleria_Spada",
 "s": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Borromini_spada.jpg/330px-Borromini_spada.jpg"
+},
+"gelatist": {
+"b": "https://www.thegelatist.it/wp-content/uploads/2026/11/R52_2921.jpg",
+"c": "thegelatist.it",
+"l": "https://www.thegelatist.it/stores/",
+"s": "https://www.thegelatist.it/wp-content/uploads/2026/11/R52_2921-200x300.jpg"
 },
 "ghetto-tour": {
 "b": "https://museoebraico.roma.it/wp-content/uploads/2019/06/notizie-2.jpg",
@@ -431,6 +461,12 @@
 "l": "https://littletripoli.wordpress.com/",
 "s": "https://littletripoli.wordpress.com/wp-content/uploads/2015/03/557217_217486095079660_1045304794_n.jpg"
 },
+"luna-faro": {
+"b": "https://www.scattidigusto.it/wp-content/uploads/2026/02/Luna-by-Faro-a-Roma-ceviche-pescato-locale-768x512.jpg",
+"c": "scattidigusto.it",
+"l": "https://www.scattidigusto.it/luna-by-faro-a-roma-ristorante-menu-prezzi",
+"s": "https://www.scattidigusto.it/wp-content/uploads/2026/02/Luna-by-Faro-a-Roma-ceviche-pescato-locale.jpg"
+},
 "maalot-roma": {
 "b": "https://hotelmaalot.com/wp-content/uploads/2024/07/H4A9798-scaled.jpg",
 "c": "hotelmaalot.com",
@@ -448,6 +484,12 @@
 "c": "ויקיפדיה",
 "l": "https://en.wikipedia.org/wiki/MAXXI",
 "s": "https://thumb.wikimedia.org/wikipedia/en/thumb/9/9b/MAXXI_%2827483747665%29.jpg/330px-MAXXI_%2827483747665%29.jpg"
+},
+"menagere": {
+"b": "https://www.lamenagere.it/wp-content/uploads/2025/01/CUCINA-2.jpg",
+"c": "lamenagere.it",
+"l": "https://www.lamenagere.it/en/la-menagere-rome/",
+"s": "https://www.lamenagere.it/wp-content/uploads/2025/01/CUCINA-2-225x300.jpg"
 },
 "monti-walk": {
 "b": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Rome_via_dei_fori_imperiali_20050922.jpg/500px-Rome_via_dei_fori_imperiali_20050922.jpg",
@@ -749,6 +791,12 @@
 "l": "https://it.wikipedia.org/wiki/Cupola_di_San_Pietro",
 "s": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Dome_of_S.Peter_in_night.jpg/330px-Dome_of_S.Peter_in_night.jpg"
 },
+"tavernetta29": {
+"b": "https://cdn.website.dish.co/media/1a/42/4934838/La-Tavernetta-29-da-Tony-e-Andrea-WhatsApp-Image-2022-06-01-at-11-09-08-1-jpeg.jpg",
+"c": "la-tavernetta-29-da-tony-e-andrea.eatbu.com",
+"l": "https://la-tavernetta-29-da-tony-e-andrea.eatbu.com",
+"s": "https://cdn.website.dish.co/media/1a/42/4934838/La-Tavernetta-29-da-Tony-e-Andrea-WhatsApp-Image-2022-06-01-at-11-09-08-1-jpeg.jpg"
+},
 "terrazza-les-etoiles": {
 "b": "https://www.terrazzalesetoiles.com/wp-content/uploads/2022/03/les-etoiles-restaurant-rooftop-bar-rome.jpg",
 "c": "terrazzalesetoiles.com",
@@ -814,6 +862,12 @@
 "c": "ויקיפדיה",
 "l": "https://en.wikipedia.org/wiki/Bramante_Staircase",
 "s": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Vatican_Museums_Spiral_Staircase_Looking_Up_2012.jpg/330px-Vatican_Museums_Spiral_Staircase_Looking_Up_2012.jpg"
+},
+"venchi": {
+"b": "https://us.venchi.com/cdn/shop/files/LP_Our_Story_Store_Rome.jpg",
+"c": "us.venchi.com",
+"l": "https://us.venchi.com/pages/our-story",
+"s": "https://us.venchi.com/cdn/shop/files/LP_Our_Story_Store_Rome.jpg?width=330"
 },
 "via-margutta": {
 "b": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/03_Margutta.JPG/500px-03_Margutta.JPG",
