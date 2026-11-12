@@ -18,8 +18,18 @@ export function emojiOf(e) {
   return CATS[e.cat]?.emoji || '📍';
 }
 
-export function tile(e, extra = '') {
-  return `<div class="tile tile-${esc(e?.kind || 'x')} ${extra}" aria-hidden="true">${emojiOf(e)}</div>`;
+// A picture of the place with its category icon in the corner; just the icon when there's
+// no picture (or it fails to load, e.g. offline).
+export function tile(e, extra = '', { noImg = false } = {}) {
+  const em = emojiOf(e);
+  if (!e?.img || noImg) return `<div class="tile tile-${esc(e?.kind || 'x')} ${extra}" aria-hidden="true">${em}</div>`;
+  return `<div class="tile tile-img ${extra}" aria-hidden="true"><img src="${esc(e.img.s)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('img-fail')"><span class="tile-e">${em}</span></div>`;
+}
+
+export function heroHtml(e) {
+  if (!e?.img) return '';
+  return `<figure class="hero"><img src="${esc(e.img.b || e.img.s)}" alt="${esc(e.name)}" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.hero').remove()">
+    <figcaption>📷 <a href="${esc(e.img.l)}" target="_blank" rel="noopener">${esc(e.img.c)}</a></figcaption></figure>`;
 }
 
 export const isFav = id => store.state.favs.includes(id);
@@ -118,9 +128,9 @@ function detailBody(e) {
   const st = store.state;
   const parts = [];
   const area = areaName(e.area);
-  const head = `
+  const head = `${heroHtml(e)}
     <div class="detail-head">
-      ${tile(e, 'tile-lg')}
+      ${e.img ? '' : tile(e, 'tile-lg')}
       <div>
         <div class="detail-orig" dir="ltr">${esc(e.orig || '')}</div>
         <div class="detail-sub">${esc(area)}${e.kind === 'food' ? ` · ${esc(FOOD_TYPES[e.type]?.he || '')} · ${priceLevel(e.price)}` : ''}</div>

@@ -61,6 +61,7 @@ function poiIcon(emoji, color, { n = null, small = false, dashed = false, faded 
 
 function popupHtml(e, extra = '', more = '') {
   return `<div class="pop" dir="rtl">
+    ${e.img ? `<img class="pop-img" src="${esc(e.img.s)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}
     <b>${emojiOf(e)} ${esc(e.name)}</b>
     ${extra ? `<div class="pop-sub">${extra}</div>` : ''}
     <div class="pop-btns">
