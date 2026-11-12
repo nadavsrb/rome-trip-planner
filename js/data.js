@@ -48,6 +48,15 @@ export async function loadData() {
     const e = DB.byId.get(id);
     if (e) Object.assign(e, o);
   }
+  // Pictures (data/images.json): optional, the app works without them.
+  try {
+    const res = await fetch('data/images.json', { cache: 'no-cache' });
+    const pics = res.ok ? await res.json() : {};
+    for (const [id, img] of Object.entries(pics)) {
+      const e = DB.byId.get(id);
+      if (e) e.img = img;
+    }
+  } catch { /* no pictures */ }
   // Anything the final schedule uses counts as one of ours too.
   for (const d of schedule.days) {
     for (const it of d.items) {

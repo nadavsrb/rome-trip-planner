@@ -10,7 +10,7 @@ import {
 import { gmapsDir, distKm, leg as legOf, centroid } from '../geo.js';
 import { dayWeather, wxIcon, wxText, CLIMATE, wx, hourWeather, rainSpans, wetness } from '../weather.js';
 import { openSheet, toast, confirmSheet } from '../ui.js';
-import { openDetail, emojiOf, foodBadges, dayLabel, toggleBooked, needsBooking } from './common.js';
+import { openDetail, emojiOf, foodBadges, dayLabel, toggleBooked, needsBooking, tile } from './common.js';
 import { focusMapDay } from './map.js';
 
 let current = null;
@@ -83,8 +83,9 @@ function altsHtml(ci, wd) {
     if (!a) return '';
     const chk = checkOpen(a, wd, ci.start, ci.start + Math.min(ci.dur, 30));
     const bad = !chk.ok;
+    const pic = a.img ? `<img class="alt-img" src="${esc(a.img.s)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : '';
     return `<button class="alt-chip ${id === ci.id ? 'on' : ''} ${bad ? 'bad' : ''}" data-alt="${esc(id)}" aria-pressed="${id === ci.id}">
-      ${id === ci.id ? icon('check', 'ic-xs') : ''}${esc(a.name)}${bad ? ' · סגור בשעה הזו' : ''}</button>`;
+      ${pic}${id === ci.id ? icon('check', 'ic-xs') : ''}${esc(a.name)}${bad ? ' · סגור בשעה הזו' : ''}</button>`;
   }).join('')}</div>`;
 }
 
@@ -98,6 +99,7 @@ function itemHtml(ci, idx, items, st, prevLoc, nowMin, wd) {
     ${legHtml(ci, prevLoc)}${gap}
     <div class="tl-card">
       <div class="tl-time"><b>${fromMin(ci.start)}</b>${ci.end > ci.start ? `<small>${fromMin(ci.end)}</small>` : ''}</div>
+      ${ci.e?.img && (ci.t === 'place' || ci.t === 'food') ? `<div class="tl-thumb" ${openAttr}>${tile(ci.e, 'tile-sm')}</div>` : ''}
       <div class="tl-main" ${openAttr}>
         <div class="tl-title"><span class="tl-emoji">${emoji}</span>${esc(name)}${isNow ? ' <span class="badge badge-accent">עכשיו</span>' : ''}${ci.done ? ' <span class="badge badge-ok">✓ בוצע</span>' : ''}</div>
         ${itemSub(ci) ? `<div class="tl-sub">${itemSub(ci)}</div>` : ''}
@@ -467,7 +469,7 @@ export function openFoodPicker(date, u) {
       const list = rankFood({ meal: ci.meal === 'snack' ? null : ci.meal, near, wd: c.wd, time: ci.start, diet: 'any' }).slice(0, 30);
       body.querySelector('.picker-list').innerHTML = list.map(r => `
         <button class="pick-row" data-id="${r.f.id}">
-          <span class="pick-emoji">${emojiOf(r.f)}</span>
+          <span class="pick-emoji">${tile(r.f, 'tile-sm')}</span>
           <span class="pick-main"><b>${esc(r.f.name)}</b><small>${esc(FOOD_TYPES[r.f.type]?.he || '')} · ${priceLevel(r.f.price)} · ${legOf(near, r.f)?.min ?? '?'} דק׳ ${legOf(near, r.f)?.mode === 'walk' ? 'הליכה' : 'נסיעה'}</small></span>
         </button>`).join('') || '<div class="empty">אין מקומות פתוחים שמתאימים.</div>';
       body.querySelectorAll('.pick-row').forEach(b => b.addEventListener('click', () => {
@@ -621,7 +623,7 @@ function openIndoorAlternatives(date, u) {
     body: `<p class="muted small">מקומות מקורים עד 2 ק״מ משם, שפתוחים ב-${fromMin(ci.start)}. בחירה מחליפה את הפעילות, והמקורית נשארת כאופציה: לחיצה עליה מחזירה אותה.</p>
       <div class="picker-list">${rows.length ? rows.map(({ e, km }) => `
         <button class="pick-row" data-id="${e.id}">
-          <span class="pick-emoji">${emojiOf(e)}</span>
+          <span class="pick-emoji">${tile(e, 'tile-sm')}</span>
           <span class="pick-main"><b>${esc(e.name)}</b><small>${fmtKm(km)} · ${e.dur ? fmtDur(e.dur) : ''}${e.price ? ` · ${bidi(e.price)}` : ''}</small></span>
           <span class="pick-add">${icon('swap')}</span>
         </button>`).join('') : '<div class="empty">לא מצאנו מקום מקורה פתוח בסביבה בשעה הזו.</div>'}</div>`,
@@ -729,7 +731,7 @@ function openAddSheet(date, { altFor = null } = {}) {
     if (!rows.length) return '<div class="empty">לא נמצא. נסו חיפוש אחר.</div>';
     return rows.map(({ e, km, closed }) => `
       <button class="pick-row ${closed ? 'is-closed' : ''}" data-id="${e.id}">
-        <span class="pick-emoji">${emojiOf(e)}</span>
+        <span class="pick-emoji">${tile(e, 'tile-sm')}</span>
         <span class="pick-main"><b>${esc(e.name)}${inDay.has(e.id) ? ' ✓' : ''}</b>
           <small>${closed ? `סגור ביום ${WD_LONG[wd]}` : km < 50 ? `${fmtKm(km)} ${altItem ? 'מהאופציה הנוכחית' : 'מהיום'}` : ''}${e.wish ? ' · עוד לא שובץ' : ''}${e.kind === 'food' ? ` · ${priceLevel(e.price)}` : ''}</small></span>
         <span class="pick-add">${icon('plus')}</span>
