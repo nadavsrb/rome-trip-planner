@@ -16,7 +16,9 @@ function catChips(list) {
   const counts = {};
   list.forEach(e => { counts[e.cat] = (counts[e.cat] || 0) + 1; });
   const order = Object.keys(CATS).filter(k => counts[k]);
+  const ours = list.filter(e => e.ours).length;
   return [`<button class="chip ${f.cat === 'all' ? 'on' : ''}" data-cat="all">הכול <small>${list.length}</small></button>`,
+    `<button class="chip ${f.cat === 'ours' ? 'on' : ''}" data-cat="ours">📍 שלנו <small>${ours}</small></button>`,
     ...order.map(k => `<button class="chip ${f.cat === k ? 'on' : ''}" data-cat="${k}">${CATS[k].emoji} ${CATS[k].he} <small>${counts[k]}</small></button>`)].join('');
 }
 
@@ -57,7 +59,7 @@ function filtered() {
   const q = f.q.trim().toLowerCase();
   const wd = f.day ? weekdayOf(f.day) : null;
   let list = items().filter(e => {
-    if (f.cat !== 'all' && e.cat !== f.cat) return false;
+    if (f.cat === 'ours' ? !e.ours : f.cat !== 'all' && e.cat !== f.cat) return false;
     if (q && !`${e.name} ${e.orig || ''} ${e.desc || ''} ${e.tips || ''}`.toLowerCase().includes(q)) return false;
     if (f.rain && !e.indoor) return false;
     if (f.free && !(e.priceEur === 0 || (e.tags || []).includes('free'))) return false;
@@ -71,7 +73,7 @@ function filtered() {
   const ref = refPoint();
   if (ref) list = list.sort((a, b) => (distKm(ref, a) ?? 99) - (distKm(ref, b) ?? 99));
   else if (f.sort === 'dur') list = list.sort((a, b) => (a.dur || 999) - (b.dur || 999));
-  else list = list.sort((a, b) => (a.tier || 3) - (b.tier || 3));
+  else list = list.sort((a, b) => (!!b.ours - !!a.ours) || (!!a.wish - !!b.wish) || (a.tier || 3) - (b.tier || 3));
   return { list, ref };
 }
 

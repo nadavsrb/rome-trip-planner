@@ -1,11 +1,12 @@
 // Hotels: neighborhood guide, filters, sort by price/rating/commute, side-by-side compare.
 import { DB, get, areaName } from '../data.js';
 import { store, update } from '../store.js';
-import { esc, ltr, icon, euro, richText } from '../util.js';
-import { hotelCommute } from '../planner.js';
-import { leg, gmapsPlace } from '../geo.js';
+import { esc, ltr, icon, euro, richText, fromMin } from '../util.js';
+import { hotelCommute, computeDay, TRIP } from '../planner.js';
+import { leg, gmapsPlace, gmapsDir } from '../geo.js';
 import { openSheet, toast } from '../ui.js';
-import { bookingSearchUrl, emptyState } from './common.js';
+import { bookingSearchUrl, emptyState, dayLabel } from './common.js';
+import { dayWeather } from '../weather.js';
 
 const NIGHTS = 5;
 const LANDMARKS = [
@@ -160,7 +161,7 @@ function compareSheet(st) {
   });
 }
 
-export function renderHotels(root) {
+function renderHotelList(root) {
   const st = store.state;
   const chosen = st.settings.hotelId ? get(st.settings.hotelId) : null;
   const maxPrice = Math.max(400, ...DB.hotels.map(h => h.priceLow || 0));
@@ -213,9 +214,9 @@ export function renderHotels(root) {
   root.querySelectorAll('[data-area]').forEach(b => b.addEventListener('click', () => {
     if (f.area === b.dataset.area) { openArea(b.dataset.area); return; }
     f.area = b.dataset.area;
-    renderHotels(root);
+    renderHotelList(root);
   }));
-  root.querySelector('[data-area-clear]')?.addEventListener('click', () => { f.area = ''; renderHotels(root); });
+  root.querySelector('[data-area-clear]')?.addEventListener('click', () => { f.area = ''; renderHotelList(root); });
   const range = root.querySelector('[data-max]');
   range.addEventListener('input', () => {
     f.max = +range.value >= maxPrice ? 0 : +range.value;
@@ -238,4 +239,79 @@ export function renderHotels(root) {
   root.querySelector('[data-sort]').addEventListener('change', ev => { f.sort = ev.target.value; draw(); });
   root.querySelector('[data-compare]').addEventListener('click', () => compareSheet(store.state));
   draw();
+}
+
+// ---------- our hotel ----------
+
+const NEARBY = [
+  ['spanish-steps', 'המדרגות הספרדיות'], ['trevi', 'מזרקת טרווי'], ['pantheon', 'הפנתאון'],
+  ['piazza-navona', 'פיאצה נבונה'], ['colosseum', 'הקולוסיאום'], ['st-peters', 'פטרוס הקדוש'],
+];
+
+function hotelDays(st, hotel) {
+  return TRIP.dates.map((date, i) => {
+    const day = st.days.find(d => d.date === date);
+    if (!day || !day.items.length) return '';
+    const c = computeDay(day, st, dayWeather(date));
+    let txt;
+    if (i === 0) {
+      const h = c.items.find(x => x.t === 'fixed' && x.kind === 'hotel');
+      txt = `${h ? `מגיעים בסביבות ${fromMin(h.start)}` : ''}${c.back ? ` · חוזרים בערב בסביבות ${fromMin(c.end + c.back.min)}` : ''}`;
+    } else if (i === 5) {
+      const taxi = c.items.find(x => x.kind === 'transfer');
+      txt = taxi ? `יוצאים לשדה ב-${fromMin(taxi.start)}` : '';
+    } else {
+      txt = `יוצאים ב-${fromMin(c.leave)}${c.back ? ` · חוזרים בסביבות ${fromMin(c.end + c.back.min)}` : ''}`;
+    }
+    return txt ? `<div class="hd-row"><b>${dayLabel(date)}</b><span>${txt}</span></div>` : '';
+  }).join('');
+}
+
+export function renderHotels(root, param) {
+  if (param === 'compare') { renderHotelList(root); return; }
+  const st = store.state;
+  const hotel = get(st.settings.hotelId) || get('dimora-frattina');
+  if (!hotel) { renderHotelList(root); return; }
+  const near = NEARBY.map(([id, he]) => {
+    const p = get(id);
+    const g = p && leg(hotel, p);
+    return g ? `<span>${g.mode === 'walk' ? '🚶' : '🚕'} ${he} <b>${g.min}′</b></span>` : '';
+  }).join('');
+  root.innerHTML = `
+    <section class="card hotel-card">
+      <div class="hc-head">
+        <div class="tile tile-lg" aria-hidden="true">🏨</div>
+        <div>
+          <h2 class="h2 tight">${esc(hotel.name)}</h2>
+          <div class="muted" dir="ltr">${esc(hotel.address)}</div>
+        </div>
+      </div>
+      <div class="link-row">
+        <a class="btn btn-primary btn-sm" href="${gmapsDir(hotel)}" target="_blank" rel="noopener">${icon('nav')}ניווט למלון</a>
+        <a class="btn btn-soft btn-sm" href="${gmapsPlace(hotel)}" target="_blank" rel="noopener">${icon('pin')}Google Maps</a>
+        <button class="btn btn-soft btn-sm" data-copy>${icon('share')}העתקת הכתובת</button>
+      </div>
+      <div class="facts">
+        <div class="fact"><span>קבלה</span><div>${ltr(esc(hotel.reception || '8:00–17:00'))}. הגעה אחרי 17:00 צריך לתאם מראש.</div></div>
+        <div class="fact"><span>יום הטיסה</span><div>המונית יוצאת ב-6:10, לפני שהקבלה נפתחת. לסדר תשלום, צ׳ק-אאוט ומפתחות ב-16.11, ולהזמין מונית לבוקר.</div></div>
+        <div class="fact"><span>מהשדה</span><div>מונית רשמית במחיר קבוע €55 לכל כתובת בתוך החומות, בערך 45 דקות. Via Frattina היא רחוב להולכי רגל, אז ייתכן שהמונית תעצור בפינה הקרובה.</div></div>
+        <div class="fact"><span>ברכבת</span><div>Leonardo Express לטרמיני (€14, בערך 32 דק׳), ומשם מטרו A לתחנת Spagna ועוד כמה דקות הליכה.</div></div>
+      </div>
+    </section>
+
+    <section class="card driver-card">
+      <small class="muted">להראות לנהג המונית</small>
+      <div class="driver-addr" dir="ltr">Dimora Frattina<br>Via Frattina 128<br>00187 Roma</div>
+    </section>
+
+    <h2 class="h2">כמה זמן מהמלון</h2>
+    <div class="card near-grid">${near}</div>
+
+    <h2 class="h2">יציאות וחזרות לפי הלו״ז</h2>
+    <div class="card hotel-days">${hotelDays(st, hotel)}</div>
+
+    <a class="btn btn-ghost btn-sm" href="#/hotels/compare">${icon('compare')}השוואת המלונות מהתכנון</a>`;
+  root.querySelector('[data-copy]')?.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText('Dimora Frattina, Via Frattina 128, 00187 Roma'); toast('הכתובת הועתקה'); } catch { toast('Via Frattina 128, 00187 Roma'); }
+  });
 }

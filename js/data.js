@@ -10,10 +10,11 @@ export const DB = {
   themes: {},
   info: {},
   notes: {},
+  schedule: null, // our final day-by-day plan (data/schedule.json)
   byId: new Map(),
 };
 
-const FILES = ['places', 'food', 'hotels', 'daytrips', 'plan', 'info'];
+const FILES = ['places', 'food', 'hotels', 'daytrips', 'plan', 'info', 'ours', 'schedule'];
 
 export async function loadData() {
   const parts = await Promise.all(FILES.map(async f => {
@@ -21,19 +22,39 @@ export async function loadData() {
     if (!res.ok) throw new Error(`data/${f}.json: ${res.status}`);
     return res.json();
   }));
-  const [places, food, hotels, daytrips, plan, info] = parts;
+  const [places, food, hotels, daytrips, plan, info, ours, schedule] = parts;
 
-  DB.places = places.items.map(p => ({ ...p, kind: 'place' }));
-  DB.food = food.items.map(f => ({ ...f, kind: 'food' }));
+  // Our own places (from the couple's map) sit next to the curated ones in every list.
+  const ourFood = ours.items.filter(x => x.kind === 'food');
+  const ourPlaces = ours.items.filter(x => x.kind === 'place');
+  DB.places = [...ourPlaces, ...places.items].map(p => ({ ...p, kind: 'place' }));
+  DB.food = [...ourFood, ...food.items].map(f => ({ ...f, kind: 'food' }));
   DB.notes = food.notes || {};
   DB.hotels = hotels.items.map(h => ({ ...h, kind: 'hotel' }));
   DB.areas = hotels.areas || [];
   DB.daytrips = daytrips.items.map(d => ({ ...d, kind: 'daytrip', cat: 'daytrip' }));
   DB.themes = plan.themes;
   DB.info = info;
+  DB.schedule = schedule;
 
   DB.byId.clear();
-  for (const e of [...DB.places, ...DB.food, ...DB.hotels, ...DB.daytrips]) DB.byId.set(e.id, e);
+  for (const e of [...DB.places, ...DB.food, ...DB.hotels, ...DB.daytrips]) {
+    if (!DB.byId.has(e.id)) DB.byId.set(e.id, e);
+  }
+  // Small corrections to curated entries (icons, winter hours).
+  for (const [id, o] of Object.entries(ours.overrides || {})) {
+    const e = DB.byId.get(id);
+    if (e) Object.assign(e, o);
+  }
+  // Anything the final schedule uses counts as one of ours too.
+  for (const d of schedule.days) {
+    for (const it of d.items) {
+      for (const id of [it.id, ...(it.alts || [])]) {
+        const e = id && DB.byId.get(id);
+        if (e) e.ours = true;
+      }
+    }
+  }
   return DB;
 }
 

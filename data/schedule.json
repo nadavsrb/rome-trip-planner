@@ -1,0 +1,87 @@
+{
+ "version": "final-2026-11-11",
+ "hotel": "dimora-frattina",
+ "days": [
+  {
+   "date": "2026-11-12",
+   "title": "נחיתה, שוקו חם וקורסו (1)",
+   "items": [
+    { "t": "fixed", "kind": "flight", "title": "נחיתה בפיומיצ׳ינו (FCO)", "pin": "11:00", "dur": 0 },
+    { "t": "fixed", "kind": "airport", "title": "ביקורת דרכונים ומזוודות", "dur": 50, "note": "בכניסה הראשונה לאירופה נרשמים במערכת הביומטרית EES, וזה יכול לקחת זמן" },
+    { "t": "fixed", "kind": "transfer", "title": "מונית למלון (מחיר קבוע €55)", "dur": 45 },
+    { "t": "fixed", "kind": "hotel", "title": "צ׳ק-אין ומנוחה במלון", "fit": true, "min": 15, "note": "בלו״ז המקורי: 12:00. הקבלה פתוחה עד 17:00" },
+    { "t": "food", "id": "said", "meal": "snack", "pin": "13:15", "dur": 60, "note": "שוקו חם בסן לורנצו" },
+    { "t": "food", "id": "pastasciutta", "alts": ["pastasciutta", "spizzica"], "meal": "lunch", "pin": "14:45", "dur": 40, "note": "ארוחת צהריים קלה" },
+    { "t": "place", "id": "piazza-venezia", "pin": "15:45", "dur": 15, "note": "תחילת הקורסו" },
+    { "t": "place", "id": "corso-south", "pin": "16:15", "fit": true, "min": 30, "noroute": true, "note": "שופינג ושוטטות, כמה שעות" },
+    { "t": "food", "id": "venchi", "meal": "snack", "pin": "17:45", "dur": 30, "note": "גלידה ושוקולד" },
+    { "t": "food", "id": "matricianella", "alts": ["matricianella", "zuma"], "meal": "dinner", "pin": "19:30", "dur": 105, "note": "ארוחת ערב, להזמין מראש" }
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "title": "מנעול, גטו, קמפו וקולוסיאום",
+   "items": [
+    { "t": "place", "id": "aventine-keyhole", "title": "המנעול של מסדר מלטה וגן התפוזים", "pin": "08:15", "dur": 30, "note": "להגיע מוקדם, בבוקר התור קצר. גן התפוזים נפתח ב-7:00, שלוש דקות משם" },
+    { "t": "place", "id": "great-synagogue", "pin": "10:00", "dur": 55, "note": "בשישי פתוח 9:00–14:00 (כניסה אחרונה 13:15)" },
+    { "t": "food", "id": "boccione", "meal": "snack", "pin": "11:00", "dur": 20, "note": "בשישי נסגר מוקדם, בשבת סגור" },
+    { "t": "place", "id": "campo-de-fiori", "pin": "11:45", "dur": 30, "note": "השוק פתוח עד 14:00" },
+    { "t": "food", "id": "nonna-vincenza", "meal": "snack", "pin": "12:20", "dur": 20, "note": "קנולי. בלו״ז המקורי באותה שעה כמו קמפו (11:45), אז הוזז ל-12:20" },
+    { "t": "food", "id": "antico-forno-roscioli", "meal": "lunch", "pin": "13:15", "dur": 45, "note": "ארוחת צהריים, פיצה לפי משקל" },
+    { "t": "place", "id": "colosseum", "pin": "14:30", "dur": 75, "note": "נסגר ב-16:30 (כניסה אחרונה 15:30). מבחוץ אפשר בלי כרטיס" },
+    { "t": "place", "id": "shady-shack", "pin": "16:00", "dur": 30, "note": "משקפי שמש, פתוח עד 19:00" },
+    { "t": "food", "id": "da-fortunata", "alts": ["da-fortunata", "amerina"], "meal": "dinner", "pin": "19:00", "dur": 90, "note": "ארוחת ערב. Amerina פתוחה מ-17:00" }
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "title": "ותיקן, פנתאון, טרווי וקורסו (2)",
+   "items": [
+    { "t": "food", "id": "forno-trevi", "meal": "breakfast", "pin": "07:15", "dur": 30, "note": "ארוחת בוקר, קרואסון פיסטוק" },
+    { "t": "place", "id": "st-peters", "pin": "08:30", "dur": 180, "note": "להזמין כרטיסים מראש. הכניסה עצמה חינם, והזמנה מוקדמת חוסכת את תור הבידוק" },
+    { "t": "food", "id": "vinaio", "alts": ["vinaio", "alice-pizza"], "meal": "lunch", "pin": "12:15", "dur": 40, "note": "ארוחת צהריים ליד הפנתאון" },
+    { "t": "place", "id": "pantheon", "pin": "13:00", "dur": 40, "note": "מומלץ להזמין כרטיס מראש" },
+    { "t": "place", "id": "trevi", "pin": "14:00", "dur": 30, "note": "2€ לגישה קרובה" },
+    { "t": "place", "id": "spanish-steps", "pin": "15:00", "dur": 30, "note": "בהליכה מטרווי" },
+    { "t": "place", "id": "corso-north", "pin": "15:45", "fit": true, "min": 30, "noroute": true, "note": "שופינג עד פיאצה דל פופולו" },
+    { "t": "food", "id": "birreria-viennese", "meal": "dinner", "pin": "19:00", "dur": 90, "note": "ארוחת ערב ליד המדרגות" },
+    { "t": "food", "id": "divinity", "meal": "snack", "pin": "21:00", "dur": 60, "note": "דרינק על הגג, ליד הפנתאון" }
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "title": "שוק וינטג׳ ווילה בורגזה",
+   "items": [
+    { "t": "place", "id": "porta-portese", "pin": "09:30", "dur": 120, "note": "פתוח רק בראשון, עדיף להגיע מוקדם" },
+    { "t": "food", "id": "trapizzino-trastevere", "alts": ["trapizzino-trastevere", "tavernetta29"], "meal": "lunch", "pin": "12:00", "dur": 45, "note": "ארוחת צהריים בטראסטוורה" },
+    { "t": "place", "id": "piazza-navona", "title": "מזרקת ארבעת הנהרות, פיאצה נבונה", "pin": "13:45", "dur": 30, "note": "מיני טירמיסו בהליכה משם" },
+    { "t": "place", "id": "borghese-boats", "pin": "15:15", "dur": 40, "note": "5€ ל-20 דקות, נסגר ב-16:45" },
+    { "t": "place", "id": "pincio", "pin": "16:30", "dur": 30, "note": "שקיעה בסביבות 16:50" },
+    { "t": "food", "id": "piccolo-buco", "meal": "dinner", "pin": "19:00", "dur": 75, "note": "פיצה, בלי הזמנות ועם תור. סגור בשני" }
+   ]
+  },
+  {
+   "date": "2026-11-16",
+   "title": "סדנת פסטה וטראסטוורה",
+   "items": [
+    { "t": "food", "id": "luna-faro", "alts": ["luna-faro", "menagere"], "meal": "breakfast", "pin": "08:30", "dur": 45, "note": "ארוחת בוקר" },
+    { "t": "place", "id": "faini", "pin": "11:15", "dur": 195, "note": "סדנה 11:30–14:30, הארוחה כלולה" },
+    { "t": "food", "id": "gelatist", "meal": "snack", "pin": "15:15", "dur": 20, "note": "גלידה וארטיק שוקולד דובאי" },
+    { "t": "food", "id": "pompi", "alts": ["pompi", "mr100"], "meal": "snack", "pin": "16:00", "dur": 20, "note": "טירמיסו. Mr. 100 סגור בשלישי וברביעי" },
+    { "t": "place", "id": "trastevere-walk", "title": "טראסטוורה בערב", "pin": "19:00", "dur": 25, "note": "טיול ערב סביב פיאצה סנטה מריה" },
+    { "t": "food", "id": "tonnarello", "alts": ["tonnarello", "eos-sushi"], "meal": "dinner", "pin": "19:30", "dur": 90, "note": "ארוחת ערב. ב-Tonnarello אין הזמנות (יש תור), את EOS צריך להזמין מראש" },
+    { "t": "food", "id": "vecchia-trastevere", "meal": "snack", "pin": "21:30", "dur": 45, "note": "אפרול ענק" }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "title": "יום טיסה",
+   "noroute": true,
+   "items": [
+    { "t": "fixed", "kind": "transfer", "title": "מונית לשדה (מחיר קבוע €55, בערך 45 דק׳)", "pin": "06:10", "dur": 45, "note": "להזמין מונית ערב קודם. הקבלה נפתחת רק ב-8:00, אז מסדרים תשלום ומפתחות יום לפני" },
+    { "t": "fixed", "kind": "airport", "title": "צ׳ק-אין, בידוק ביטחוני וביקורת דרכונים", "pin": "07:00", "dur": 150, "note": "ארוחת בוקר בשדה אחרי הבידוק. Ginger ו-La Ménagère נפתחים רק אחרי 8:00, אז הם לא נכנסים ליום הזה" },
+    { "t": "fixed", "kind": "flight", "title": "המראה הביתה", "pin": "10:05", "dur": 0 }
+   ]
+  }
+ ]
+}

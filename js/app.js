@@ -1,7 +1,7 @@
 // Entry point: loads data and state, routes between the tabs, handles share links and offline.
 import { loadData, get } from './data.js';
 import { load, store, update, subscribe, decodeShare, replaceState, snapshot, undo } from './store.js';
-import { generatePlan, TRIP } from './planner.js';
+import { scheduleDays, TRIP } from './planner.js';
 import { loadWeather } from './weather.js';
 import { $, $$, romeToday, daysBetween, weekdayOf, WD_LONG } from './util.js';
 import { toast, confirmSheet, dropAllSheets } from './ui.js';
@@ -11,7 +11,8 @@ import { renderFood } from './views/food.js';
 import { renderHotels } from './views/hotels.js';
 import { renderMap } from './views/map.js';
 import { renderInfo } from './views/info.js';
-import { openSettings, applyTheme, shareNow } from './views/settings.js';
+import { openSettings, applyTheme, openShareSheet } from './views/settings.js';
+import { initSync, joinSync, parseJoinToken, onSyncChange, syncConfig } from './sync.js';
 
 const ROUTES = { plan: renderPlan, explore: renderExplore, food: renderFood, hotels: renderHotels, map: renderMap, info: renderInfo };
 const scrolls = {};
@@ -48,15 +49,57 @@ function countdown() {
   $('#countdown').innerHTML = text;
 }
 
-// Drop plan items that point at entries removed from the data files.
+// Drop plan items that point at entries removed from the data files, and make sure
+// every trip day exists.
 function cleanPlan(s) {
-  for (const d of s.days || []) d.items = d.items.filter(it => !it.id || get(it.id));
+  for (const d of s.days || []) {
+    d.items = d.items.filter(it => !it.id || get(it.id));
+    for (const it of d.items) {
+      if (it.alts) {
+        it.alts = it.alts.filter(get);
+        if (it.alts.length < 2) delete it.alts;
+      }
+    }
+  }
+  const missing = TRIP.dates.filter(date => !s.days.some(d => d.date === date));
+  if (missing.length) {
+    s.days.push(...scheduleDays(missing));
+    s.days.sort((a, b) => a.date.localeCompare(b.date));
+  }
+  if (!s.settings.hotelId || !get(s.settings.hotelId)) s.settings.hotelId = 'dimora-frattina';
+}
+
+// A sync invite from the other phone: #join=<token>
+async function importJoin() {
+  const m = location.hash.match(/^#join=(.+)$/);
+  if (!m) return false;
+  history.replaceState(null, '', `${location.pathname}#/plan`);
+  if (ready) render();
+  let target;
+  try { target = parseJoinToken(m[1]); } catch { toast('קישור הסנכרון לא תקין או נקטע בהעתקה'); return true; }
+  const cur = syncConfig();
+  if (cur && cur.room === target.room) { toast('הטלפון הזה כבר מסונכרן ✓'); return true; }
+  const ok = await confirmSheet({
+    title: 'להצטרף ללו״ז המשותף? 🔄',
+    text: 'מעכשיו שינויים יעברו אוטומטית בין שני הטלפונים. הלו״ז בטלפון הזה יוחלף בלו״ז המשותף.',
+    ok: 'הצטרפות',
+  });
+  if (!ok) return true;
+  try {
+    snapshot();
+    await joinSync(target.db, target.room);
+    toast('מחוברים ✓ הלו״ז מסונכרן עם הטלפון השני', { ms: 5000 });
+  } catch (e) {
+    toast(e.message || 'לא הצלחנו להצטרף', { ms: 7000 });
+  }
+  return true;
 }
 
 async function importShared() {
   const m = location.hash.match(/^#share=(.+)$/);
   if (!m) return;
   history.replaceState(null, '', `${location.pathname}#/plan`);
+  if (ready) render();
   try {
     const data = await decodeShare(m[1]);
     const n = data.days.reduce((k, d) => k + d.items.length, 0);
@@ -97,6 +140,9 @@ async function boot() {
   window.addEventListener('hashchange', () => {
     if (!ready) return;
     dropAllSheets();
+    // A sync invite or a shared plan opened while the app is already open in this tab.
+    if (location.hash.startsWith('#join=')) { importJoin(); return; }
+    if (location.hash.startsWith('#share=')) { importShared(); return; }
     render();
   });
   load();
@@ -107,16 +153,22 @@ async function boot() {
     $('#view').innerHTML = `<div class="empty">לא הצלחנו לטעון את הנתונים 😕<br><small>${String(e.message || e)}</small><br><button class="btn btn-primary" onclick="location.reload()">לנסות שוב</button></div>`;
     return;
   }
-  if (!store.state.days) update(s => { s.days = generatePlan(s); }, { silent: true });
-  else update(cleanPlan, { silent: true });
+  if (!store.state.days) update(s => { s.days = scheduleDays(); }, { silent: true });
+  update(cleanPlan, { silent: true });
 
   countdown();
   ready = true;
   render();
   subscribe(render);
   $('#btn-settings').addEventListener('click', openSettings);
-  $('#btn-share').addEventListener('click', shareNow);
-  await importShared();
+  $('#btn-share').addEventListener('click', openShareSheet);
+  const dot = $('#sync-dot');
+  const showSync = st => { if (dot) { dot.hidden = st.status === 'off'; dot.dataset.s = st.status; } };
+  onSyncChange(showSync);
+  if (store.migrated) toast('הלו״ז הסופי נטען ✓ התוכנית הקודמת נשמרה בגיבוי', { ms: 6000 });
+  const joined = await importJoin();
+  if (!joined) await importShared();
+  initSync().catch(() => {});
   loadWeather().then(() => { if (['plan', 'info'].includes(parseHash().name)) render(); });
   registerSW();
   setInterval(countdown, 60 * 60 * 1000);

@@ -1,6 +1,19 @@
 {
  "items": [
   {
+   "id": "dimora-frattina",
+   "name": "Dimora Frattina",
+   "area": "tridente",
+   "address": "Via Frattina 128, 00187 Roma",
+   "lat": 41.904385,
+   "lng": 12.4816518,
+   "reception": "8:00–17:00",
+   "ours": true,
+   "desc": "המלון שלנו: ברחוב Via Frattina, רחוב קניות להולכי רגל בין ויה דל קורסו למדרגות הספרדיות.",
+   "verified": true,
+   "note": "Chosen by the couple. Address and reception hours (8:00-17:00) from their schedule and My Maps; coordinates from their My Maps pin."
+  },
+  {
    "id": "albergo-enrica",
    "name": "Albergo Enrica",
    "stars": 1,
