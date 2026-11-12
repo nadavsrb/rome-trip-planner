@@ -1,5 +1,5 @@
 // Entry point: loads data and state, routes between the tabs, handles share links and offline.
-import { loadData, get } from './data.js';
+import { loadData, get, DB } from './data.js';
 import { load, store, update, subscribe, decodeShare, replaceState, snapshot, undo } from './store.js';
 import { scheduleDays, TRIP } from './planner.js';
 import { loadWeather } from './weather.js';
@@ -60,6 +60,17 @@ function cleanPlan(s) {
         if (it.alts.length < 2) delete it.alts;
       }
     }
+  }
+  // One-time corrections to plans saved before a data fix (e.g. Said moved to Via Tomacelli).
+  s.fixes = s.fixes || [];
+  for (const fx of DB.schedule?.fixes || []) {
+    if (s.fixes.includes(fx.key)) continue;
+    for (const d of s.days) {
+      for (const it of d.items) {
+        if (it.id === fx.id && Object.entries(fx.from || {}).every(([k, v]) => it[k] === v)) Object.assign(it, fx.set);
+      }
+    }
+    s.fixes.push(fx.key);
   }
   const missing = TRIP.dates.filter(date => !s.days.some(d => d.date === date));
   if (missing.length) {
@@ -135,15 +146,57 @@ function registerSW() {
     document.addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'visible') reg.update().catch(() => {});
     });
-    reg.addEventListener('updatefound', () => {
-      const nw = reg.installing;
-      nw?.addEventListener('statechange', () => {
-        if (nw.state === 'activated' && hadController && !reloading) {
-          toast('יש גרסה חדשה של האפליקציה', { action: 'רענון', onAction: () => location.reload(), ms: 12000 });
-        }
-      });
-    });
   }).catch(() => {});
+}
+
+// ---------- automatic updates ----------
+// Every publish on GitHub Pages re-stamps all files, so when data/schedule.json has a newer
+// Last-Modified than the copy this page loaded, a new version is out. Check when the app
+// comes back to the foreground and every few minutes, and reload into it by itself
+// (waiting for any open sheet to close first, so nothing typed is lost).
+const UPDATE_KEY = 'rome26:update';
+let newStamp = null;
+
+async function publishedStamp() {
+  try {
+    const res = await fetch(`data/schedule.json?check=${Date.now()}`, { method: 'HEAD', cache: 'no-store' });
+    return res.ok ? res.headers.get('last-modified') : null;
+  } catch { return null; }
+}
+
+async function checkForUpdate() {
+  if (!DB.stamp || document.visibilityState !== 'visible' || navigator.onLine === false) return;
+  const latest = await publishedStamp();
+  if (!latest || latest === DB.stamp) return;
+  // Already reloaded for this version a moment ago and still got the old files (very slow
+  // network): try again later instead of reloading in a loop.
+  let last = null;
+  try { last = JSON.parse(sessionStorage.getItem(UPDATE_KEY) || 'null'); } catch { /* ignore */ }
+  if (last && last.stamp === latest && Date.now() - last.at < 10 * 60 * 1000) return;
+  newStamp = latest;
+  reloadWhenIdle();
+}
+
+function reloadWhenIdle() {
+  if (!newStamp || document.body.classList.contains('sheet-open')) return;
+  try { sessionStorage.setItem(UPDATE_KEY, JSON.stringify({ stamp: newStamp, at: Date.now() })); } catch { /* ignore */ }
+  location.reload();
+}
+
+function startUpdateWatch() {
+  // Right after a reload for an update: say so.
+  try {
+    const last = JSON.parse(sessionStorage.getItem(UPDATE_KEY) || 'null');
+    if (last && last.stamp === DB.stamp && !last.shown) {
+      toast('האתר עודכן לגרסה החדשה ✓');
+      sessionStorage.setItem(UPDATE_KEY, JSON.stringify({ ...last, shown: true }));
+    }
+  } catch { /* ignore */ }
+  setTimeout(checkForUpdate, 4000);
+  setInterval(checkForUpdate, 5 * 60 * 1000);
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') checkForUpdate(); });
+  window.addEventListener('online', checkForUpdate);
+  window.addEventListener('sheets-closed', reloadWhenIdle);
 }
 
 let ready = false;
@@ -183,6 +236,7 @@ async function boot() {
   initSync().catch(() => {});
   loadWeather().then(() => { if (['plan', 'info'].includes(parseHash().name)) render(); });
   registerSW();
+  startUpdateWatch();
   setInterval(countdown, 60 * 60 * 1000);
 }
 

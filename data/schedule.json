@@ -1,6 +1,9 @@
 {
  "version": "final-2026-11-11",
  "hotel": "dimora-frattina",
+ "fixes": [
+  { "key": "said-tomacelli", "id": "said", "from": { "note": "שוקו חם בסן לורנצו" }, "set": { "note": "שוקו חם ב-Via Tomacelli, חמש דקות מהמלון" } }
+ ],
  "days": [
   {
    "date": "2026-11-12",
@@ -10,7 +13,7 @@
     { "t": "fixed", "kind": "airport", "title": "ביקורת דרכונים ומזוודות", "dur": 50, "note": "בכניסה הראשונה לאירופה נרשמים במערכת הביומטרית EES, וזה יכול לקחת זמן" },
     { "t": "fixed", "kind": "transfer", "title": "מונית למלון (מחיר קבוע €55)", "dur": 45 },
     { "t": "fixed", "kind": "hotel", "title": "צ׳ק-אין ומנוחה במלון", "fit": true, "min": 15, "note": "בלו״ז המקורי: 12:00. הקבלה פתוחה עד 17:00" },
-    { "t": "food", "id": "said", "meal": "snack", "pin": "13:15", "dur": 60, "note": "שוקו חם בסן לורנצו" },
+    { "t": "food", "id": "said", "meal": "snack", "pin": "13:15", "dur": 60, "note": "שוקו חם ב-Via Tomacelli, חמש דקות מהמלון" },
     { "t": "food", "id": "pastasciutta", "alts": ["pastasciutta", "spizzica"], "meal": "lunch", "pin": "14:45", "dur": 40, "note": "ארוחת צהריים קלה" },
     { "t": "place", "id": "piazza-venezia", "pin": "15:45", "dur": 15, "note": "תחילת הקורסו" },
     { "t": "place", "id": "corso-south", "pin": "16:15", "fit": true, "min": 30, "noroute": true, "note": "שופינג ושוטטות, כמה שעות" },

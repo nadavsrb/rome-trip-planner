@@ -103,6 +103,7 @@ function itemHtml(ci, idx, items, st, prevLoc, nowMin, wd) {
         ${itemSub(ci) ? `<div class="tl-sub">${itemSub(ci)}</div>` : ''}
         ${ci.note ? `<div class="tl-note">${bidi(ci.note)}</div>` : ''}
         ${altsHtml(ci, wd)}
+        ${ci.t === 'daytrip' && ci.e ? `<ol class="mini-tl">${(ci.e.plan || []).map(p => `<li><b>${esc(p.t)}</b><span>${esc(p.x)}</span></li>`).join('')}</ol>` : ''}
         ${warnHtml(ci.done ? [] : ci.warns)}
         ${ci.hints.map(h => `<div class="hint">${esc(h)}</div>`).join('')}
         ${ci.t === 'meal' ? mealSuggestions(ci, items, idx, st) : ''}

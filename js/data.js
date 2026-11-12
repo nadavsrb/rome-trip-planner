@@ -11,6 +11,7 @@ export const DB = {
   info: {},
   notes: {},
   schedule: null, // our final day-by-day plan (data/schedule.json)
+  stamp: null,    // when the loaded data was published (Last-Modified of schedule.json)
   byId: new Map(),
 };
 
@@ -20,6 +21,7 @@ export async function loadData() {
   const parts = await Promise.all(FILES.map(async f => {
     const res = await fetch(`data/${f}.json`, { cache: 'no-cache' });
     if (!res.ok) throw new Error(`data/${f}.json: ${res.status}`);
+    if (f === 'schedule') DB.stamp = res.headers.get('last-modified');
     return res.json();
   }));
   const [places, food, hotels, daytrips, plan, info, ours, schedule] = parts;

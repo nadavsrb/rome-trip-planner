@@ -1,6 +1,8 @@
-// Offline support. App files are precached per version; data files are network-first
-// so plan updates show up right away; map tiles are cached as you browse.
-const VERSION = 'rome26-v3';
+// Offline support. Our own files (pages, code, data) come fresh from the network first,
+// with a short timeout, so a new version shows up the next time the app opens without any
+// manual refresh; the cache is only the fallback when there's no (or a very slow) connection.
+// Libraries from CDNs have fixed versions and are cached for good; map tiles are cached as you browse.
+const VERSION = 'rome26-v4';
 const SHELL = [
   './', './index.html', './manifest.webmanifest', './css/app.css',
   './js/app.js', './js/util.js', './js/geo.js', './js/store.js', './js/data.js', './js/planner.js',
@@ -18,6 +20,7 @@ const CDN = [
 ];
 const TILES = 'rome26-tiles';
 const MAX_TILES = 900;
+const NET_TIMEOUT = 3000; // after this, show the saved copy and let the network finish in the background
 
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
@@ -36,7 +39,7 @@ self.addEventListener('activate', event => {
     await Promise.all(old.map(k => caches.delete(k)));
     await self.clients.claim();
     // This is an update: reload every open window, so nobody keeps looking at the old
-    // version until the app is fully closed (pages of the first version can't do it themselves).
+    // version until the app is fully closed (pages of older versions can't do it themselves).
     if (old.length) {
       const wins = await self.clients.matchAll({ type: 'window' });
       // Not awaited: the reload's requests wait for this worker to finish activating,
@@ -45,6 +48,27 @@ self.addEventListener('activate', event => {
     }
   })());
 });
+
+// Our own files: network first (revalidating the browser's HTTP cache), saved copy as fallback.
+function fresh(event, url) {
+  const net = fetch(url, { cache: 'no-cache' }).then(async res => {
+    if (res.ok) {
+      const cache = await caches.open(VERSION);
+      await cache.put(url, res.clone());
+    }
+    return res;
+  });
+  event.waitUntil(net.catch(() => {})); // keep the worker alive until the cache is updated
+  return (async () => {
+    try {
+      const res = await Promise.race([net, new Promise(r => setTimeout(r, NET_TIMEOUT, null))]);
+      if (res) return res;
+    } catch { /* offline: use the saved copy */ }
+    const cache = await caches.open(VERSION);
+    const hit = await cache.match(url, { ignoreSearch: true });
+    return hit || net.catch(() => Response.error());
+  })();
+}
 
 async function networkFirst(req) {
   const cache = await caches.open(VERSION);
@@ -57,9 +81,9 @@ async function networkFirst(req) {
   }
 }
 
-async function cacheFirst(req, cacheName = VERSION) {
-  const cache = await caches.open(cacheName);
-  const hit = await cache.match(req, { ignoreSearch: cacheName === VERSION });
+async function cacheFirst(req) {
+  const cache = await caches.open(VERSION);
+  const hit = await cache.match(req);
   if (hit) return hit;
   const res = await fetch(req);
   if (res.ok || res.type === 'opaque') cache.put(req, res.clone());
@@ -95,7 +119,9 @@ self.addEventListener('fetch', event => {
     return;
   }
   if (url.origin !== self.location.origin) return;
-  if (url.pathname.includes('/data/')) { event.respondWith(networkFirst(req)); return; }
-  if (req.mode === 'navigate') { event.respondWith(cacheFirst(new Request('./index.html'))); return; }
-  event.respondWith(cacheFirst(req));
+  if (req.mode === 'navigate') {
+    event.respondWith(fresh(event, new URL('./index.html', self.registration.scope).href));
+    return;
+  }
+  event.respondWith(fresh(event, url.origin + url.pathname));
 });

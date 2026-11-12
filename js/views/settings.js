@@ -1,5 +1,6 @@
 // Settings: sync between the phones, share link and backup, restoring the final schedule, theme.
 import { store, update, snapshot, undo, encodeShare, replaceState } from '../store.js';
+import { DB } from '../data.js';
 import { esc, icon } from '../util.js';
 import { openSheet, toast, confirmSheet } from '../ui.js';
 import { sync, onSyncChange, syncConfig, enableSync, disableSync, syncNow, joinLink } from '../sync.js';
@@ -125,11 +126,20 @@ function body(st) {
       <div class="seg seg-sm">${[['auto', 'אוטומטי'], ['light', 'בהיר'], ['dark', 'כהה']].map(([k, l]) =>
         `<button class="${s.theme === k ? 'on' : ''}" data-theme="${k}">${l}</button>`).join('')}</div>
     </section>
-    <p class="muted small center">גרסה ${APP_VERSION} · הלו״ז הסופי</p>`;
+    <p class="muted small center">גרסה ${APP_VERSION}${published() ? ` · עודכן ${published()}` : ''}</p>`;
 }
 
 // Shown at the bottom of the settings, to check which version a phone is running.
-const APP_VERSION = 3;
+const APP_VERSION = 4;
+
+// When the data this page runs on was published (Rome time), e.g. "12.11, 07:21".
+function published() {
+  const d = DB.stamp ? new Date(DB.stamp) : null;
+  if (!d || Number.isNaN(d.getTime())) return '';
+  const f = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', day: 'numeric', month: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(d);
+  const v = t => f.find(p => p.type === t)?.value;
+  return `${v('day')}.${v('month')}, ${v('hour')}:${v('minute')}`;
+}
 
 export function applyTheme() {
   const t = store.state?.settings.theme || 'auto';

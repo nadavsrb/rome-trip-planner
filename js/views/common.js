@@ -136,7 +136,7 @@ function detailBody(e) {
       ${factRow('איך מגיעים', richText(e.travel))}
       ${factRow('עלות', [e.costEur ? `נסיעה כ-${euro(e.costEur)} לאדם הלוך-חזור` : '', e.entryEur ? `כניסות כ-${euro(e.entryEur)} לאדם` : ''].filter(Boolean).join(' · '))}
       ${factRow('הזמנות', richText(e.booking))}
-      ${factRow('ימים', [closedDaysText(e) ? `האתרים המרכזיים ${closedDaysText(e)}` : '', (e.bestDays || []).length ? `מומלץ: ${e.bestDays.map(d => WD_LONG[d]).join(', ')}` : ''].filter(Boolean).join(' · '))}
+      ${factRow('ימים', [closedDaysText(e) ? `האתרים המרכזיים: ${closedDaysText(e)}` : '', (e.bestDays || []).length ? `מומלץ: ${e.bestDays.map(d => WD_LONG[d]).join(', ')}` : ''].filter(Boolean).join(' · '))}
       ${factRow('אוכל', richText(e.food))}
     </div>`);
     if ((e.highlights || []).length) parts.push(`<h3 class="h3">מה רואים</h3><ul class="bullets">${e.highlights.map(x => `<li>${esc(x)}</li>`).join('')}</ul>`);

@@ -36,7 +36,10 @@ export function openSheet({ title = '', body = '', cls = '', onMount, onClose } 
     wrap.classList.remove('open');
     setTimeout(() => {
       wrap.remove();
-      if (!stack.length) document.body.classList.remove('sheet-open');
+      if (!stack.length) {
+        document.body.classList.remove('sheet-open');
+        window.dispatchEvent(new Event('sheets-closed'));
+      }
     }, 220);
     if (!fromPop) history.back();
     onClose?.();

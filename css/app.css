@@ -76,6 +76,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }
 .hidden { display: none !important; }
 .muted { color: var(--muted); }
+.ltr { white-space: nowrap; }
 .small { font-size: 13.5px; }
 .center { text-align: center; }
 .ic { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; flex: none; }
