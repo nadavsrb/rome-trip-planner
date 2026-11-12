@@ -2,7 +2,7 @@
 import { loadData, get, DB } from './data.js';
 import { load, store, update, subscribe, decodeShare, replaceState, snapshot, undo } from './store.js';
 import { scheduleDays, TRIP } from './planner.js';
-import { loadWeather } from './weather.js';
+import { loadWeather, weatherIsStale } from './weather.js';
 import { $, $$, romeToday, daysBetween, weekdayOf, WD_LONG } from './util.js';
 import { toast, confirmSheet, dropAllSheets } from './ui.js';
 import { renderPlan } from './views/plan.js';
@@ -234,7 +234,13 @@ async function boot() {
   const joined = await importJoin();
   if (!joined) await importShared();
   initSync().catch(() => {});
-  loadWeather().then(() => { if (['plan', 'info'].includes(parseHash().name)) render(); });
+  // The forecast: now, when the app comes back to the foreground, and every 15 minutes
+  // while it's open (it re-fetches only when the copy is over an hour old).
+  const showWeather = () => { if (['plan', 'info'].includes(parseHash().name)) render(); };
+  loadWeather().then(showWeather);
+  const refreshWeather = () => { if (weatherIsStale()) loadWeather({ force: true }).then(showWeather); };
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') refreshWeather(); });
+  setInterval(() => { if (document.visibilityState === 'visible') refreshWeather(); }, 15 * 60 * 1000);
   registerSW();
   startUpdateWatch();
   setInterval(countdown, 60 * 60 * 1000);

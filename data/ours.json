@@ -892,7 +892,8 @@
    "url": "https://www.thepantheonhotel.com",
    "kind": "food",
    "ours": true,
-   "closed": []
+   "closed": [],
+   "wx": "rooftop"
   },
   {
    "id": "trapizzino-trastevere",
@@ -1065,7 +1066,8 @@
    "closed": [
     1
    ],
-   "hours": "א׳ 12:00–15:00 ו-18:30–23:00 · ב׳ סגור · ג׳–ד׳ 18:30–23:00 · ה׳–ש׳ 12:00–15:00 ו-18:30–23:00"
+   "hours": "א׳ 12:00–15:00 ו-18:30–23:00 · ב׳ סגור · ג׳–ד׳ 18:30–23:00 · ה׳–ש׳ 12:00–15:00 ו-18:30–23:00",
+   "wx": "queue"
   },
   {
    "id": "luna-faro",
@@ -1417,7 +1419,8 @@
    "kind": "food",
    "ours": true,
    "closed": [],
-   "hours": "כל יום 11:30–23:00"
+   "hours": "כל יום 11:30–23:00",
+   "wx": "queue"
   },
   {
    "id": "eos-sushi",
@@ -1504,7 +1507,8 @@
    "desc": "מפיאצה ונציה עד פיאצה קולונה: רשתות אופנה וחנויות לאורך הרחוב.",
    "kind": "place",
    "ours": true,
-   "closed": []
+   "closed": [],
+   "wx": "street"
   },
   {
    "id": "corso-north",
@@ -1526,7 +1530,8 @@
    "desc": "מפיאצה קולונה עד פיאצה דל פופולו.",
    "kind": "place",
    "ours": true,
-   "closed": []
+   "closed": [],
+   "wx": "street"
   },
   {
    "id": "shady-shack",
@@ -1565,7 +1570,8 @@
    "desc": "סירות משוטים באגם הקטן, מול מקדש אסקלפיוס.",
    "kind": "place",
    "ours": true,
-   "closed": []
+   "closed": [],
+   "wx": "boat"
   },
   {
    "id": "faini",
@@ -2065,7 +2071,11 @@
       "18:30"
      ]
     ]
-   }
+   },
+   "wx": "queue"
+  },
+  "pantheon": {
+   "wx": "queue"
   }
  }
 }

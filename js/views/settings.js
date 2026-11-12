@@ -130,7 +130,7 @@ function body(st) {
 }
 
 // Shown at the bottom of the settings, to check which version a phone is running.
-const APP_VERSION = 4;
+const APP_VERSION = 5;
 
 // When the data this page runs on was published (Rome time), e.g. "12.11, 07:21".
 function published() {
