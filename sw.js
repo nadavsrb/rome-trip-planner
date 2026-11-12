@@ -1,6 +1,6 @@
 // Offline support. App files are precached per version; data files are network-first
 // so plan updates show up right away; map tiles are cached as you browse.
-const VERSION = 'rome26-v2';
+const VERSION = 'rome26-v3';
 const SHELL = [
   './', './index.html', './manifest.webmanifest', './css/app.css',
   './js/app.js', './js/util.js', './js/geo.js', './js/store.js', './js/data.js', './js/planner.js',
@@ -22,7 +22,8 @@ const MAX_TILES = 900;
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(VERSION);
-    await cache.addAll(SHELL);
+    // Straight from the network: the browser's HTTP cache may still hold the previous files.
+    await cache.addAll(SHELL.map(u => new Request(u, { cache: 'reload' })));
     await Promise.all(CDN.map(u => cache.add(new Request(u, { mode: 'cors' })).catch(() => {})));
     await self.skipWaiting();
   })());
@@ -31,8 +32,17 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
-    await Promise.all(keys.filter(k => k !== VERSION && k !== TILES).map(k => caches.delete(k)));
+    const old = keys.filter(k => k !== VERSION && k !== TILES);
+    await Promise.all(old.map(k => caches.delete(k)));
     await self.clients.claim();
+    // This is an update: reload every open window, so nobody keeps looking at the old
+    // version until the app is fully closed (pages of the first version can't do it themselves).
+    if (old.length) {
+      const wins = await self.clients.matchAll({ type: 'window' });
+      // Not awaited: the reload's requests wait for this worker to finish activating,
+      // so waiting for the reload here would deadlock.
+      wins.forEach(c => { if (typeof c.navigate === 'function') c.navigate(c.url).catch(() => {}); });
+    }
   })());
 });
 

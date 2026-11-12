@@ -124,8 +124,12 @@ function body(st) {
       <h3 class="h3">תצוגה</h3>
       <div class="seg seg-sm">${[['auto', 'אוטומטי'], ['light', 'בהיר'], ['dark', 'כהה']].map(([k, l]) =>
         `<button class="${s.theme === k ? 'on' : ''}" data-theme="${k}">${l}</button>`).join('')}</div>
-    </section>`;
+    </section>
+    <p class="muted small center">גרסה ${APP_VERSION} · הלו״ז הסופי</p>`;
 }
+
+// Shown at the bottom of the settings, to check which version a phone is running.
+const APP_VERSION = 3;
 
 export function applyTheme() {
   const t = store.state?.settings.theme || 'auto';
