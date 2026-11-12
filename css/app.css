@@ -629,3 +629,20 @@ body[data-route="map"] .view { max-width: none; padding: 0; }
 .sync-dot[data-s="offline"], .sync-dot[data-s="connecting"] { background: var(--warn); }
 .sync-dot[data-s="error"] { background: var(--danger); }
 .guide-card-wide { width: 100%; margin-top: 14px; }
+
+/* ---------- weather ---------- */
+
+.wx-rain { margin-top: 8px; font-size: 13.5px; color: var(--sky); }
+.wx-rain.dry { color: var(--muted); }
+.wx-hours { margin-top: 8px; font-size: 13.5px; }
+.wx-hours summary { cursor: pointer; color: var(--sky); width: fit-content; }
+.wxh-row { display: flex; gap: 4px; overflow-x: auto; padding: 8px 0 6px; scrollbar-width: none; }
+.wxh-row::-webkit-scrollbar { display: none; }
+.wxh { flex: none; width: 46px; display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 5px 0; border-radius: 10px; background: var(--surface-2); font-variant-numeric: tabular-nums; }
+.wxh span { font-size: 18px; line-height: 1.2; }
+.wxh b { font-size: 13px; }
+.wxh small { font-size: 11px; color: var(--muted); min-height: 13px; }
+.wxh.wet { background: var(--sky-soft); }
+.wxh.wet small:last-child { color: var(--sky); font-weight: 700; }
+.wx-alt { margin-top: 7px; }
+.now-wx small { color: var(--text); }

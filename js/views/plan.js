@@ -8,7 +8,7 @@ import {
   scheduleDays, sortByPins,
 } from '../planner.js';
 import { gmapsDir, distKm, leg as legOf, centroid } from '../geo.js';
-import { dayWeather, wxIcon, wxText, CLIMATE } from '../weather.js';
+import { dayWeather, wxIcon, wxText, CLIMATE, wx, hourWeather, rainSpans, wetness } from '../weather.js';
 import { openSheet, toast, confirmSheet } from '../ui.js';
 import { openDetail, emojiOf, foodBadges, dayLabel, toggleBooked, needsBooking } from './common.js';
 import { focusMapDay } from './map.js';
@@ -105,6 +105,8 @@ function itemHtml(ci, idx, items, st, prevLoc, nowMin, wd) {
         ${altsHtml(ci, wd)}
         ${ci.t === 'daytrip' && ci.e ? `<ol class="mini-tl">${(ci.e.plan || []).map(p => `<li><b>${esc(p.t)}</b><span>${esc(p.x)}</span></li>`).join('')}</ol>` : ''}
         ${warnHtml(ci.done ? [] : ci.warns)}
+        ${!ci.done && ['outdoor', 'view', 'street', 'boat'].includes(ci.wxExp) && ci.warns.some(w => w.type === 'wx' && w.lvl !== 'lo')
+          ? `<button class="chip chip-sm wx-alt" data-indoor="${ci.u}">🏛️ חלופה מקורה בסביבה</button>` : ''}
         ${ci.hints.map(h => `<div class="hint">${esc(h)}</div>`).join('')}
         ${ci.t === 'meal' ? mealSuggestions(ci, items, idx, st) : ''}
       </div>
@@ -198,8 +200,28 @@ function nowCardHtml(st) {
   } else if (!cur && c.items.length && now >= c.end) {
     lines.push(`<div class="now-line"><span class="now-tag soft">סיימנו</span><b>זהו להיום 🎉</b>${hotel && n.today !== TRIP.dates[5] ? `<a class="btn btn-soft btn-xs" href="${gmapsDir(hotel)}" target="_blank" rel="noopener">${icon('nav')}למלון</a>` : ''}</div>`);
   }
+  const wxLine = nowWeatherLine(n.today, now);
+  if (wxLine) lines.push(wxLine);
   if (!lines.length) return '';
   return `<section class="card now-card" data-nowcard>${lines.join('')}</section>`;
+}
+
+// "🌧️ 19° · rain now, easing around 17:00" / "☔ rain from 15:00" / "dry for the next hours".
+function nowWeatherLine(date, now) {
+  const hr = Math.floor(now / 60);
+  const cur = hourWeather(date, hr);
+  if (!cur) return '';
+  let status;
+  if (wetness(cur) >= 2) {
+    let h = hr + 1;
+    while (h < 24 && wetness(hourWeather(date, h)) >= 2) h++;
+    status = h < 24 ? `גשם עכשיו, צפוי להיחלש בסביבות ${String(h).padStart(2, '0')}:00` : 'גשם עכשיו ועד הלילה';
+  } else {
+    let h = hr + 1;
+    while (h <= Math.min(23, hr + 4) && wetness(hourWeather(date, h)) < 2) h++;
+    status = h <= Math.min(23, hr + 4) ? `☔ גשם צפוי בסביבות ${String(h).padStart(2, '0')}:00` : 'יבש בשעות הקרובות';
+  }
+  return `<div class="now-line now-wx"><span class="now-tag soft">${wxIcon(cur.code)} ${cur.t}°</span><small>${status}</small></div>`;
 }
 
 let nowTimer = null;
@@ -241,6 +263,26 @@ export function dayRouteUrl(day, c, st) {
   return `https://www.google.com/maps/dir/?${p.toString()}`;
 }
 
+// ---------- the day's forecast by the hour ----------
+
+function hourlyStrip(date) {
+  const hs = wx.hours[date];
+  if (!hs) return '';
+  const cells = [];
+  for (let h = 7; h <= 23; h++) {
+    const x = hs[h];
+    if (!x) continue;
+    const rain = x.pop != null ? `${x.pop}%` : x.mm >= 0.1 ? `${x.mm.toFixed(1)}` : '';
+    cells.push(`<div class="wxh ${wetness(x) >= 2 ? 'wet' : ''}"><small>${String(h).padStart(2, '0')}</small><span>${wxIcon(x.code)}</span><b>${x.t}°</b><small>${rain}</small></div>`);
+  }
+  if (!cells.length) return '';
+  const at = wx.fetchedAt ? new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date(wx.fetchedAt)) : '';
+  return `<details class="wx-hours"><summary>התחזית לפי שעות</summary>
+    <div class="wxh-row" dir="ltr">${cells.join('')}</div>
+    <small class="muted">${wx.source ? `לפי ${esc(wx.source)}` : ''}${at ? ` · עודכנה ב-${at}` : ''}${wx.hours[date]?.some(x => x && x.pop != null) ? ' · אחוזים = סיכוי לגשם' : ' · מספרים = מ״מ גשם בשעה'}</small>
+  </details>`;
+}
+
 // ---------- render ----------
 
 export function renderPlan(root, param) {
@@ -253,9 +295,14 @@ export function renderPlan(root, param) {
   const hotel = hotelOf(st);
   const nowMin = romeToday() === date ? romeNowMin() : null;
   const first = c.items[0];
+  const rainTxt = w ? (w.pop != null ? `${w.pop}% גשם` : w.mm >= 0.2 ? `גשם ~${Math.round(w.mm)} מ״מ` : 'בלי גשם') : '';
   const weatherLine = w
-    ? `${wxIcon(w.code)} ${esc(wxText(w.code))} ${ltr(`${w.tmin}°–${w.tmax}°`)} · ${w.pop ?? '–'}% גשם`
+    ? `${wxIcon(w.code)} ${esc(wxText(w.code))} ${ltr(`${w.tmin}°–${w.tmax}°`)} · ${rainTxt}`
     : `${wxIcon(CLIMATE.code)} ממוצע לעונה ${ltr(`${CLIMATE.tmin}°–${CLIMATE.tmax}°`)}`;
+  const spans = rainSpans(date);
+  const rainLine = spans.length
+    ? `<div class="wx-rain">☔ גשם צפוי ${spans.map(([a, b]) => ltr(`${String(a).padStart(2, '0')}:00–${String(b).padStart(2, '0')}:00`)).join(', ')}${w?.gust >= 40 ? ` · 💨 משבי רוח עד ${w.gust} קמ״ש` : ''}</div>`
+    : (wx.hours[date] ? `<div class="wx-rain dry">🌤️ לא צפוי גשם בשעות היום${w?.gust >= 40 ? ` · 💨 משבי רוח עד ${w.gust} קמ״ש` : ''}</div>` : '');
 
   let prevLoc = idx === 0 ? TRIP.airport : hotel;
   const itemsHtml = c.items.map((ci, i) => {
@@ -289,6 +336,8 @@ export function renderPlan(root, param) {
         ${first ? `<span>${icon('clock', 'ic-xs')} ${ltr(`${fromMin(first.start)}–${fromMin(c.end)}`)}</span>` : ''}
         ${c.walkKm > 0.3 ? `<span>🚶 כ-${c.walkKm.toFixed(1)} ק״מ</span>` : ''}
       </div>
+      ${rainLine}
+      ${hourlyStrip(date)}
       ${warnHtml(c.warns)}
       <div class="dh-actions">
         ${route ? `<a class="btn btn-primary btn-sm" href="${esc(route)}" target="_blank" rel="noopener">${icon('map')}המסלול ב-Google Maps</a>` : ''}
@@ -354,6 +403,10 @@ function bind(root, day, c) {
   root.querySelector('[data-act="bookings"]')?.addEventListener('click', openBookings);
   root.querySelector('[data-act="daymenu"]')?.addEventListener('click', () => openDayMenu(date));
   root.querySelector('[data-act="onmap"]')?.addEventListener('click', () => { focusMapDay(date); location.hash = '#/map'; });
+  root.querySelectorAll('[data-indoor]').forEach(b => b.addEventListener('click', ev => {
+    ev.stopPropagation();
+    openIndoorAlternatives(date, b.dataset.indoor);
+  }));
 
   const tl = root.querySelector('#tl');
   if (tl && window.Sortable) {
@@ -544,6 +597,46 @@ function openItemMenu(date, u) {
         close();
         toast('הוסר מהיום', { action: 'ביטול', onAction: undo });
       });
+    },
+  });
+}
+
+// ---------- covered alternatives when the weather turns ----------
+
+function openIndoorAlternatives(date, u) {
+  const st = store.state;
+  const day = st.days.find(d => d.date === date);
+  const c = computeDay(day, st, dayWeather(date));
+  const ci = c.items.find(x => x.u === u);
+  if (!ci || !ci.loc) return;
+  const used = new Set(day.items.flatMap(i => [i.id, ...(i.alts || [])]));
+  const rows = DB.places
+    .filter(e => e.indoor === true && e.lat != null && !used.has(e.id) && e.cat !== 'experience' && e.cat !== 'event')
+    .map(e => ({ e, km: distKm(ci.loc, e), chk: checkOpen(e, c.wd, ci.start, ci.start + Math.min(ci.dur, 60)) }))
+    .filter(r => r.km <= 2 && r.chk.ok)
+    .sort((a, b) => a.km - b.km)
+    .slice(0, 10);
+  const s = openSheet({
+    title: `חלופה מקורה ל${itemTitle(ci).name}`,
+    body: `<p class="muted small">מקומות מקורים עד 2 ק״מ משם, שפתוחים ב-${fromMin(ci.start)}. בחירה מחליפה את הפעילות, והמקורית נשארת כאופציה: לחיצה עליה מחזירה אותה.</p>
+      <div class="picker-list">${rows.length ? rows.map(({ e, km }) => `
+        <button class="pick-row" data-id="${e.id}">
+          <span class="pick-emoji">${emojiOf(e)}</span>
+          <span class="pick-main"><b>${esc(e.name)}</b><small>${fmtKm(km)} · ${e.dur ? fmtDur(e.dur) : ''}${e.price ? ` · ${bidi(e.price)}` : ''}</small></span>
+          <span class="pick-add">${icon('swap')}</span>
+        </button>`).join('') : '<div class="empty">לא מצאנו מקום מקורה פתוח בסביבה בשעה הזו.</div>'}</div>`,
+    onMount(body) {
+      body.querySelectorAll('.pick-row').forEach(b => b.addEventListener('click', () => {
+        const id = b.dataset.id;
+        patchItem(date, u, t => {
+          const alts = t.alts?.length ? t.alts : [t.id];
+          if (!alts.includes(id)) alts.push(id);
+          t.alts = alts;
+          t.id = id;
+        });
+        s.close();
+        toast(`הוחלף ב${get(id)?.name ? `־${get(id).name}` : ''}. לחיצה על האופציה המקורית מחזירה אותה`, { ms: 5000 });
+      }));
     },
   });
 }

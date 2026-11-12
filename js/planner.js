@@ -3,6 +3,7 @@
 import { DB, get } from './data.js';
 import { toMin, fromMin, weekdayOf, uid, WD_LONG } from './util.js';
 import { distKm, leg, sunTimes, centroid } from './geo.js';
+import { windowWx, wetness } from './weather.js';
 
 export const TRIP = {
   dates: ['2026-11-12', '2026-11-13', '2026-11-14', '2026-11-15', '2026-11-16', '2026-11-17'],
@@ -123,6 +124,57 @@ function dayStartMin(state) {
   return toMin(state.settings.startTime) ?? toMin(paceOf(state).start);
 }
 
+// ---------- weather ----------
+
+// How exposed a stop is to the weather: outdoor, view, street (shopping street), boat,
+// rooftop, queue (indoors, but the line is outside), takeaway (street food), or null.
+export function wxExposure(it, e) {
+  if (!e || it.t === 'fixed' || it.t === 'meal' || it.t === 'custom' || it.t === 'daytrip') return null;
+  if (e.wx) return e.wx === 'indoor' ? null : e.wx;
+  if (e.kind === 'food') return e.type === 'street' ? 'takeaway' : null;
+  if (e.cat === 'view') return 'view';
+  if (e.indoor === true) return null;
+  if (e.indoor === false || ['piazza', 'park', 'market', 'neighborhood'].includes(e.cat)) return 'outdoor';
+  return null;
+}
+
+export function weatherWarns(exp, w, { atSunset = false, start = 0 } = {}) {
+  const out = [];
+  if (!exp || !w) return out;
+  const wet = wetness(w);
+  const storm = w.code >= 95;
+  const chance = w.pop != null ? ` (${w.pop}%)` : w.mm >= 0.2 ? ` (~${w.mm.toFixed(1)} מ״מ)` : '';
+  const push = (lvl, text) => out.push({ lvl, type: 'wx', text });
+  switch (exp) {
+    case 'boat':
+      if (storm || wet >= 2) push('hi', `🚣 צפוי גשם בזמן הזה${chance}, כנראה לא ישכירו סירות`);
+      else if (wet === 1) push('mid', `☂️ אפשרות לגשם${chance}, ייתכן שלא ישכירו סירות`);
+      if (w.gust >= 35) push('hi', `💨 רוח חזקה (משבים עד ${w.gust} קמ״ש), כנראה לא ישכירו סירות`);
+      break;
+    case 'rooftop':
+      if (storm || wet >= 2) push('mid', `☔ צפוי גשם${chance}: הגג עלול להיות סגור, כדאי לבדוק או להזמין שולחן בפנים`);
+      else if (wet === 1) push('lo', `☂️ אפשרות לגשם${chance}`);
+      if (w.gust >= 40) push('mid', `💨 רוח חזקה על הגג (משבים עד ${w.gust} קמ״ש)`);
+      if (w.tmin <= 11) push('lo', `🧥 קר על הגג (${w.tmin}°), כדאי מעיל`);
+      break;
+    case 'queue':
+      if (wet >= 2) push('lo', `☔ צפוי גשם${chance}, והתור בחוץ: מטריה`);
+      break;
+    case 'takeaway':
+      if (wet >= 2) push('lo', `☔ צפוי גשם${chance}: לאכול בפנים או במקום מקורה`);
+      break;
+    default: // outdoor, view, street
+      if (storm) push('hi', '⛈️ סופת רעמים צפויה בזמן הזה');
+      else if (wet === 3) push('mid', exp === 'street' ? `☔ גשם חזק צפוי${chance}: גלריה אלברטו סורדי ולה רינשנטה מקורות, אפשר להמשיך שם` : `☔ גשם חזק צפוי בזמן הזה${chance}`);
+      else if (wet === 2) push('mid', exp === 'street' ? `☔ צפוי גשם${chance}: מטריה, ואפשר להיכנס לחנויות` : `☔ צפוי גשם בזמן הזה${chance}, כדאי מטריה`);
+      else if (wet === 1) push('lo', `☂️ אפשרות לגשם${chance}`);
+      if (exp === 'view' && atSunset && wet < 2 && w.cloud >= 85) push('lo', '☁️ מעונן מאוד, השקיעה כנראה לא תיראה');
+      if (w.gust >= 55) push('lo', `💨 רוח חזקה (משבים עד ${w.gust} קמ״ש)`);
+      if (start >= 18 * 60 && w.tmin <= 8) push('lo', `🧥 קר בערב (${w.tmin}°)`);
+  }
+  return out;
+}
+
 // ---------- timing one day ----------
 
 export function computeDay(day, state, weather = null) {
@@ -180,6 +232,7 @@ export function computeDay(day, state, weather = null) {
       }
     }
 
+    let atSunset = false;
     if (e && it.t !== 'daytrip' && e.kind !== 'hotel') {
       // A restaurant only needs to seat you about half an hour before it closes.
       const need = e.kind === 'food' ? Math.min(dur, 30) : dur;
@@ -192,7 +245,7 @@ export function computeDay(day, state, weather = null) {
       if (!chk.ok) warns.push(openWarning(chk, wd));
       if (chk.ok && e.lastEntry && start > toMin(e.lastEntry)) warns.push({ lvl: 'hi', type: 'hours', text: `כניסה אחרונה ב-${e.lastEntry}` });
       const tags = e.tags || [];
-      const atSunset = tags.includes('view') && Math.abs(start + dur / 2 - sunset) <= 35;
+      atSunset = (tags.includes('view') || e.cat === 'view') && Math.abs(start + dur / 2 - sunset) <= 35;
       const fineAfterDark = tags.includes('night') || ['shopping', 'event', 'experience'].includes(e.cat);
       if (atSunset) hints.push(`🌅 בדיוק בשקיעה (${sun.sunset})`);
       else if (e.kind === 'place' && e.indoor === false && !fineAfterDark && start >= sunset + 15) {
@@ -205,11 +258,15 @@ export function computeDay(day, state, weather = null) {
       }
     }
 
+    const exp = wxExposure(it, e);
+    const ww = exp ? windowWx(day.date, start, start + Math.max(dur, 20)) : null;
+    if (ww) warns.push(...weatherWarns(exp, ww, { atSunset, start }));
+
     if (cursor == null) leave = start - travel;
     const end = start + dur;
     if ((it.t === 'place' && !isFoodExperience(e)) || it.t === 'daytrip' || it.t === 'custom') activity += dur;
     if (lg && lg.mode === 'walk') walkKm += lg.km;
-    out.push({ ...it, e, loc, dur, start, end, leg: lg, gap, warns, hints });
+    out.push({ ...it, e, loc, dur, start, end, leg: lg, gap, warns, hints, wxExp: exp, wxw: ww });
     cursor = end;
     if (loc) prev = loc;
     else if (it.t === 'fixed' && (it.kind === 'hotel' || it.kind === 'transfer')) prev = hotel;
@@ -224,6 +281,8 @@ export function computeDay(day, state, weather = null) {
   }
   if (cursor != null && cursor > toMin('23:45')) dayWarns.push({ lvl: 'lo', text: 'היום מסתיים מאוחר מאוד' });
   if (walkKm > 14) dayWarns.push({ lvl: 'lo', text: `הרבה הליכה היום (כ-${Math.round(walkKm)} ק״מ) — שקלו מונית או מטרו` });
+  const wxHit = out.filter(x => !x.done && x.warns.some(w => w.type === 'wx' && w.lvl !== 'lo')).length;
+  if (wxHit) dayWarns.push({ lvl: 'mid', type: 'wx', text: wxHit === 1 ? 'פעילות אחת בחוץ בזמן מזג אוויר לא נוח, מסומנת למטה' : `${wxHit} פעילויות בחוץ בזמן מזג אוויר לא נוח, מסומנות למטה` });
 
   return {
     items: out, wd, sun, leave, end: cursor, back, activity, walkKm,
